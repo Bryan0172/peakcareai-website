@@ -1,0 +1,13 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Webinar form → trigger Brevo automation function
+[[triggers]]
+  event = "submission-created"
+  form = "webinar-registration"
+  function = "webinar-signup"

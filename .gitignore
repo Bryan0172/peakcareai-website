@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local env / secrets — NIE committen
+.env
+.env.*
+!.env.example
+
+# Netlify local
+.netlify
+
+# Logs / OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Interne Outreach-/Marketing-Ablage — echte Lead-PII, gehoert NICHT ins Website-Repo (DSGVO)
+content/
+og-image-generator.html
