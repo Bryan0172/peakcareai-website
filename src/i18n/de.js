@@ -54,6 +54,11 @@ const de = {
       microtext: '30 Minuten. Keine Verkaufspräsentation. Ein praktisches Gespräch über Ihr Haus.',
     },
 
+    two_fields: {
+      heading: 'Dieselbe Methode, zwei Felder.',
+      body: 'Im Kern lösen wir überall dasselbe: KI-gestützte Kommunikation und Automatisierung dort, wo fachliche Arbeit auf Menschen trifft und Verwaltung die Zeit frisst. In der unabhängigen Hotellerie haben wir das über Jahre bewiesen — und aus internationaler Projektentwicklung, in der stets auch die Handwerksgewerke zu koordinieren waren, kennen wir das Handwerk aus der Praxis. Dieselbe Methode trägt es heute europaweit: Handwerks- und Servicebetriebe (SHK, Heizung, Elektro, Dach, Maler). Zwei getrennte Schienen, ein Fundament.',
+    },
+
     trust: {
       h2: 'Ihre Gäste fragen schon heute die KI, wo sie übernachten sollen.',
       body: 'Wenn die KI die Website Ihres Hotels nicht lesen kann, empfiehlt sie einfach ein anderes — und der Gast, der Sie direkt gefunden hätte, bucht stattdessen über eine OTA, mit 15–18% Provision. Das ist kein Marketing-Problem. Es ist ein Sichtbarkeits-Problem, und es ist lösbar.',

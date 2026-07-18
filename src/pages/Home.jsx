@@ -145,6 +145,16 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-50 to-transparent" />
       </section>
 
+      {/* ─── TWO VERTICALS (Scope, ruhig/nachgeordnet — Hotel bleibt Flaggschiff) ─── */}
+      <section className="bg-slate-50 border-b border-slate-100">
+        <div className="container-main py-12 md:py-16">
+          <div className="max-w-3xl">
+            <h2 className="text-xl md:text-2xl font-bold text-navy-900 mb-4">{h.two_fields.heading}</h2>
+            <p className="text-slate-600 text-base md:text-lg leading-relaxed">{h.two_fields.body}</p>
+          </div>
+        </div>
+      </section>
+
       {/* ─── THE PROBLEM ─── */}
       <section className="bg-white border-b border-slate-100">
         <div className="container-main py-14 md:py-20">

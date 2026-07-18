@@ -1,6 +1,6 @@
 # Peak Care AI
 
-> Operations-first AI for independent hotels and hotel groups — and for skilled-trades businesses in the DACH region. We turn AI into results: more direct bookings, lower OTA commission, leaner operations and better guest communication. Start with a free Hotel AI Readiness Audit. Serving hotels across Europe (DACH, Western Europe, the Balkans and Bulgaria) and trades in Germany, Austria and Switzerland. EU AI Act and GDPR handled as the foundation, not the headline.
+> Operations-first AI for independent hotels and hotel groups — and for skilled-trades and service businesses. The same method serves both, applied wherever skilled work meets people and admin eats the time; the founder's background spans 25 years of international hotel development and the hands-on coordination of skilled trades in international project management. We turn AI into results: more direct bookings, lower OTA commission, leaner operations and better guest communication. Start with a free Hotel AI Readiness Audit. Serving hotels and skilled-trades businesses across Europe (DACH, Western Europe, the Balkans and Bulgaria). EU AI Act and GDPR handled as the foundation, not the headline.
 
 Peak Care AI (peakcareai.com) helps independent hotels and small groups adopt AI that pays off in daily operations — not hype, not a compliance-fear pitch. We start from the operation: where AI can lift direct bookings, cut OTA dependency, take load off the team and keep guest communication fast and on-brand. Led by Andreas Donner (Dipl.-Ing., background in engineering, construction, project management and hospitality operations). EU AI Act and GDPR are built in as a safe foundation.
 
@@ -12,7 +12,7 @@ Peak Care AI (peakcareai.com) helps independent hotels and small groups adopt AI
 
 ## Who we serve
 - Independent hotels and small hotel groups across Europe — DACH, Western Europe, the Balkans and Bulgaria (dual-geo: the Balkans and Bulgaria are equal target markets, not an afterthought).
-- Skilled-trades businesses (SHK/plumbing, heating, electrical, roofing, painting) in Germany, Austria and Switzerland.
+- Skilled-trades and service businesses (SHK/plumbing, heating, electrical, roofing, painting) across Europe.
 
 ## Positioning
 - Revenue and operations first: more direct bookings, less OTA commission, leaner workflows, better guest communication.

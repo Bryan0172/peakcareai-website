@@ -54,6 +54,11 @@ const en = {
       microtext: '30 minutes. No pitch deck. A practical conversation about your hotel.',
     },
 
+    two_fields: {
+      heading: 'One method, two fields.',
+      body: 'At the core we solve the same thing everywhere: AI-driven communication and automation where skilled work meets people and admin eats the time. We proved it over years in independent hospitality — and from international project development, where the skilled trades always had to be coordinated, we know how trades work in practice. The same method now carries it across Europe: skilled-trades and service businesses (plumbing/heating, electrical, roofing, painting). Two separate tracks, one foundation.',
+    },
+
     trust: {
       h2: 'Your guests are already asking AI where to stay.',
       body: "40% of travellers now plan trips with ChatGPT, Google AI Overviews and booking assistants. If AI can't read your hotel's website, it simply recommends someone else — and the guest who would have found you directly books through an OTA instead, at 15–18% commission. That's not a marketing problem. It's a visibility problem, and it's fixable.",
