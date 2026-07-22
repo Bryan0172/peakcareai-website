@@ -44,23 +44,38 @@ const de = {
     meta_desc: 'Wenn die KI Ihr Haus nicht lesen kann, empfiehlt sie ein anderes. Peak Care AI macht unabhängige Boutique-Hotels für die KI-Suche sichtbar und holt Direktbuchungen zurück — gebaut von jemandem, der 25 Jahre lang Hotelmarken entwickelt, gebaut und umgesetzt hat.',
 
     hero: {
-      badge: 'KI-Sichtbarkeit & Direktbuchungen für Boutique-Hotels',
-      h1_line1: 'Ihr Hotel für die KI-Suche sichtbar machen —',
-      h1_line2: 'und Direktbuchungen zurückholen.',
-      sub: '40% der Reisenden planen heute mit ChatGPT, Google AI & Buchungsassistenten. Wenn die KI Ihr Haus nicht lesen kann, empfiehlt sie ein anderes — und der Gast bucht über Booking.com, mit 15–18% Provision. Das ändern wir. Gebaut von jemandem, der 25 Jahre lang Hotelmarken entwickelt, gebaut und umgesetzt hat — nicht von einem Software-Verkäufer.',
+      badge: 'Schnellere Antworten für Hotellerie & Handwerk',
+      h1_line1: 'Die meisten Direktbuchungen gehen nicht am Preis verloren —',
+      h1_line2: 'sondern am Tempo.',
+      sub: 'Die Anfrage trifft um 21 Uhr ein. Ihre Antwort geht morgen Nachmittag raus. Bis dahin hat der Gast den OTA-Tab gebucht, den er daneben offen hatte — zu 15–18% Provision. Peak Care AI entwirft die erste Antwort in Sekunden: Direktanfragen, Bewertungsantworten, Nachrichten vor der Anreise, verpasste Anrufe, Nachfassen bei Angeboten. Ein Mensch liest den Ton und drückt auf Senden — das Urteil bleibt bei Ihrem Team, nur das Warten verschwindet.',
       trust: ['Aldiana', 'Meliá', 'Thomas Cook', 'Maritim — 25 Jahre internationale Hotelentwicklung & Markenumsetzung'],
-      cta_primary: 'Kostenloser KI-Sichtbarkeits-Check',
-      cta_secondary: 'Hotel AI Assessment ansehen',
-      microtext: '30 Minuten. Keine Verkaufspräsentation. Ein praktisches Gespräch über Ihr Haus.',
+      cta_primary: 'Kostenloser OTA-Provisions-Check',
+      cta_secondary: 'KI-Sichtbarkeits-Check ansehen',
+      microtext: '30 Minuten. Keine Verkaufspräsentation. Wir rechnen aus, was ein Jahr Plattform-Provision Ihr Haus tatsächlich kostet.',
     },
 
-    two_fields: {
-      heading: 'Dieselbe Methode, zwei Felder.',
-      body: 'Im Kern lösen wir überall dasselbe: KI-gestützte Kommunikation und Automatisierung dort, wo fachliche Arbeit auf Menschen trifft und Verwaltung die Zeit frisst. In der unabhängigen Hotellerie haben wir das über Jahre bewiesen — und aus internationaler Projektentwicklung, in der stets auch die Handwerksgewerke zu koordinieren waren, kennen wir das Handwerk aus der Praxis. Dieselbe Methode trägt es heute europaweit: Handwerks- und Servicebetriebe (SHK, Heizung, Elektro, Dach, Maler). Zwei getrennte Schienen, ein Fundament.',
+    tasks: {
+      label: 'Was wir entwerfen',
+      h2: 'Fünf Aufgaben, in Sekunden beantwortet — nicht morgen.',
+      sub: 'Ein Mensch liest jeden Entwurf und drückt auf Senden. Nur das Warten verschwindet.',
+      items: [
+        { icon: '💬', title: 'Direktanfragen', text: 'In der Sprache des Gastes, in dem Moment, in dem er fragt — nicht am nächsten Morgen.' },
+        { icon: '⭐', title: 'Bewertungsantworten', text: 'Jede Bewertung bekommt eine durchdachte Antwort, noch am selben Tag.' },
+        { icon: '🛎️', title: 'Nachrichten vor der Anreise', text: 'Check-in-Details, Zusatzangebote und Tipps vor Ort — automatisch vor dem Aufenthalt versendet.' },
+        { icon: '📞', title: 'Verpasste Anrufe', text: 'Ein fertiger Nachfass-Entwurf innerhalb von Minuten, damit keine Anfrage abkühlt.' },
+        { icon: '📄', title: 'Nachfassen bei Angeboten', text: 'Angebote werden nachgefasst, bevor der Gast anderswo bucht.' },
+      ],
+    },
+
+    trades: {
+      label: 'Zweites Feld: Handwerk',
+      h2: 'Dasselbe Problem, nach Feierabend.',
+      body: 'SHK, Elektro, Dach, Maler — die Anfrage nach Feierabend und der Anruf, den niemand annehmen konnte, bekommen noch am selben Abend eine Antwort, nicht erst nach zwei Werktagen. Dieselbe Methode wie in der Hotellerie, eine eigene Schiene für Handwerks- und Servicebetriebe im gesamten DACH-Raum.',
     },
 
     trust: {
-      h2: 'Ihre Gäste fragen schon heute die KI, wo sie übernachten sollen.',
+      label: 'Schritt 2',
+      h2: 'Dann gefunden werden, bevor sie überhaupt fragen.',
       body: 'Wenn die KI die Website Ihres Hotels nicht lesen kann, empfiehlt sie einfach ein anderes — und der Gast, der Sie direkt gefunden hätte, bucht stattdessen über eine OTA, mit 15–18% Provision. Das ist kein Marketing-Problem. Es ist ein Sichtbarkeits-Problem, und es ist lösbar.',
       tagline: 'Die Hotels, die heute in KI-Antworten auftauchen, sind nicht unbedingt die besten — es sind die maschinenlesbaren.',
     },
@@ -97,7 +112,7 @@ const de = {
     },
 
     why_now: {
-      label: 'Was wir prüfen & fixen',
+      label: 'Schritt 2: Was wir prüfen & fixen',
       h2: 'Fünf konkrete Dinge, kein Strategie-Deck.',
       sub: 'Ein kostenloser Check zeigt genau, wo Ihr Hotel bei jedem dieser Punkte steht — dann fixen wir, was fehlt.',
       items: [
@@ -164,11 +179,11 @@ const de = {
 
     cta_final: {
       label: 'Kostenlos starten',
-      h2_line1: 'Starten Sie mit einem kostenlosen KI-Sichtbarkeits-Check —',
-      h2_line2: 'sehen Sie genau, wo Sie stehen.',
-      sub: 'Wir zeigen Ihnen, was KI aktuell auf der Website Ihres Hotels sieht (oder nicht sieht) — und wie die Fixes für Ihr Haus konkret aussehen würden.',
-      cta_primary: 'Kostenloser KI-Sichtbarkeits-Check',
-      cta_secondary: 'Hotel AI Assessment ansehen',
+      h2_line1: 'Starten Sie mit einem kostenlosen OTA-Provisions-Check —',
+      h2_line2: 'sehen Sie genau, was er Sie kostet.',
+      sub: 'Wir rechnen aus, was ein Jahr Plattform-Provision Ihr Haus tatsächlich kostet — und wie die Fixes für Ihr Haus konkret aussehen würden, inklusive KI-Sichtbarkeit als nächstem Schritt.',
+      cta_primary: 'Kostenloser OTA-Provisions-Check',
+      cta_secondary: 'KI-Sichtbarkeits-Check ansehen',
     },
   },
 

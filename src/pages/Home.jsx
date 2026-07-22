@@ -145,22 +145,43 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-50 to-transparent" />
       </section>
 
-      {/* ─── TWO VERTICALS (Scope, ruhig/nachgeordnet — Hotel bleibt Flaggschiff) ─── */}
-      <section className="bg-slate-50 border-b border-slate-100">
-        <div className="container-main py-12 md:py-16">
-          <div className="max-w-3xl">
-            <h2 className="text-xl md:text-2xl font-bold text-navy-900 mb-4">{h.two_fields.heading}</h2>
-            <p className="text-slate-600 text-base md:text-lg leading-relaxed">{h.two_fields.body}</p>
+      {/* ─── TASKS (What We Draft — the 5 response tasks, hero follow-through) ─── */}
+      <section className="section-light">
+        <div className="container-main">
+          <div className="text-center mb-12">
+            <p className="text-gold-500 font-semibold text-sm uppercase tracking-widest mb-3">{h.tasks.label}</p>
+            <h2 className="section-heading">{h.tasks.h2}</h2>
+            <p className="section-subheading">{h.tasks.sub}</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+            {h.tasks.items.map((c) => (
+              <div key={c.title} className="card p-6">
+                <div className="text-2xl mb-3">{c.icon}</div>
+                <h3 className="font-bold text-navy-900 mb-2">{c.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{c.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ─── THE PROBLEM ─── */}
+      {/* ─── TRADES (Second Field: Skilled Trades DACH — own section, equal footing) ─── */}
+      <section className="bg-navy-900 border-b border-white/5">
+        <div className="container-main py-14 md:py-16">
+          <div className="max-w-3xl">
+            <p className="text-gold-400 font-semibold text-xs uppercase tracking-[0.18em] mb-4">{h.trades.label}</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight mb-4">{h.trades.h2}</h2>
+            <p className="text-white/60 text-base md:text-lg leading-relaxed">{h.trades.body}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── STEP 2 INTRO (AI visibility — reframed as the follow-on, not the opener) ─── */}
       <section className="bg-white border-b border-slate-100">
         <div className="container-main py-14 md:py-20">
           <div className="max-w-3xl">
             <p className="text-gold-500 font-semibold text-xs uppercase tracking-[0.18em] mb-4">
-              The Problem
+              {h.trust.label}
             </p>
             <h2 className="text-2xl md:text-4xl font-bold text-navy-900 leading-tight mb-6">
               {h.trust.h2}
@@ -227,10 +248,10 @@ export default function Home() {
                 Free to start
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                One clear engagement per hotel — no subscription.
+                One clear engagement per house — no subscription.
               </h2>
               <p className="text-white/60 leading-relaxed text-lg">
-                Start with a free AI visibility check. If it's useful, we agree a clear fixed price for the 5 fixes — sized to your house, no subscription lock-in, no pricing surprises.
+                Start with a free OTA commission check. If it's useful, we agree a clear fixed price for the fixes — sized to your house, no subscription lock-in, no pricing surprises.
               </p>
             </div>
             <div className="shrink-0 flex flex-col items-center gap-4">
@@ -240,7 +261,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gold-400 hover:bg-gold-500 text-navy-900 font-bold px-8 py-4 rounded-xl transition-colors text-base shadow-lg shadow-gold-400/20 whitespace-nowrap"
               >
-                Get your free AI Visibility Check
+                Free OTA Commission Check
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

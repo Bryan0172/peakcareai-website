@@ -44,23 +44,38 @@ const en = {
     meta_desc: "40% of travellers now plan trips with ChatGPT, Google AI and booking assistants. If AI can't read your hotel, it recommends someone else. Peak Care AI makes independent and boutique hotels visible to AI search and wins back direct bookings — built by a hotel-industry insider with 25 years developing, building and implementing hotels for international brands.",
 
     hero: {
-      badge: 'AI Visibility & Direct Bookings for Boutique Hotels',
-      h1_line1: 'Make your hotel visible to AI search —',
-      h1_line2: 'and win back direct bookings.',
-      sub: "40% of travellers now plan trips with ChatGPT, Google AI and booking assistants. If AI can't read your hotel, it recommends someone else — and the guest books via Booking.com, at 15–18% commission. We fix that. Built by someone who spent 25 years developing, building and implementing hotels for international brands — not by a software vendor.",
+      badge: 'Faster Replies for Hospitality & Trades',
+      h1_line1: "Most direct bookings aren't lost on price —",
+      h1_line2: "they're lost on speed.",
+      sub: "The inquiry arrives at 9pm. Your reply goes out tomorrow afternoon. By then the guest has booked the OTA tab they had open right next to it — at 15–18% commission. Peak Care AI drafts the first response in seconds: direct inquiries, review replies, pre-arrival messages, missed calls, quote follow-ups. A person reads the tone and hits send — the judgment stays with your team, only the waiting disappears.",
       trust: ['Aldiana', 'Meliá', 'Thomas Cook', 'Maritim — 25 years in international hotel development & brand implementation'],
-      cta_primary: 'Free AI Visibility Check for your hotel',
-      cta_secondary: 'Explore the Hotel AI Assessment',
-      microtext: '30 minutes. No pitch deck. A practical conversation about your hotel.',
+      cta_primary: 'Free OTA Commission Check',
+      cta_secondary: 'See the AI Visibility Check',
+      microtext: '30 minutes. No pitch deck. We calculate what a year of platform commission actually costs your house.',
     },
 
-    two_fields: {
-      heading: 'One method, two fields.',
-      body: 'At the core we solve the same thing everywhere: AI-driven communication and automation where skilled work meets people and admin eats the time. We proved it over years in independent hospitality — and from international project development, where the skilled trades always had to be coordinated, we know how trades work in practice. The same method now carries it across Europe: skilled-trades and service businesses (plumbing/heating, electrical, roofing, painting). Two separate tracks, one foundation.',
+    tasks: {
+      label: 'What We Draft',
+      h2: 'Five tasks, answered in seconds — not tomorrow.',
+      sub: 'A person still reads every draft and hits send. Only the waiting disappears.',
+      items: [
+        { icon: '💬', title: 'Direct inquiries', text: "In the guest's language, the moment they ask — not the next morning." },
+        { icon: '⭐', title: 'Review responses', text: 'Every review gets a considered reply, on the same day it lands.' },
+        { icon: '🛎️', title: 'Pre-arrival messages', text: 'Check-in details, upsells and local tips, sent automatically before the stay.' },
+        { icon: '📞', title: 'Missed calls', text: 'A drafted follow-up ready within minutes, so no enquiry goes cold.' },
+        { icon: '📄', title: 'Quote follow-ups', text: 'Offers get chased before the guest books elsewhere.' },
+      ],
+    },
+
+    trades: {
+      label: 'Second Field: Skilled Trades',
+      h2: 'The same problem, after hours.',
+      body: "Plumbing and heating, electrical, roofing, painting — the enquiry that comes in after closing time and the call nobody picked up get an answer the same evening, not after two working days. Same method as hospitality, one dedicated track for skilled-trades and service businesses across the DACH region.",
     },
 
     trust: {
-      h2: 'Your guests are already asking AI where to stay.',
+      label: 'Step 2',
+      h2: 'Then, get found before they even ask.',
       body: "40% of travellers now plan trips with ChatGPT, Google AI Overviews and booking assistants. If AI can't read your hotel's website, it simply recommends someone else — and the guest who would have found you directly books through an OTA instead, at 15–18% commission. That's not a marketing problem. It's a visibility problem, and it's fixable.",
       tagline: "The hotels showing up in AI answers today aren't necessarily the best ones — they're the machine-readable ones.",
     },
@@ -97,7 +112,7 @@ const en = {
     },
 
     why_now: {
-      label: 'What We Check & Fix',
+      label: 'Step 2: What We Check & Fix',
       h2: 'Five concrete things, not a strategy deck.',
       sub: "A free check tells you exactly where your hotel stands on each of these — then we fix what's missing.",
       items: [
@@ -164,11 +179,11 @@ const en = {
 
     cta_final: {
       label: 'Start free',
-      h2_line1: 'Start with a free AI visibility check —',
-      h2_line2: 'see exactly where you stand.',
-      sub: "15 minutes. We show you what AI currently sees (or doesn't see) on your hotel's website, and what the fixes would look like for your house specifically.",
-      cta_primary: 'Free AI Visibility Check for your hotel',
-      cta_secondary: 'Explore the Hotel AI Assessment',
+      h2_line1: 'Start with a free OTA commission check —',
+      h2_line2: "see exactly what it's costing you.",
+      sub: "15 minutes. We calculate what a year of platform commission actually costs your house, and what the fixes would look like specifically for you — including AI visibility, as the next step.",
+      cta_primary: 'Free OTA Commission Check',
+      cta_secondary: 'See the AI Visibility Check',
     },
   },
 
