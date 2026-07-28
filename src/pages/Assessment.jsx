@@ -46,7 +46,7 @@ const QUESTIONS = [
   {
     id: 'awareness',
     text: 'How familiar are you with the EU AI Act requirements for hospitality businesses?',
-    sub: 'The regulation applies from August 2026 to all AI systems used in the EU.',
+    sub: 'From 2 August 2026, the EU AI Act\'s Article 50 transparency rules apply to guest-facing AI systems used in the EU.',
     options: [
       { label: 'Not familiar at all', value: 2 },
       { label: 'Heard of it, not yet assessed', value: 1 },
@@ -138,7 +138,7 @@ export default function Assessment() {
             <span className="text-gold-400">Self-Assessment</span>
           </h1>
           <p className="text-white/60 leading-relaxed">
-            5 questions. Find out in 3 minutes whether your hotel needs to act before August 2026 — and what the priority steps are.
+            5 questions. Find out in 3 minutes whether your hotel needs to act before 2 August 2026 — and what the priority steps are.
           </p>
         </div>
       </section>
@@ -253,8 +253,7 @@ export default function Assessment() {
         <section className="bg-amber-50 border-t border-amber-200 py-8">
           <div className="container-main text-center">
             <p className="text-amber-800 text-sm">
-              <strong>EU AI Act deadline: August 2026.</strong>{' '}
-              3 months left.{' '}
+              <strong>EU AI Act Article 50 deadline: 2 August 2026.</strong>{' '}
               <Link to="/webinar" className="font-bold underline">Book an AI Readiness Call →</Link>
             </p>
           </div>

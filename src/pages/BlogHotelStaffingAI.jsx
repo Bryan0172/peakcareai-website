@@ -54,7 +54,7 @@ export default function BlogHotelStaffingAI() {
               "name": "How does the EU AI Act affect AI tools used for guest communication?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Under the EU AI Act (effective August 2026), AI systems that interact directly with guests — including chatbots and automated messaging tools — require documentation: what the system does, what data it accesses, and how guests are informed they are interacting with AI. Hotels using these tools should have a written record of each system and its scope before the deadline."
+                "text": "Under the EU AI Act's Article 50 transparency rules (effective 2 August 2026), AI systems that interact directly with guests — including chatbots and automated messaging tools — require documentation: what the system does, what data it accesses, and how guests are informed they are interacting with AI. Hotels using these tools should have a written record of each system and its scope before the deadline."
               }
             },
             {
@@ -218,7 +218,7 @@ export default function BlogHotelStaffingAI() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">What this means for EU AI Act compliance</h2>
             <p>
-              From August 2026, AI tools that interact directly with guests require documentation under the EU AI Act. For guest messaging AI: this means a written record of what the system does, what data it accesses, and how guests know they are interacting with an AI rather than a person.
+              From 2 August 2026, AI tools that interact directly with guests require documentation under the EU AI Act's Article 50 transparency rules. For guest messaging AI: this means a written record of what the system does, what data it accesses, and how guests know they are interacting with an AI rather than a person.
             </p>
             <p>
               This is not a large compliance burden for most hotels. A one-page system description per tool is usually sufficient. But it needs to be in place — and most hotels using AI messaging tools currently have nothing documented.
@@ -250,7 +250,7 @@ export default function BlogHotelStaffingAI() {
                 },
                 {
                   q: 'How does the EU AI Act affect guest communication AI?',
-                  a: 'Guest-facing AI tools require documentation under the EU AI Act (August 2026): what the system does, what data it accesses, and how guests are informed. A one-page system description per tool is usually sufficient — but most hotels currently have nothing documented.'
+                  a: 'Guest-facing AI tools require documentation under the EU AI Act Article 50 transparency rules (from 2 August 2026): what the system does, what data it accesses, and how guests are informed. A one-page system description per tool is usually sufficient — but most hotels currently have nothing documented.'
                 },
                 {
                   q: 'How do we handle staff resistance to AI?',

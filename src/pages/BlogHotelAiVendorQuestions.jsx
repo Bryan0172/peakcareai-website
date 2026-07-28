@@ -36,7 +36,7 @@ export default function BlogHotelAiVendorQuestions() {
         {
           q: 'Do you provide EU AI Act documentation for your system — technical specifications, conformity assessment, or a system card?',
           why: 'The EU AI Act requires documentation for limited-risk and high-risk systems — from vendors, not just from hotel operators. Vendors deploying chatbots, automated communication tools, or recommendation systems in EU hotels should be able to produce this.',
-          listen: 'An actual document or a clear timeline for when it will be available. "We\'re working on it" is less reassuring as the August 2026 deadline approaches.'
+          listen: 'An actual document or a clear timeline for when it will be available. "We\'re working on it" is less reassuring with the 2 August 2026 deadline in place.'
         },
         {
           q: 'Does your system require a transparency disclosure to guests — and does your product support implementing one?',
@@ -154,7 +154,7 @@ export default function BlogHotelAiVendorQuestions() {
               "name": "What should a hotel check regarding EU AI Act compliance before buying an AI tool?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ask the vendor: What risk category does your system fall under according to the EU AI Act? Can you provide EU AI Act documentation — technical specifications, conformity assessment, or a system card? Does your product support adding guest-facing transparency disclosures for AI interactions? Vendors operating in the EU should have answers to these questions by mid-2026. If they do not, they are not prepared for the August 2026 deadline."
+                "text": "Ask the vendor: What risk category does your system fall under according to the EU AI Act? Can you provide EU AI Act documentation — technical specifications, conformity assessment, or a system card? Does your product support adding guest-facing transparency disclosures for AI interactions? Vendors operating in the EU should have answers to these questions by mid-2026. If they do not, they are not prepared for the 2 August 2026 deadline."
               }
             },
             {
@@ -178,7 +178,7 @@ export default function BlogHotelAiVendorQuestions() {
               "name": "How long does it actually take to implement an AI tool in a hotel?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Actual implementation timelines vary considerably from demo timelines. PMS integration alone can take 4–6 weeks if the vendor's engineering queue is backed up. Staff training adds additional time. For a property approaching a high season or regulatory deadline (such as EU AI Act August 2026), ask specifically about the vendor's current onboarding queue and the most common causes of delay at comparable properties."
+                "text": "Actual implementation timelines vary considerably from demo timelines. PMS integration alone can take 4–6 weeks if the vendor's engineering queue is backed up. Staff training adds additional time. For a property approaching a high season or regulatory deadline (such as the EU AI Act's Article 50 deadline of 2 August 2026), ask specifically about the vendor's current onboarding queue and the most common causes of delay at comparable properties."
               }
             },
             {
@@ -323,7 +323,7 @@ export default function BlogHotelAiVendorQuestions() {
               },
               {
                 q: 'What EU AI Act compliance documentation should a hotel AI vendor provide?',
-                a: 'At minimum: the risk classification of their system with a rationale, a technical description of how the system works, evidence that guest transparency disclosures are implemented (for limited-risk tools), and a DPA for data processing. Vendors who cannot provide these by August 2026 are not compliant.'
+                a: 'At minimum: the risk classification of their system with a rationale, a technical description of how the system works, evidence that guest transparency disclosures are implemented (for limited-risk tools), and a DPA for data processing. Vendors who cannot provide these by 2 August 2026 are not compliant.'
               },
               {
                 q: 'What are common hidden costs when buying AI tools for hotels?',
@@ -356,7 +356,7 @@ export default function BlogHotelAiVendorQuestions() {
               Evaluating an AI vendor — or already committed to one?
             </h3>
             <p className="text-white/60 mb-6 max-w-lg mx-auto">
-              A structured 30-minute conversation to review your current or planned AI tools — what questions remain open, what compliance gaps need to be closed before August 2026, and what your team needs to manage this without external support.
+              A structured 30-minute conversation to review your current or planned AI tools — what questions remain open, what compliance gaps need to be closed before 2 August 2026, and what your team needs to manage this without external support.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
@@ -382,7 +382,7 @@ export default function BlogHotelAiVendorQuestions() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Link to="/blog/eu-ai-act-hotel-checklist-2026" className="border border-gray-100 rounded-xl p-5 hover:border-gray-300 transition-colors">
                 <p className="text-xs text-gold-400 font-bold uppercase tracking-widest mb-2">EU AI Act</p>
-                <p className="font-semibold text-gray-900 text-sm leading-snug">EU AI Act Hotel Checklist: 8 things to document by August 2026</p>
+                <p className="font-semibold text-gray-900 text-sm leading-snug">EU AI Act Hotel Checklist: 8 things to document before 2 August 2026</p>
               </Link>
               <Link to="/blog/shadow-ai-hotels" className="border border-gray-100 rounded-xl p-5 hover:border-gray-300 transition-colors">
                 <p className="text-xs text-gold-400 font-bold uppercase tracking-widest mb-2">Operations</p>

@@ -537,7 +537,7 @@ export default function HotelAIReadinessCheck() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-10">
             <div className="bg-white rounded-xl p-5 border-l-4 border-amber-400 shadow-sm">
-              <div className="font-bold text-navy-900 mb-2 text-sm">EU AI Act — August 2026</div>
+              <div className="font-bold text-navy-900 mb-2 text-sm">EU AI Act Article 50 — 2 August 2026</div>
               <p className="text-slate-500 text-sm leading-relaxed">Article 4 requires documented AI literacy for all staff working with AI systems — in force in three months.</p>
             </div>
             <div className="bg-white rounded-xl p-5 border-l-4 border-red-400 shadow-sm">

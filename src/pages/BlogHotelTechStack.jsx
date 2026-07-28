@@ -62,7 +62,7 @@ export default function BlogHotelTechStack() {
               "name": "What is the EU AI Act's relevance to hotel tech stacks?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The EU AI Act (August 2026) requires documentation of AI systems that interact with guests or staff. If your AI tools pull data from multiple disconnected systems, you need to document those data flows as part of your compliance record. A fragmented tech stack makes this documentation difficult and increases compliance risk."
+                "text": "The EU AI Act's Article 50 transparency rules (from 2 August 2026) require documentation of AI systems that interact with guests or staff. If your AI tools pull data from multiple disconnected systems, you need to document those data flows as part of your compliance record. A fragmented tech stack makes this documentation difficult and increases compliance risk."
               }
             }
           ]
@@ -191,7 +191,7 @@ export default function BlogHotelTechStack() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">The EU AI Act adds a compliance layer to this</h2>
             <p>
-              From August 2026, the EU AI Act requires hotels to maintain documentation of AI systems that interact with guests or staff — including which data sources those systems access. A fragmented tech stack does not just create operational problems. It creates compliance documentation problems.
+              From 2 August 2026, the EU AI Act's Article 50 transparency rules require hotels to maintain documentation of AI systems that interact with guests or staff — including which data sources those systems access. A fragmented tech stack does not just create operational problems. It creates compliance documentation problems.
             </p>
             <p>
               If your AI tools pull from five different databases, your compliance record needs to describe all five, their data categories, and the access controls in place. Hotels with a clean, consolidated data architecture will find this significantly easier than those with legacy fragmentation.

@@ -103,7 +103,7 @@ export default function Services() {
               <div className="shrink-0 w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-bold text-sm flex items-center justify-center">3</div>
               <div>
                 <h3 className="font-bold text-navy-900 mb-2">Structured implementation roadmap</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">A 90-day plan, sequenced by impact — starting with what improves operations today, building toward compliance by August 2026.</p>
+                <p className="text-slate-500 text-sm leading-relaxed">A 90-day plan, sequenced by impact — starting with what improves operations today, building toward Article 50 compliance by 2 August 2026.</p>
               </div>
             </div>
 

@@ -42,7 +42,7 @@ export default function BlogEuAiActChecklist() {
     {
       num: '07',
       title: 'Vendor compliance: does your AI vendor provide the documentation you need?',
-      body: 'Your vendors — particularly for high-risk or limited-risk AI tools — should be able to provide their own EU AI Act documentation: technical specifications, risk assessments, and evidence of compliance testing. Ask each vendor directly: "Do you provide EU AI Act documentation for your system?" The answer tells you a great deal about how seriously they are taking August 2026.',
+      body: 'Your vendors — particularly for high-risk or limited-risk AI tools — should be able to provide their own EU AI Act documentation: technical specifications, risk assessments, and evidence of compliance testing. Ask each vendor directly: "Do you provide EU AI Act documentation for your system?" The answer tells you a great deal about how seriously they are taking Article 50 transparency compliance.',
       tip: 'Vendors who cannot answer this question by May 2026 are not going to be ready by August. That is useful information before your next contract renewal.',
     },
     {
@@ -56,22 +56,22 @@ export default function BlogEuAiActChecklist() {
   return (
     <>
       <SEO
-        title="EU AI Act Hotel Checklist: 8 Things to Document by August 2026 | peakcareai.com"
-        description="The EU AI Act applies to hotels from August 2026. Here are the 8 things an independent hotel needs to document — without a lawyer, without an IT team, in one afternoon."
-        ogTitle="EU AI Act Hotel Checklist: 8 Things to Document by August 2026"
+        title="EU AI Act Hotel Checklist: 8 Things to Document before 2 August 2026 | peakcareai.com"
+        description="From 2 August 2026, the EU AI Act's Article 50 transparency rules apply to hotels. Here are the 8 things an independent hotel needs to document — without a lawyer, without an IT team, in one afternoon."
+        ogTitle="EU AI Act Hotel Checklist: 8 Things to Document before 2 August 2026"
         ogDescription="Practical EU AI Act compliance for independent hotels. What to document, how to do it, and what counts as sufficient."
         type="article"
         canonical="https://peakcareai.com/blog/eu-ai-act-hotel-checklist-2026"
         jsonLd={[{
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "EU AI Act Hotel Checklist: 8 Things to Document by August 2026",
+          "headline": "EU AI Act Hotel Checklist: 8 Things to Document before 2 August 2026",
           "inLanguage": "en",
           "author": { "@type": "Person", "name": "Andreas Donner", "url": "https://peakcareai.com/about" },
           "publisher": { "@type": "Organization", "name": "Peak Care AI", "url": "https://peakcareai.com" },
           "datePublished": "2026-05-27",
-          "description": "The EU AI Act applies to European hotels from August 2026. An 8-point checklist for independent hotel operators: what to document, how to classify AI tools, and what constitutes sufficient compliance without legal support.",
-          "keywords": "EU AI Act hotels, EU AI Act hotel checklist, hotel AI compliance 2026, EU AI Act August 2026, independent hotel EU AI Act, hotel AI documentation, EU AI Act hospitality"
+          "description": "From 2 August 2026, the EU AI Act's Article 50 transparency rules apply to European hotels. An 8-point checklist for independent hotel operators: what to document, how to classify AI tools, and what constitutes sufficient compliance without legal support.",
+          "keywords": "EU AI Act hotels, EU AI Act hotel checklist, hotel AI compliance 2026, EU AI Act Article 50 August 2026, independent hotel EU AI Act, hotel AI documentation, EU AI Act hospitality"
         }, {
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -89,7 +89,7 @@ export default function BlogEuAiActChecklist() {
               "name": "What is the EU AI Act deadline for hotels?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The key date is August 2026, when the requirements for limited-risk and general-purpose AI systems become fully applicable. Hotels using chatbots, automated guest communication tools, or AI-driven pricing systems need to have their documentation and transparency notices in place by this date."
+                "text": "The key date is 2 August 2026, when the Article 50 transparency requirements become applicable. Hotels using chatbots, automated guest communication tools, or AI-driven pricing systems need to have their documentation and transparency notices in place by this date."
               }
             },
             {
@@ -118,7 +118,7 @@ export default function BlogEuAiActChecklist() {
             },
             {
               "@type": "Question",
-              "name": "What happens if a hotel does not comply with the EU AI Act by August 2026?",
+              "name": "What happens if a hotel does not comply with the EU AI Act's Article 50 rules by 2 August 2026?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Enforcement is risk-tiered. Hotels using minimal- or limited-risk AI systems face low near-term enforcement risk for incomplete documentation in the first phase. However, guest transparency requirements (chatbot disclosures) are more actively enforced. The practical risk for independent hotels is less regulatory penalty and more reputational: a guest complaint about undisclosed AI interaction is harder to manage than completing a one-page system record."
@@ -138,12 +138,12 @@ export default function BlogEuAiActChecklist() {
           </div>
 
           <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-400 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest mb-5">
-            ⏱ Deadline: August 2026
+            ⏱ Deadline: 2 August 2026
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-5">
             EU AI Act Hotel Checklist:<br />
-            <span className="text-gold-400">8 things to document by August 2026</span>
+            <span className="text-gold-400">8 things to document before 2 August 2026</span>
           </h1>
           <p className="text-white/60 text-lg leading-relaxed mb-6">
             No lawyer. No IT team. One structured afternoon. Here is what an independent hotel needs to have on paper before the deadline — and what actually counts as sufficient.
@@ -162,7 +162,7 @@ export default function BlogEuAiActChecklist() {
       <div className="bg-red-950 border-y border-red-800/40 py-3">
         <div className="container-main max-w-3xl flex items-center gap-3 text-sm">
           <span className="text-red-400">⚠</span>
-          <span className="text-red-300">The EU AI Act limited-risk requirements apply from <strong>August 2026</strong>. Most hotel chatbots, automated messaging tools, and upsell systems fall into this category.</span>
+          <span className="text-red-300">The EU AI Act's Article 50 transparency requirements apply from <strong>2 August 2026</strong>. Most hotel chatbots, automated messaging tools, and upsell systems fall into this category.</span>
         </div>
       </div>
 
@@ -173,7 +173,7 @@ export default function BlogEuAiActChecklist() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-4">Why this matters now — and not in October</h2>
             <p>
-              Most hotel operators have heard that the EU AI Act exists. Fewer understand that August 2026 is not a distant regulatory abstraction — it is the point at which compliance requirements for the AI systems most hotels already run become enforceable.
+              Most hotel operators have heard that the EU AI Act exists. Fewer understand that 2 August 2026 is not a distant regulatory abstraction — it is the point at which Article 50 transparency requirements for the AI systems most hotels already run become enforceable.
             </p>
             <p>
               The good news: for an independent hotel using standard AI tools, compliance is not complex. It is documentation. It is disclosure. It is knowing what you are running and having a one-page record of it. A 50-room property can complete this in an afternoon.
@@ -252,7 +252,7 @@ export default function BlogEuAiActChecklist() {
               },
               {
                 q: 'What is the actual deadline?',
-                a: 'August 2026 is when the requirements for limited-risk and general-purpose AI systems become fully applicable — the category most hotel chatbots, automated messaging tools, and pricing systems fall into.'
+                a: '2 August 2026 is when the Article 50 transparency requirements become applicable — the rules that cover most hotel chatbots, automated messaging tools, and pricing systems.'
               },
               {
                 q: 'What counts as an AI system in a hotel?',
@@ -285,7 +285,7 @@ export default function BlogEuAiActChecklist() {
               Not sure which of your systems need documentation?
             </h3>
             <p className="text-white/60 mb-6 max-w-lg mx-auto">
-              A 30-minute structured conversation to map your current AI tools, classify them, and identify what needs to be on paper by August 2026. No slides. No software pitch.
+              A 30-minute structured conversation to map your current AI tools, classify them, and identify what needs to be on paper before 2 August 2026. No slides. No software pitch.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
