@@ -44,7 +44,7 @@ const en = {
     meta_desc: "40% of travellers now plan trips with ChatGPT, Google AI and booking assistants. If AI can't read your hotel, it recommends someone else. Peak Care AI makes independent and boutique hotels visible to AI search and wins back direct bookings — built by a hotel-industry insider with 25 years developing, building and implementing hotels for international brands.",
 
     hero: {
-      badge: 'Faster Replies for Hospitality & Trades',
+      badge: 'Faster Replies for Hospitality',
       h1_line1: "Most direct bookings aren't lost on price —",
       h1_line2: "they're lost on speed.",
       sub: "The inquiry arrives at 9pm. Your reply goes out tomorrow afternoon. By then the guest has booked the OTA tab they had open right next to it — at 15–18% commission. Peak Care AI drafts the first response in seconds: direct inquiries, review replies, pre-arrival messages, missed calls, quote follow-ups. A person reads the tone and hits send — the judgment stays with your team, only the waiting disappears.",
@@ -65,12 +65,6 @@ const en = {
         { icon: '📞', title: 'Missed calls', text: 'A drafted follow-up ready within minutes, so no enquiry goes cold.' },
         { icon: '📄', title: 'Quote follow-ups', text: 'Offers get chased before the guest books elsewhere.' },
       ],
-    },
-
-    trades: {
-      label: 'Second Field: Skilled Trades',
-      h2: 'The same problem, after hours.',
-      body: "Plumbing and heating, electrical, roofing, painting — the enquiry that comes in after closing time and the call nobody picked up get an answer the same evening, not after two working days. Same method as hospitality, one dedicated track for skilled-trades and service businesses across the DACH region.",
     },
 
     trust: {

@@ -44,7 +44,7 @@ const de = {
     meta_desc: 'Wenn die KI Ihr Haus nicht lesen kann, empfiehlt sie ein anderes. Peak Care AI macht unabhängige Boutique-Hotels für die KI-Suche sichtbar und holt Direktbuchungen zurück — gebaut von jemandem, der 25 Jahre lang Hotelmarken entwickelt, gebaut und umgesetzt hat.',
 
     hero: {
-      badge: 'Schnellere Antworten für Hotellerie & Handwerk',
+      badge: 'Schnellere Antworten für die Hotellerie',
       h1_line1: 'Die meisten Direktbuchungen gehen nicht am Preis verloren —',
       h1_line2: 'sondern am Tempo.',
       sub: 'Die Anfrage trifft um 21 Uhr ein. Ihre Antwort geht morgen Nachmittag raus. Bis dahin hat der Gast den OTA-Tab gebucht, den er daneben offen hatte — zu 15–18% Provision. Peak Care AI entwirft die erste Antwort in Sekunden: Direktanfragen, Bewertungsantworten, Nachrichten vor der Anreise, verpasste Anrufe, Nachfassen bei Angeboten. Ein Mensch liest den Ton und drückt auf Senden — das Urteil bleibt bei Ihrem Team, nur das Warten verschwindet.',
@@ -65,12 +65,6 @@ const de = {
         { icon: '📞', title: 'Verpasste Anrufe', text: 'Ein fertiger Nachfass-Entwurf innerhalb von Minuten, damit keine Anfrage abkühlt.' },
         { icon: '📄', title: 'Nachfassen bei Angeboten', text: 'Angebote werden nachgefasst, bevor der Gast anderswo bucht.' },
       ],
-    },
-
-    trades: {
-      label: 'Zweites Feld: Handwerk',
-      h2: 'Dasselbe Problem, nach Feierabend.',
-      body: 'SHK, Elektro, Dach, Maler — die Anfrage nach Feierabend und der Anruf, den niemand annehmen konnte, bekommen noch am selben Abend eine Antwort, nicht erst nach zwei Werktagen. Dieselbe Methode wie in der Hotellerie, eine eigene Schiene für Handwerks- und Servicebetriebe im gesamten DACH-Raum.',
     },
 
     trust: {

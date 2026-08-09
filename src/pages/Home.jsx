@@ -165,17 +165,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── TRADES (Second Field: Skilled Trades DACH — own section, equal footing) ─── */}
-      <section className="bg-navy-900 border-b border-white/5">
-        <div className="container-main py-14 md:py-16">
-          <div className="max-w-3xl">
-            <p className="text-gold-400 font-semibold text-xs uppercase tracking-[0.18em] mb-4">{h.trades.label}</p>
-            <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight mb-4">{h.trades.h2}</h2>
-            <p className="text-white/60 text-base md:text-lg leading-relaxed">{h.trades.body}</p>
-          </div>
-        </div>
-      </section>
-
       {/* ─── STEP 2 INTRO (AI visibility — reframed as the follow-on, not the opener) ─── */}
       <section className="bg-white border-b border-slate-100">
         <div className="container-main py-14 md:py-20">
