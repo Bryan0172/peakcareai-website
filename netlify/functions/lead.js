@@ -87,8 +87,16 @@ exports.handler = async (event) => {
     .map(([k, v]) => `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee">${esc(k)}</td><td style="padding:4px 12px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`)
     .join('');
 
+  // REQ-2026-08-17-JEDE-FUNNEL-TESTMAIL-TRAEGT-DENSELBEN-BETREFF-WIE-EIN-ECHTER-HOTEL-LEAD (PCAI, 17.08.):
+  // funnel-check test submissions were indistinguishable from real leads by subject line alone,
+  // because both go through this exact same code path (that sameness IS the delivery proof).
+  // Fix: an explicit opt-in flag only SEO/GEO's own test payloads set — never present in a real
+  // form submission — swaps the subject prefix without touching delivery, replyTo, or the Brevo
+  // call itself. The proof stays "did it arrive", not "does it say the right words".
+  const isFunnelTest = String(data['_funnel_test'] || '').toLowerCase() === 'true';
+
   const html = `<div style="font-family:Arial,sans-serif;color:#1a1a1a">
-    <h2 style="margin:0 0 12px">🏨 Neue PCAI-Anfrage — ${esc(formName)}</h2>
+    <h2 style="margin:0 0 12px">${isFunnelTest ? '🧪 Funnel-Testmail' : '🏨 Neue PCAI-Anfrage'} — ${esc(formName)}</h2>
     <table style="border-collapse:collapse;font-size:14px">${rows}</table>
     <p style="color:#888;font-size:12px;margin-top:14px">Quelle: peakcareai.com · Formular „${esc(formName)}"</p>
   </div>`;
@@ -97,7 +105,7 @@ exports.handler = async (event) => {
     sender: SENDER,
     to: TO,
     bcc: BCC,
-    subject: `🏨 PCAI-Lead: ${formName}${name ? ' — ' + name : ''}`,
+    subject: `${isFunnelTest ? '🧪 PCAI-TEST' : '🏨 PCAI-Lead'}: ${formName}${name ? ' — ' + name : ''}`,
     htmlContent: html,
   };
   if (email && /\S+@\S+\.\S+/.test(email)) payload.replyTo = { email, name: name || email };
