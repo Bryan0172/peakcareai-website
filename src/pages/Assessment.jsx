@@ -138,7 +138,7 @@ export default function Assessment() {
             <span className="text-gold-400">Self-Assessment</span>
           </h1>
           <p className="text-white/60 leading-relaxed">
-            5 questions. Find out in 3 minutes whether your hotel needs to act before 2 August 2026 — and what the priority steps are.
+            5 questions. Find out in 3 minutes where your hotel stands against the Article 50 transparency rules that took effect on 2 August 2026 — and what the priority steps are.
           </p>
         </div>
       </section>
@@ -253,7 +253,7 @@ export default function Assessment() {
         <section className="bg-amber-50 border-t border-amber-200 py-8">
           <div className="container-main text-center">
             <p className="text-amber-800 text-sm">
-              <strong>EU AI Act Article 50 deadline: 2 August 2026.</strong>{' '}
+              <strong>Article 50 transparency has applied since 2 August 2026. Systems already on the market must carry machine-readable marking from 2 December 2026.</strong>{' '}
               <Link to="/webinar" className="font-bold underline">Book an AI Readiness Call →</Link>
             </p>
           </div>

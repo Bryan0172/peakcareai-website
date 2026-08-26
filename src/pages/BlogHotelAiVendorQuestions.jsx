@@ -356,7 +356,7 @@ export default function BlogHotelAiVendorQuestions() {
               Evaluating an AI vendor — or already committed to one?
             </h3>
             <p className="text-white/60 mb-6 max-w-lg mx-auto">
-              A structured 30-minute conversation to review your current or planned AI tools — what questions remain open, what compliance gaps need to be closed before 2 August 2026, and what your team needs to manage this without external support.
+              A structured 30-minute conversation to review your current or planned AI tools — what questions remain open, which Article 50 transparency gaps are still open now that the rules apply, and what your team needs to manage this without external support.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
