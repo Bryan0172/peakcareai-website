@@ -1,10 +1,18 @@
 [build]
   functions = "netlify/functions"
 
+# 26.08.2026 (Andreas-Direktauftrag, Soft-404-Behebung): frueher lieferte diese Regel fuer JEDE
+# unbekannte Adresse die Startseite mit HTTP 200 ("Soft 404"). Folge: tote Links waren weder fuer
+# uns noch fuer Suchmaschinen auffindbar, und Google indexiert solche Adressen als Dubletten.
+# Geprueft vor der Umstellung: alle 17 Router-Routen werden von scripts/prerender.mjs als eigene
+# HTML-Datei erzeugt. Netlify liefert vorhandene Dateien VOR nicht erzwungenen Redirects aus —
+# echte Seiten funktionieren also unveraendert, nur nicht existierende Adressen bekommen 404.
+# ‼️ Neue Route hinzufuegen => sicherstellen, dass der Prerender sie erzeugt, sonst wird sie 404.
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  from   = "/*"
+  to     = "/404.html"
+  status = 404
+  force  = false
 
 # Webinar form → trigger Brevo automation function
 [[triggers]]
