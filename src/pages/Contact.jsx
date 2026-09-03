@@ -67,6 +67,10 @@ export default function Contact() {
     e.preventDefault()
     setSending(true)
     try {
+      // Honeypot ist ein unkontrolliertes Feld (kein React State) — Wert direkt aus dem
+      // DOM lesen, sonst würde es die AJAX-Übermittlung nie erreichen, obwohl der Server
+      // es prüft (03.09.2026, A386-SEO-Muster).
+      const botField = e.target.elements['bot-field']?.value || ''
       // Brevo-Lead-Funktion (garantierte Zustellung in den Posteingang). res.ok prüfen,
       // damit bei Versand-Fehler KEIN falsches "gesendet" angezeigt wird (kein stiller Verlust).
       const res = await fetch('/.netlify/functions/lead', {
@@ -75,6 +79,7 @@ export default function Contact() {
         body: encode({
           'form-name': 'contact',
           ...form,
+          'bot-field': botField,
           'cf-turnstile-response': turnstileToken,
         }),
       })
@@ -164,6 +169,11 @@ export default function Contact() {
               ) : (
                 <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-5">
                   <input type="hidden" name="form-name" value="contact" />
+                  {/* Honeypot (03.09.2026, A386-SEO-Muster): unsichtbar für Menschen, Bots füllen
+                      jedes Feld blind aus. Server verwirft still, wenn dieses Feld gefüllt ist. */}
+                  <p className="hidden" aria-hidden="true">
+                    <label>Leave this field blank<input name="bot-field" tabIndex={-1} autoComplete="off" /></label>
+                  </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.name} *</label>
