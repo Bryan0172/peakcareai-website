@@ -60,7 +60,7 @@ export default function BlogShadowAIHotels() {
             <span className="text-gold-400 text-sm">Shadow AI Guide</span>
           </div>
           <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest mb-5">
-            EU AI Act Artikel 50 · 2. August 2026
+            EU AI Act Artikel 50 · in Kraft seit 2. August 2026
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-5">
             Shadow AI in Hotels:<br />
@@ -149,7 +149,7 @@ export default function BlogShadowAIHotels() {
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10 mb-4">Warum das jetzt relevant ist</h2>
               <p className="text-slate-600 leading-relaxed">
-                Ab dem 2. August 2026 gelten die Transparenzpflichten aus Artikel 50 des EU AI Act. Eine der Kernanforderungen betrifft die
+                Seit dem 2. August 2026 gelten die Transparenzpflichten aus Artikel 50 des EU AI Act. Eine der Kernanforderungen betrifft die
                 Transparenz und Dokumentation von KI-Systemen, die in Unternehmen eingesetzt werden.
               </p>
               <p className="text-slate-600 leading-relaxed">
@@ -239,7 +239,7 @@ export default function BlogShadowAIHotels() {
               <p className="text-slate-600 leading-relaxed">
                 Diese drei Schritte lösen das Thema nicht vollständig — aber sie verschieben die Position
                 von <em>"wir wissen es nicht"</em> zu <em>"wir haben einen Ueberblick"</em>.
-                Das ist der wesentliche Unterschied, wenn die Artikel-50-Transparenzpflichten ab dem 2. August 2026 gelten.
+                Das ist der wesentliche Unterschied, seit die Artikel-50-Transparenzpflichten am 2. August 2026 in Kraft getreten sind.
               </p>
 
               {/* FAQ */}
@@ -321,7 +321,7 @@ export default function BlogShadowAIHotels() {
 
               <div className="bg-white border border-slate-200 rounded-2xl p-5 text-center">
                 <div className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Weiterführender Artikel</div>
-                <p className="text-navy-900 font-bold text-sm mb-3">EU AI Act Artikel 50: Was Hotels ab 2. August 2026 offenlegen müssen</p>
+                <p className="text-navy-900 font-bold text-sm mb-3">EU AI Act Artikel 50: Was Hotels offenlegen müssen — in Kraft seit 2. August 2026</p>
                 <Link to="/blog/eu-ai-act-hotels-2026" className="block bg-navy-900 hover:bg-navy-700 text-white font-bold py-3 rounded-xl transition-colors text-sm">
                   Artikel lesen →
                 </Link>

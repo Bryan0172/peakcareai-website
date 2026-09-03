@@ -23,3 +23,4 @@ Peak Care AI (peakcareai.com) helps independent hotels and small groups adopt AI
 
 ## Knowledge
 - [Blog](https://peakcareai.com/blog): Practical guides on AI for hotels, guest communication, EU AI Act for hospitality, and hotel tech.
+- [Questions to Ask Any AI Vendor Before Signing](https://peakcareai.com/blog/hotel-ai-vendor-questions): A 15-question hotel operator's checklist for evaluating AI vendors — data storage and GDPR, EU AI Act risk classification and documentation, accountability for errors, total cost of ownership, exit clauses, and implementation reality. Includes a Green/Yellow/Red scoring framework by category. Covers the EU AI Act Article 50 transparency deadline (2 August 2026) and the phased documentation/governance requirements through December 2027.

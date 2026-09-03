@@ -36,12 +36,17 @@ export default function BlogHotelAiVendorQuestions() {
         {
           q: 'Do you provide EU AI Act documentation for your system — technical specifications, conformity assessment, or a system card?',
           why: 'The EU AI Act requires documentation for limited-risk and high-risk systems — from vendors, not just from hotel operators. Vendors deploying chatbots, automated communication tools, or recommendation systems in EU hotels should be able to produce this.',
-          listen: 'An actual document or a clear timeline for when it will be available. "We\'re working on it" is less reassuring with the 2 August 2026 deadline in place.'
+          listen: 'An actual document or a clear timeline for when it will be available. "We\'re working on it" is less reassuring now that the deadline has passed.'
         },
         {
           q: 'Does your system require a transparency disclosure to guests — and does your product support implementing one?',
           why: 'The EU AI Act requires guests to be informed when interacting with AI systems, particularly chatbots and virtual assistants. If the vendor\'s product does not support adding a disclosure notice, you cannot meet this requirement without custom development.',
           listen: 'Confirmation that guest-facing AI interactions include a disclosure, and a description of where and how it appears. Ideally: a screenshot.'
+        },
+        {
+          q: 'If the assistant generates text or images shown to guests and it was already in service before 2 August 2026: how will its output be marked from 2 December 2026?',
+          why: 'Article 50(2) requires machine-readable marking of synthetic content for systems that were already on the market before 2 August 2026 — the deadline is 2 December 2026, three months away. A vendor whose product generates guest-facing text or images needs a concrete answer, not a general assurance.',
+          listen: 'A specific marking mechanism (metadata, watermark, or disclosure) and a rollout date on or before 2 December 2026. "Not applicable" is only valid if the vendor confirms in writing that no synthetic content is generated.'
         },
       ]
     },
@@ -154,7 +159,7 @@ export default function BlogHotelAiVendorQuestions() {
               "name": "What should a hotel check regarding EU AI Act compliance before buying an AI tool?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ask the vendor: What risk category does your system fall under according to the EU AI Act? Can you provide EU AI Act documentation — technical specifications, conformity assessment, or a system card? Does your product support adding guest-facing transparency disclosures for AI interactions? Vendors operating in the EU should have answers to these questions by mid-2026. If they do not, they are not prepared for the 2 August 2026 deadline."
+                "text": "Ask the vendor: What risk category does your system fall under according to the EU AI Act? Can you provide EU AI Act documentation — technical specifications, conformity assessment, or a system card? Does your product support adding guest-facing transparency disclosures for AI interactions? And if the system generates guest-facing text or images and was already in service before 2 August 2026: how will its output be marked from 2 December 2026? Vendors operating in the EU should have had answers to the first three questions since the Article 50 transparency duty took effect on 2 August 2026 — a vendor who still does not is not compliant now."
               }
             },
             {
@@ -178,7 +183,7 @@ export default function BlogHotelAiVendorQuestions() {
               "name": "How long does it actually take to implement an AI tool in a hotel?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Actual implementation timelines vary considerably from demo timelines. PMS integration alone can take 4–6 weeks if the vendor's engineering queue is backed up. Staff training adds additional time. For a property approaching a high season or regulatory deadline (such as the EU AI Act's Article 50 deadline of 2 August 2026), ask specifically about the vendor's current onboarding queue and the most common causes of delay at comparable properties."
+                "text": "Actual implementation timelines vary considerably from demo timelines. PMS integration alone can take 4–6 weeks if the vendor's engineering queue is backed up. Staff training adds additional time. For a property approaching a high season or the Article 50(2) marking deadline of 2 December 2026, ask specifically about the vendor's current onboarding queue and the most common causes of delay at comparable properties."
               }
             },
             {
@@ -305,7 +310,7 @@ export default function BlogHotelAiVendorQuestions() {
               In practice, vendors who can answer the EU AI Act questions clearly — risk category, documentation available, transparency disclosure implemented — tend to also have cleaner answers on data, accountability, and exit. The EU AI Act requires that vendors document exactly what their system does, how it processes data, and what safeguards exist. Vendors who have done this work have, by necessity, thought carefully about their product.
             </p>
             <p>
-              Vendors who cannot answer the EU AI Act questions by mid-2026 are unlikely to be ready by August. That is itself useful information before your next contract renewal.
+              A vendor who still cannot answer the EU AI Act questions has had the guidance since July 2026 and the obligation since August. That is itself useful information before your next contract renewal.
             </p>
             <p>
               The checklist above is designed to surface this quickly, without requiring legal support or deep technical knowledge. The answers — or the absence of answers — tell you what you need to know.
@@ -323,7 +328,7 @@ export default function BlogHotelAiVendorQuestions() {
               },
               {
                 q: 'What EU AI Act compliance documentation should a hotel AI vendor provide?',
-                a: 'At minimum: the risk classification of their system with a rationale, a technical description of how the system works, evidence that guest transparency disclosures are implemented (for limited-risk tools), and a DPA for data processing. Vendors who cannot provide these by 2 August 2026 are not compliant.'
+                a: 'At minimum: the risk classification of their system with a rationale, a technical description of how the system works, evidence that guest transparency disclosures are implemented (for limited-risk tools), and a DPA for data processing. Vendors who still cannot provide these are not compliant — the transparency duty under Article 50 has applied since 2 August 2026.'
               },
               {
                 q: 'What are common hidden costs when buying AI tools for hotels?',
@@ -382,7 +387,7 @@ export default function BlogHotelAiVendorQuestions() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Link to="/blog/eu-ai-act-hotel-checklist-2026" className="border border-gray-100 rounded-xl p-5 hover:border-gray-300 transition-colors">
                 <p className="text-xs text-gold-400 font-bold uppercase tracking-widest mb-2">EU AI Act</p>
-                <p className="font-semibold text-gray-900 text-sm leading-snug">EU AI Act Hotel Checklist: 8 things to document before 2 August 2026</p>
+                <p className="font-semibold text-gray-900 text-sm leading-snug">EU AI Act Hotel Checklist: 8 things to document — Article 50 in force since 2 August 2026</p>
               </Link>
               <Link to="/blog/shadow-ai-hotels" className="border border-gray-100 rounded-xl p-5 hover:border-gray-300 transition-colors">
                 <p className="text-xs text-gold-400 font-bold uppercase tracking-widest mb-2">Operations</p>

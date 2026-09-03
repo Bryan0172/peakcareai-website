@@ -1,2 +1,13 @@
-/book-briefing    /book-briefing.html   200
-/*    /index.html   200
+# 26.08.2026 — Soft-404-Behebung, Andreas-Direktauftrag.
+#
+# ‼️ Diese Datei ist bei PCAI die WIRKSAME Redirect-Quelle, nicht netlify.toml.
+# peakcareai.com wird per Netlify Drop (Datei-Upload des dist-Ordners) ausgeliefert.
+# Dabei liest Netlify NUR Konfiguration, die IM hochgeladenen Ordner liegt — eine
+# netlify.toml im Projektwurzelverzeichnis wird ignoriert. Vite kopiert public/ nach
+# dist/, damit ist diese Regel bei jedem Build automatisch Teil des Deploys.
+#
+# Vorher lieferte jede unbekannte Adresse die Startseite mit HTTP 200 ("Soft 404"):
+# tote Links unauffindbar, und Google sah beliebig viele Dubletten der Startseite.
+# Alle 17 Router-Routen werden vorgerendert, echte Seiten sind also Dateien und
+# haben Vorrang vor dieser Regel.
+/*    /404.html    404

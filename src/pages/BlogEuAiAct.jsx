@@ -5,22 +5,22 @@ export default function BlogEuAiAct() {
   return (
     <>
       <SEO
-        title="EU AI Act Article 50: What Hotels Must Disclose from 2 August 2026 | peakcareai.com"
-        description="From 2 August 2026, the EU AI Act's Article 50 transparency obligations apply to hotels — the rules that cover guest-facing AI such as chatbots and automated guest communication. Here's what to do now."
-        ogTitle="EU AI Act Article 50: What Hotels Must Disclose from 2 August 2026"
+        title="EU AI Act Article 50: What Hotels Must Disclose — In Force Since 2 August 2026 | peakcareai.com"
+        description="Since 2 August 2026, the EU AI Act's Article 50 transparency obligations have applied to hotels — the rules that cover guest-facing AI such as chatbots and automated guest communication. Here's what to do now."
+        ogTitle="EU AI Act Article 50: What Hotels Must Disclose — In Force Since 2 August 2026"
         ogDescription="Practical guide for hotel GMs: which AI systems are affected, what needs documentation, and the 5 steps to compliance."
         type="article"
         canonical="https://peakcareai.com/blog/eu-ai-act-hotels-2026"
         jsonLd={[{
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "EU AI Act Article 50: What Hotels Must Disclose from 2 August 2026",
+          "headline": "EU AI Act Article 50: What Hotels Must Disclose — In Force Since 2 August 2026",
           "inLanguage": "en",
           "author": { "@type": "Person", "name": "Andreas Donner", "url": "https://peakcareai.com/about" },
           "publisher": { "@type": "Organization", "name": "Peak Care AI", "url": "https://peakcareai.com" },
           "datePublished": "2026-05-02",
           "keywords": "EU AI Act hotels, EU AI Act hotel compliance, hotel AI regulation 2026, EU AI Act Article 50 August 2026, hotel chatbot compliance, EU AI Act hospitality, shadow AI hotel, hotel revenue management AI Act",
-          "description": "From 2 August 2026, the EU AI Act's Article 50 transparency obligations apply to hotels using revenue management systems, chatbots, and automated guest communication. Practical 5-step compliance guide for hotel GMs without legal jargon."
+          "description": "Since 2 August 2026, the EU AI Act's Article 50 transparency obligations have applied to hotels using revenue management systems, chatbots, and automated guest communication. Practical 5-step compliance guide for hotel GMs without legal jargon."
         }, {
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -38,7 +38,7 @@ export default function BlogEuAiAct() {
               "name": "What is the EU AI Act compliance deadline for hotels?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "From 2 August 2026, Article 50 of the EU AI Act requires transparency for guest-facing AI systems — chatbots and automated guest communication must make clear that guests are interacting with a machine. High-risk obligations do not apply here: standalone high-risk duties only start on 2 December 2027, and hotel operations are not listed as a high-risk category. What matters from 2 August 2026 is documented, disclosed transparency, not a fines-driven deadline."
+                "text": "Since 2 August 2026, Article 50 of the EU AI Act has required transparency for guest-facing AI systems — chatbots and automated guest communication must make clear that guests are interacting with a machine. High-risk obligations do not apply here: standalone high-risk duties only start on 2 December 2027, and hotel operations are not listed as a high-risk category. What matters is documented, disclosed transparency, not a fines-driven deadline."
               }
             },
             {
@@ -62,7 +62,7 @@ export default function BlogEuAiAct() {
               "name": "What are the EU AI Act fines for hotels?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "High-risk obligations do not apply to typical hotel AI use — following the Digital Omnibus, standalone high-risk duties for Annex III systems start on 2 December 2027, and hotel operations are not listed in Annex III at all. What does apply from 2 August 2026 is Article 50 transparency: guests must be able to tell when they are interacting with AI. The more immediate risk for most hotels is not a fine but audit exposure: a formal inquiry triggered by a guest complaint would require documentation that, if it does not exist, creates significant legal and reputational risk. The cost of documentation done proactively is a fraction of the cost of documentation produced under regulatory pressure."
+                "text": "High-risk obligations do not apply to typical hotel AI use — following the Digital Omnibus, standalone high-risk duties for Annex III systems start on 2 December 2027, and hotel operations are not listed in Annex III at all. What has applied since 2 August 2026 is Article 50 transparency: guests must be able to tell when they are interacting with AI. The more immediate risk for most hotels is not a fine but audit exposure: a formal inquiry triggered by a guest complaint would require documentation that, if it does not exist, creates significant legal and reputational risk. The cost of documentation done proactively is a fraction of the cost of documentation produced under regulatory pressure."
               }
             },
             {
@@ -102,11 +102,11 @@ export default function BlogEuAiAct() {
             <span className="text-gold-400 text-sm">EU AI Act Guide</span>
           </div>
           <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest mb-5">
-            Deadline: 2 August 2026
+            In force since: 2 August 2026
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-5">
             EU AI Act Article 50:<br />
-            <span className="text-gold-400">What Hotels Must Disclose from 2 August 2026</span>
+            <span className="text-gold-400">What Hotels Must Disclose — In Force Since 2 August 2026</span>
           </h1>
           <p className="text-white/60 text-lg leading-relaxed mb-6">
             A practical guide for Hotel GMs, Revenue Managers and Operations teams — without legal jargon.
@@ -142,9 +142,9 @@ export default function BlogEuAiAct() {
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10 mb-4">What the EU AI Act actually says about hotels</h2>
               <p className="text-slate-600 leading-relaxed">
-                The EU AI Act (Regulation 2024/1689) entered into force in August 2024. From 2 August 2026,
+                The EU AI Act (Regulation 2024/1689) entered into force in August 2024. Since 2 August 2026,
                 the <strong>Article 50 transparency obligations</strong> — covering guest-facing AI such as
-                chatbots and automated guest communication — become enforceable.
+                chatbots and automated guest communication — have been enforceable.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 Limited-risk systems don't mean low-importance. They include any AI system that interacts
@@ -234,7 +234,7 @@ export default function BlogEuAiAct() {
               <p className="text-slate-600 leading-relaxed">
                 High-risk obligations do not apply here. Following the Digital Omnibus, standalone Annex III
                 high-risk duties start on 2 December 2027 — and hotel operations are not listed in Annex III
-                at all. What does apply from 2 August 2026 is transparency: guests must be able to tell when
+                at all. What has applied since 2 August 2026 is transparency: guests must be able to tell when
                 they are interacting with AI.
               </p>
               <p className="text-slate-600 leading-relaxed">
@@ -250,8 +250,8 @@ export default function BlogEuAiAct() {
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10 mb-4">A note on timing</h2>
               <p className="text-slate-600 leading-relaxed">
-                The deadline is 2 August 2026. For hotels that haven't started, that is
-                enough time — but only if the process begins now.
+                The obligation took effect 2 August 2026. For hotels that haven't started: the process
+                itself still takes only 1–2 working days once it begins — what's missing isn't time, it's a start date.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 In my experience, the AI inventory (Step 1) takes 2–4 hours for a well-organised property.
@@ -338,7 +338,7 @@ export default function BlogEuAiAct() {
       <section className="bg-navy-900 py-16">
         <div className="container-main text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-4">
-            2 August 2026 is closer than your next renovation.
+            2 August 2026 has already come and gone — closer to your last renovation than your next one.
           </h2>
           <p className="text-white/55 mb-8 leading-relaxed">
             30 minutes, one-to-one. Practical steps for your hotel — no slides, no sales pitch.
