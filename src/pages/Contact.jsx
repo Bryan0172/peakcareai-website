@@ -167,10 +167,16 @@ export default function Contact() {
                   <p className="text-slate-500 leading-relaxed">{c.success_p}</p>
                 </div>
               ) : (
-                <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-5">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className="space-y-5">
                   <input type="hidden" name="form-name" value="contact" />
-                  {/* Honeypot (03.09.2026, A386-SEO-Muster): unsichtbar für Menschen, Bots füllen
-                      jedes Feld blind aus. Server verwirft still, wenn dieses Feld gefüllt ist. */}
+                  {/* Honeypot (03.09.2026, A386-SEO-Muster + REQ-2026-09-03-DREI-KOMPLETT-LEERE-
+                      FORMULAR-EINSENDUNGEN): unsichtbar für Menschen, Bots füllen jedes Feld blind
+                      aus. `data-netlify-honeypot` aktiviert Netlifys EIGENEN Spamfilter für den
+                      NATIVEN Formular-Pfad — der greift bei Scannern, die die Seite ohne JS POSTen
+                      und damit `handleSubmit`/meine serverseitige Prüfung in lead.js NIE erreichen
+                      (bestätigt: drei leere Einsendungen 03.09. 05:05Z, Betreff "Form submission
+                      from contact form:" = Netlifys eigene Vorlage, nicht meine). Das serverseitige
+                      Feld unten schützt weiterhin den AJAX-Pfad über lead.js. */}
                   <p className="hidden" aria-hidden="true">
                     <label>Leave this field blank<input name="bot-field" tabIndex={-1} autoComplete="off" /></label>
                   </p>
