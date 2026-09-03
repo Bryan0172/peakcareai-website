@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useLang } from '../context/LanguageContext'
 
 // Dependency-freie, versions-unabhängige SEO-Komponente.
 // react-helmet-async@3 benötigt React 19 — dieses Projekt ist React 18 → Helmet war funktionslos
@@ -9,6 +10,19 @@ export default function SEO({
   title, description, keywords, canonical, type = 'website',
   siteName, image, ogTitle, ogDescription, jsonLd,
 }) {
+  // Fix 03.09.2026 (SEO/GEO, REQ-2026-07-28-BC-PRIVATE-MARKETS-FIX-..., Punkt 1 -- selbe
+  // Fehlerklasse+Loesung wie peak-care-neuclaude Commit b8bbe6f, nur umgekehrtes Vorzeichen:
+  // <html lang> stand statisch auf "en" in index.html, obwohl der Prerender aktuell jede
+  // Route mit deutschem Inhalt ausliefert (LanguageContext faellt beim Prerendern auf 'de'
+  // zurueck). Dynamisch aus dem tatsaechlich gerenderten Sprachzustand setzen, damit es
+  // korrekt bleibt, sobald echte Pro-Route-Sprachlogik dazukommt, statt den Fehler nur
+  // umzudrehen (en->de hartkodiert waere derselbe Bug mit vertauschten Vorzeichen).
+  const { lang } = useLang() || {}
+
+  useEffect(() => {
+    if (lang) document.documentElement.lang = lang
+  }, [lang])
+
   useEffect(() => {
     if (title) {
       document.title = title
