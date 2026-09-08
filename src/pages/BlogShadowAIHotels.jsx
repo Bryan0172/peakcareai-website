@@ -5,6 +5,7 @@ export default function BlogShadowAIHotels() {
   return (
     <>
       <SEO
+        lang="en"
         title="Shadow AI in Hotels: Was Ihr Team bereits nutzt — und warum Sie es wissen sollten | peakcareai.com"
         description="Hotelmitarbeiter nutzen KI-Tools eigenständig — oft ohne Wissen der Geschäftsführung. Was Shadow AI im Hotelbetrieb bedeutet, welche Risiken entstehen und wie Sie in drei Schritten Klarheit gewinnen."
         ogTitle="Shadow AI in Hotels: Was Ihr Team bereits nutzt"

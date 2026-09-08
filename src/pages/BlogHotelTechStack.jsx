@@ -5,6 +5,7 @@ export default function BlogHotelTechStack() {
   return (
     <>
       <SEO
+        lang="en"
         title="Why Your Hotel's Tech Stack Is Blocking AI Adoption | peakcareai.com"
         description="27% of European hotels run 7+ disconnected platforms. Before you invest in AI, you need to understand why your current tech stack is the real barrier — and what to fix first."
         ogTitle="Why Your Hotel's Tech Stack Is Blocking AI Adoption"

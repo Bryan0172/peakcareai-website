@@ -126,6 +126,7 @@ export default function BlogHotelAiVendorQuestions() {
   return (
     <>
       <SEO
+        lang="en"
         title="Questions to Ask Any AI Vendor Before Signing — Hotel Operator's Checklist | peakcareai.com"
         description="15 questions every hotel operator should ask an AI vendor before signing. Data storage, EU AI Act compliance, exit clauses, implementation reality. What to ask — and what answers to accept."
         ogTitle="Questions to Ask Any AI Vendor Before Signing — Hotel Operator's Checklist"

@@ -5,6 +5,7 @@ export default function BlogEuAiAct() {
   return (
     <>
       <SEO
+        lang="en"
         title="EU AI Act Article 50: What Hotels Must Disclose — In Force Since 2 August 2026 | peakcareai.com"
         description="Since 2 August 2026, the EU AI Act's Article 50 transparency obligations have applied to hotels — the rules that cover guest-facing AI such as chatbots and automated guest communication. Here's what to do now."
         ogTitle="EU AI Act Article 50: What Hotels Must Disclose — In Force Since 2 August 2026"

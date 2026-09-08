@@ -5,6 +5,7 @@ export default function BlogHotelStaffingAI() {
   return (
     <>
       <SEO
+        lang="en"
         title="AI for Understaffed Hotels: What Actually Works in 2026 | peakcareai.com"
         description="65% of European hotels face staffing shortages. AI can absorb 60–70% of front desk volume — but only if implemented correctly. A practical guide for hotel operators."
         ogTitle="AI for Understaffed Hotels: What Actually Works in 2026"

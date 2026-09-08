@@ -56,6 +56,7 @@ export default function BlogEuAiActChecklist() {
   return (
     <>
       <SEO
+        lang="en"
         title="EU AI Act Hotel Checklist: 8 Things to Document — Article 50 In Force Since 2 August 2026 | peakcareai.com"
         description="Since 2 August 2026, the EU AI Act's Article 50 transparency rules have applied to hotels. Here are the 8 things an independent hotel needs to document — without a lawyer, without an IT team, in one afternoon."
         ogTitle="EU AI Act Hotel Checklist: 8 Things to Document — Article 50 In Force Since 2 August 2026"
