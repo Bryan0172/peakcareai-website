@@ -11,8 +11,17 @@ const SENDER = { email: 'peakcare@peak-care.com', name: 'Peak Care AI Website' }
 // Verifikations-Hickup unterscheidet, fehlte. Jetzt: fehlendes/leeres Token faellt CLOSED
 // (false), jeder technische Fehler (HTTP, Parse, Netzwerk) faellt weiterhin OPEN (true) —
 // ein Cloudflare-Ausfall darf nie einen echten Lead stumm killen.
+//
+// PATCH 08.09.2026 (SEO/GEO, REQ-2026-09-04-A440-PCAI-BITTET-ANDREAS-...): "failing open"
+// hiess bisher woertlich "wie ein bestandener Check behandeln" -- am 04.09. kam dadurch ein
+// erfundener Token als ganz normaler, unmarkierter Lead durch, weil ein technischer Fehler
+// beim Cloudflare-Aufruf (nicht das Secret, das war laut token-inventory.md seit 11.07.
+// gesetzt) nicht von einem echten "success:true" zu unterscheiden war. Rueckgabewert daher
+// jetzt ein Tri-State ('pass' | 'fail' | 'error') statt boolean: 'error' liefert den Lead
+// weiterhin aus (kein stummer Verlust bei einem Cloudflare-Hickup), aber sichtbar
+// gekennzeichnet statt ununterscheidbar von einer echten Verifikation -- s. Handler unten.
 async function verifyTurnstile(token, ip) {
-  if (!token) return false;
+  if (!token) return 'fail';
   try {
     const body = new URLSearchParams();
     body.append('secret', process.env.CLOUDFLARE_TURNSTILE_SECRET || '');
@@ -22,19 +31,19 @@ async function verifyTurnstile(token, ip) {
       method: 'POST', body,
     });
     if (!res.ok) {
-      console.error(`Turnstile siteverify HTTP ${res.status} — failing open`);
-      return true;
+      console.error(`Turnstile siteverify HTTP ${res.status} — treating as unverified, not as pass`);
+      return 'error';
     }
     const text = await res.text();
     let json;
     try { json = JSON.parse(text); } catch (e) {
-      console.error('Turnstile siteverify returned non-JSON — failing open', text.slice(0, 200));
-      return true;
+      console.error('Turnstile siteverify returned non-JSON — treating as unverified, not as pass', text.slice(0, 200));
+      return 'error';
     }
-    return json.success === true;
+    return json.success === true ? 'pass' : 'fail';
   } catch (e) {
-    console.error('Turnstile verification threw — failing open to avoid losing a lead', (e && e.message) || String(e));
-    return true;
+    console.error('Turnstile verification threw — treating as unverified, not as pass', (e && e.message) || String(e));
+    return 'error';
   }
 }
 
@@ -147,15 +156,21 @@ exports.handler = async (event) => {
   if (data['bot-field']) return { statusCode: 200, body: JSON.stringify({ ok: true }) };
 
   // Turnstile: nur aktiv wenn CLOUDFLARE_TURNSTILE_SECRET gesetzt.
+  let turnstileUnverified = false;
   if (process.env.CLOUDFLARE_TURNSTILE_SECRET) {
     const token = data['cf-turnstile-response'];
     const ip = event.headers['cf-connecting-ip'] || event.headers['x-forwarded-for'] || '';
-    if (!await verifyTurnstile(token, ip)) {
+    const verdict = await verifyTurnstile(token, ip);
+    if (verdict === 'fail') {
       // PATCH 03.09.2026: dieser Zweig verlor bisher still. Ein FEHLENDES/abgelaufenes Token
       // (Turnstile-Tokens leben ~300s) trifft auch echte Menschen, die laenger schreiben.
       await notifyBlocked(token ? 'Turnstile-Verifikation fehlgeschlagen' : 'Turnstile-Token fehlte oder war abgelaufen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
       return { statusCode: 200, body: JSON.stringify({ ok: true }) };
     }
+    // PATCH 08.09.2026 (REQ-2026-09-04-A440-PCAI-...): 'error' liefert den Lead weiterhin aus
+    // (kein Cloudflare-Hickup soll einen echten Interessenten stumm kosten), aber nicht mehr
+    // ununterscheidbar von einem echten 'pass' -- sichtbar im Betreff/Inhalt der echten Mail.
+    if (verdict === 'error') turnstileUnverified = true;
   }
 
   // Spam still verwerfen (200 zurück, damit der Bot „Erfolg" sieht und keine echte Mail rausgeht).
@@ -177,8 +192,15 @@ exports.handler = async (event) => {
   // call itself. The proof stays "did it arrive", not "does it say the right words".
   const isFunnelTest = String(data['_funnel_test'] || '').toLowerCase() === 'true';
 
+  const unverifiedBanner = turnstileUnverified
+    ? `<p style="font-size:13px;margin:0 0 12px;padding:8px 10px;background:#fff8e1;border-left:3px solid #e0a800">
+        ⚠️ Turnstile konnte diese Übermittlung technisch nicht prüfen (Cloudflare-Aufruf fehlgeschlagen) —
+        zugestellt, damit kein echter Interessent verloren geht, aber ohne Bot-Verifikation. Bitte inhaltlich einschätzen.
+      </p>`
+    : '';
   const html = `<div style="font-family:Arial,sans-serif;color:#1a1a1a">
     <h2 style="margin:0 0 12px">${isFunnelTest ? '🧪 Funnel-Testmail' : '🏨 Neue PCAI-Anfrage'} — ${esc(formName)}</h2>
+    ${unverifiedBanner}
     <table style="border-collapse:collapse;font-size:14px">${rows}</table>
     <p style="color:#888;font-size:12px;margin-top:14px">Quelle: peakcareai.com · Formular „${esc(formName)}"</p>
   </div>`;
@@ -187,7 +209,7 @@ exports.handler = async (event) => {
     sender: SENDER,
     to: TO,
     bcc: BCC,
-    subject: `${isFunnelTest ? '🧪 PCAI-TEST' : '🏨 PCAI-Lead'}: ${formName}${name ? ' — ' + name : ''}`,
+    subject: `${isFunnelTest ? '🧪 PCAI-TEST' : turnstileUnverified ? '⚠️🏨 PCAI-Lead (unverifiziert)' : '🏨 PCAI-Lead'}: ${formName}${name ? ' — ' + name : ''}`,
     htmlContent: html,
   };
   if (email && /\S+@\S+\.\S+/.test(email)) payload.replyTo = { email, name: name || email };
