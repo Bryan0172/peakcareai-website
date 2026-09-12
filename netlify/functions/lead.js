@@ -27,7 +27,7 @@ async function verifyTurnstile(token, ip) {
     body.append('secret', process.env.CLOUDFLARE_TURNSTILE_SECRET || '');
     body.append('response', token);
     if (ip) body.append('remoteip', ip);
-    const res = await fetch('https://challenges.cloudflare.com/turnstile/v1/siteverify', {
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
       method: 'POST', body,
     });
     if (!res.ok) {
@@ -58,7 +58,15 @@ async function notifyBlocked(reason, data, formName, client) {
     const payload = Object.entries(data).filter(([k]) => KNOWN_FIELDS.includes(k));
     const rows = payload
       .map(([k, v]) => `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee">${esc(k)}</td><td style="padding:4px 12px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`)
-      .join('');
+      .join('')
+      // PATCH 12.09.2026 (SEO/GEO, REQ-2026-09-12-DIE-PCAI-BLOCKIERMAIL-ZEIGT-DAS-TURNSTILE-FELD-NICHT):
+      // Token-Fingerabdruck-Zeile aus PC/BC (11.09.) hierher gespiegelt, aus Konsistenz. Rein
+      // additiv, NICHT Teil von `payload`/`filled` — Bot-Erkennung bleibt unveraendert.
+      + (() => {
+          const tok = String(data['cf-turnstile-response'] || '');
+          const fp = tok ? `${esc(tok.slice(0, 12))}… · ${tok.length} Z.` : '(leer)';
+          return `<tr><td style="padding:4px 12px;font-weight:600;vertical-align:top;border-bottom:1px solid #eee;color:#888">cf-turnstile-response</td><td style="padding:4px 12px;border-bottom:1px solid #eee;color:#888">${fp}</td></tr>`;
+        })();
     const filled = payload.filter(([, v]) => String(v || '').trim() !== '').length;
     // PATCH 03.09.2026 (SEO/GEO, REQ-2026-08-26-SEO-SE4-ZUSTELLTEST-..., aus PC mitgezogen fuer
     // Konsistenz): bekannte Nicht-Browser-User-Agents bekommen ein eigenes Verdikt statt als
@@ -167,10 +175,17 @@ exports.handler = async (event) => {
       await notifyBlocked(token ? 'Turnstile-Verifikation fehlgeschlagen' : 'Turnstile-Token fehlte oder war abgelaufen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
       return { statusCode: 200, body: JSON.stringify({ ok: true }) };
     }
-    // PATCH 08.09.2026 (REQ-2026-09-04-A440-PCAI-...): 'error' liefert den Lead weiterhin aus
-    // (kein Cloudflare-Hickup soll einen echten Interessenten stumm kosten), aber nicht mehr
-    // ununterscheidbar von einem echten 'pass' -- sichtbar im Betreff/Inhalt der echten Mail.
-    if (verdict === 'error') turnstileUnverified = true;
+    // GO 08.09.2026 (Andreas, A453-PCAI): der PATCH 08.09-Fassung dieses Zweigs ("error"
+    // liefert sichtbar markiert aus) ging davon aus, dass ein Cloudflare-Fehler selten ist.
+    // Live-Messung desselben Tages zeigt: auf dieser Strecke ist er der Normalfall, nicht die
+    // Ausnahme -- jede Uebermittlung MIT irgendeinem (auch erfundenem) Token landete im Lead-
+    // Postfach statt geblockt zu werden. notifyBlocked() verliert dabei niemanden (dieselben
+    // Rohdaten gehen als Warnmail raus, manuell einschaetzbar) -- nur der Zustellpfad wechselt
+    // vom Lead- ins Warn-Postfach, wie bei 'fail'.
+    if (verdict === 'error') {
+      await notifyBlocked('Turnstile technisch nicht prüfbar — Verifikation ausgefallen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
+      return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+    }
   }
 
   // Spam still verwerfen (200 zurück, damit der Bot „Erfolg" sieht und keine echte Mail rausgeht).
