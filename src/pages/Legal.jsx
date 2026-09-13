@@ -47,9 +47,6 @@ export function Imprint() {
       <section className="section-white">
         <div className="container-main max-w-3xl">
           <div className="space-y-6 text-slate-600 text-sm leading-relaxed">
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-amber-800 text-sm">
-              <strong>Note:</strong> {l.imprint_placeholder}
-            </div>
             <div>
               <h2 className="text-base font-bold text-navy-900 mb-2">{l.imprint_resp_h}</h2>
               <p style={{ whiteSpace: 'pre-line' }}>{l.imprint_resp_p}</p>
