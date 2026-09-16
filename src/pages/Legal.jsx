@@ -17,14 +17,19 @@ export function Privacy() {
       <section className="section-white">
         <div className="container-main max-w-3xl">
           <div className="prose prose-slate max-w-none space-y-6 text-slate-600 text-sm leading-relaxed">
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-amber-800 text-sm">
-              <strong>Note:</strong> {l.privacy_placeholder}
-            </div>
             <p>{l.privacy_p1}</p>
             <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_data_h}</h2>
             <p>{l.privacy_data_p}</p>
+            <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_legal_h}</h2>
+            <p>{l.privacy_legal_p}</p>
+            <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_processors_h}</h2>
+            <p style={{ whiteSpace: 'pre-line' }}>{l.privacy_processors_p}</p>
+            <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_retention_h}</h2>
+            <p>{l.privacy_retention_p}</p>
             <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_rights_h}</h2>
             <p>{l.privacy_rights_p}</p>
+            <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_cookies_h}</h2>
+            <p>{l.privacy_cookies_p}</p>
           </div>
         </div>
       </section>
