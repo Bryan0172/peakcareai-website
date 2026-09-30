@@ -15,6 +15,7 @@ import BlogEuAiAct from './pages/BlogEuAiAct'
 import BlogShadowAIHotels from './pages/BlogShadowAIHotels'
 import BlogEuAiActChecklist from './pages/BlogEuAiActChecklist'
 import BlogHotelAiVendorQuestions from './pages/BlogHotelAiVendorQuestions'
+import BlogAiActProviderOrDeployer from './pages/BlogAiActProviderOrDeployer'
 import HotelAIReadinessCheck from './pages/HotelAIReadinessCheck'
 import AiOfferAssistant from './pages/AiOfferAssistant'
 
@@ -39,6 +40,7 @@ export default function App() {
               <Route path="/blog/shadow-ai-hotels" element={<BlogShadowAIHotels />} />
               <Route path="/blog/eu-ai-act-hotel-checklist-2026" element={<BlogEuAiActChecklist />} />
               <Route path="/blog/hotel-ai-vendor-questions" element={<BlogHotelAiVendorQuestions />} />
+              <Route path="/blog/eu-ai-act-provider-or-deployer" element={<BlogAiActProviderOrDeployer />} />
               <Route path="/hotel-ai-readiness-check" element={<HotelAIReadinessCheck />} />
               <Route path="/ai-offer-assistant-hotels" element={<AiOfferAssistant />} />
               <Route path="/privacy" element={<Privacy />} />

@@ -286,6 +286,17 @@ export default function BlogEuAiAct() {
                 ))}
               </div>
 
+              <div className="bg-slate-50 border border-slate-100 rounded-xl p-6 my-8">
+                <p className="font-bold text-navy-900 mb-1">Related: is your hotel the provider or the deployer?</p>
+                <p className="text-slate-600 text-sm leading-relaxed mb-3">
+                  Article 50 says who must disclose. It doesn't say whether that's you or your vendor — that
+                  depends on whose name is on the chat window.
+                </p>
+                <Link to="/blog/eu-ai-act-provider-or-deployer" className="text-navy-700 hover:text-gold-500 font-semibold text-sm">
+                  Provider or deployer: the test question →
+                </Link>
+              </div>
+
               {/* Author */}
               <div className="mt-12 pt-8 border-t border-slate-100 flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-navy-900 text-gold-400 flex items-center justify-center font-bold shrink-0">AD</div>
