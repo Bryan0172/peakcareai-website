@@ -123,6 +123,7 @@ export default function Assessment() {
   return (
     <>
       <SEO
+        lang="en"
         title="EU AI Act Hotel Self-Assessment — 5 Minutes | peakcareai.com"
         description="Find out in 5 minutes whether your hotel is affected by the EU AI Act. Free self-assessment for Hotel GMs and operations managers."
       />

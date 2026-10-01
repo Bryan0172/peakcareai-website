@@ -163,6 +163,7 @@ export default function HotelAIReadinessCheck() {
   return (
     <>
       <SEO
+        lang="en"
         title="Hotel Operations & AI Assessment for Independent Hotels | Peak Care AI"
         description="Peak Care AI maps operational pain points, existing tools, shadow-AI exposure and realistic AI potential for independent hotels and small groups. Includes a 90-day plan."
         ogTitle="Hotel Operations & AI Assessment for Independent Hotels | Peak Care AI"

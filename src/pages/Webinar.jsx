@@ -33,6 +33,7 @@ export default function Webinar() {
   return (
     <>
       <SEO
+        lang="en"
         title="Executive Briefing: Shadow AI & AI Literacy for Hotels | Peak Care AI"
         description="A focused conversation for hotel operators — where AI is already in your operation, how to bring staff tool usage under management control, and what practical AI governance looks like."
         ogTitle="Executive Briefing: Shadow AI & AI Literacy for Hotels | Peak Care AI"

@@ -280,6 +280,7 @@ export default function AiOfferAssistant() {
   return (
     <>
       <SEO
+        lang="en"
         title="AI Offer Assistant for Hotels — Group, Corporate & Event Inquiries | Peak Care AI"
         description="Peak Care AI's AI Offer Assistant helps hotel reservations and sales teams handle group bookings, corporate requests and event inquiries faster and more consistently. 30-day pilot · Human team in control."
         jsonLd={[SCHEMA]}
