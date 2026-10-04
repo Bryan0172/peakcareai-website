@@ -111,6 +111,11 @@ async function notifyBlocked(reason, data, formName, client) {
     // Mail; wuerde sie unterdrueckt, meldete SE4 Gruen auf einer Messung, die nie stattfand.
     const SE4_MARKER = 'se4-wirksamkeitsnachweis';
     const isSe4Proof = Object.values(data || {}).some((v) => String(v).toLowerCase().includes(SE4_MARKER));
+    // PATCH 04.10.2026 (SEO/GEO, REQ-2026-10-04-TURNSTILE-WARNMAILS-EIGENE-TESTS-NICHT-AN-ANDREAS-,
+    // Andreas im Chat: "Go Turnstile"): der SE4-Beleg bleibt erhalten (die Mail wird weiter gesendet),
+    // geht aber NUR an den Hub, ohne Bcc, und traegt [TEST] + Einstufung EIGENTEST. Alle uebrigen
+    // Faelle laufen unveraendert wie bisher (TO + BCC Andreas).
+    const HUB_ONLY = [{ email: 'peakcare@peak-care.com', name: 'Peak Care Hub' }];
     if (verdictInfo.bot && !isSe4Proof) {
       // Kein stiller Abbruch (A510 verlangt internes Logging): strukturiert ins Netlify-
       // Funktionslog. Ein Zaehler je Marke in einer Datei ist hier nicht moeglich -- die
@@ -129,8 +134,11 @@ async function notifyBlocked(reason, data, formName, client) {
     const srcLabel = KNOWN_OWN_IPS.some(ip => srcIp.includes(ip))
       ? '<strong style="color:#666">eigene Infrastruktur (bekannte IP)</strong>'
       : '<strong style="color:#0a0">extern</strong>';
+    const verdictShown = isSe4Proof
+      ? '<strong style="color:#666">EIGENTEST</strong> — SE4-Wirksamkeitsnachweis der SEO-Lane, kein echter Interessent.'
+      : verdict;
     const diag = `<p style="font-size:13px;margin:10px 0 0;padding:8px 10px;background:#f6f6f6;border-left:3px solid #999">
-          Einschaetzung: ${verdict}<br>
+          Einschaetzung: ${verdictShown}<br>
           Nutzfelder gesamt: <strong>${payload.length}</strong> · davon ausgefuellt: <strong>${filled}</strong>
           · Quelle: ${srcLabel}
           · IP: ${esc(srcIp || 'unbekannt')}
@@ -141,13 +149,16 @@ async function notifyBlocked(reason, data, formName, client) {
       headers: { 'api-key': process.env.BREVO_API_KEY || '', 'content-type': 'application/json', accept: 'application/json' },
       body: JSON.stringify({
         sender: SENDER,
-        to: TO,
-        bcc: BCC,
-        subject: `⚠️ PCAI-Anfrage blockiert (${reason}) — evtl. echter Lead, bitte prüfen (${formName})`,
+        to: isSe4Proof ? HUB_ONLY : TO,
+        bcc: isSe4Proof ? undefined : BCC,
+        subject: isSe4Proof
+          ? `[TEST] SE4-Wirksamkeitsnachweis PCAI — erwartete Turnstile-Blockade (${formName})`
+          : `⚠️ PCAI-Anfrage blockiert (${reason}) — evtl. echter Lead, bitte prüfen (${formName})`,
         htmlContent: `<div style="font-family:Arial,sans-serif;color:#1a1a1a">
-          <h2 style="margin:0 0 12px">⚠️ Peak-Care-AI-Anfrage blockiert — ${esc(reason)}</h2>
-          <p style="font-size:14px;margin:0 0 12px">Diese Übermittlung wurde <strong>nicht</strong> als Lead zugestellt.
-          Der Absender hat im Formular „gesendet" gesehen. Bitte prüfen, ob es ein echter Interessent war.</p>
+          <h2 style="margin:0 0 12px">${isSe4Proof ? '🧪 Eigentest (SE4) — ' : '⚠️ Peak-Care-AI-Anfrage blockiert — '}${esc(reason)}</h2>
+          <p style="font-size:14px;margin:0 0 12px">${isSe4Proof
+            ? 'Eigener Testverkehr der SEO-Lane, keine Aktion nötig. Die Mail belegt, dass der Alarmweg dieser Marke funktioniert.'
+            : 'Diese Übermittlung wurde <strong>nicht</strong> als Lead zugestellt. Der Absender hat im Formular „gesendet" gesehen. Bitte prüfen, ob es ein echter Interessent war.'}</p>
           <table style="border-collapse:collapse;font-size:14px">${rows}</table>
           ${diag}
           <p style="color:#888;font-size:12px;margin-top:14px">Quelle: peakcareai.com · Formular „${esc(formName)}" · Grund: ${esc(reason)}</p>
