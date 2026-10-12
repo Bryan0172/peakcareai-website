@@ -54,7 +54,7 @@ function getRoutes() {
   } catch (e) { console.warn('sitemap.xml nicht lesbar:', e.message) }
   // Router-Routen, die evtl. nicht in der Sitemap stehen
   ;['/services', '/hospitality', '/corporate-ai', '/about', '/contact', '/webinar',
-    '/webinar/eu-ai-act-for-hotels', '/assessment', '/hotel-ai-readiness-check',
+    '/assessment', '/hotel-ai-readiness-check',
     '/ai-offer-assistant-hotels', '/privacy', '/imprint',
     '/blog/eu-ai-act-hotels-2026', '/blog/shadow-ai-hotels',
     '/blog/eu-ai-act-hotel-checklist-2026', '/blog/hotel-ai-vendor-questions',

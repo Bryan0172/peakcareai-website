@@ -179,7 +179,7 @@ export default function BlogAiActProviderOrDeployer() {
                 <div className="w-12 h-12 rounded-full bg-navy-900 text-gold-400 flex items-center justify-center font-bold shrink-0">AD</div>
                 <div>
                   <p className="font-bold text-navy-900">Andreas Donner</p>
-                  <p className="text-slate-500 text-sm">Founder, peakcareai.com · 25+ years in luxury hotel project development and construction worldwide.</p>
+                  <p className="text-slate-500 text-sm">Founder, peakcareai.com · Dipl.-Ing. · 25 years of international hotel and construction projects, including for Meliá, Aldiana and Thomas Cook.</p>
                 </div>
               </div>
 

@@ -14,7 +14,7 @@ const en = {
   },
 
   footer: {
-    tagline: 'Hospitality operations & AI transformation. Built from 25+ years of international luxury hospitality experience.',
+    tagline: 'Hotel operations and AI. Built on 25 years of international hotel and construction projects.',
     sections: { services: 'Services', focus: 'Focus', legal: 'Legal' },
     links: {
       services: [
@@ -23,6 +23,7 @@ const en = {
         { label: 'Internal Workflow Automation', to: '/services#workflow-automation' },
         { label: 'AI Governance for Hotels', to: '/services#governance' },
         { label: 'Team AI Literacy & Adoption', to: '/services#team-enablement' },
+        { label: 'AI Offer Assistant', to: '/ai-offer-assistant-hotels' },
       ],
       focus: [
         { label: 'Hospitality Focus', to: '/hospitality' },
@@ -61,7 +62,7 @@ const en = {
       items: [
         { icon: '💬', title: 'Direct inquiries', text: "In the guest's language, the moment they ask — not the next morning." },
         { icon: '⭐', title: 'Review responses', text: 'Every review gets a considered reply, on the same day it lands.' },
-        { icon: '🛎️', title: 'Pre-arrival messages', text: 'Check-in details, upsells and local tips, sent automatically before the stay.' },
+        { icon: '🛎️', title: 'Pre-arrival messages', text: 'Check-in details, extras and local tips, as a ready draft well before the stay. Your team reviews and sends.' },
         { icon: '📞', title: 'Missed calls', text: 'A drafted follow-up ready within minutes, so no enquiry goes cold.' },
         { icon: '📄', title: 'Quote follow-ups', text: 'Offers get chased before the guest books elsewhere.' },
       ],
@@ -112,7 +113,7 @@ const en = {
       items: [
         { icon: '🧩', title: 'Structured data / Schema', text: "The machine-readable markup that lets AI actually understand your hotel — most independent sites have none." },
         { icon: '❓', title: 'FAQ content', text: 'AI answer engines rely on clear Q&A pairs. We add the questions guests actually ask.' },
-        { icon: '💶', title: 'Public rates', text: "AI tools can't recommend what they can't price. Visible rate ranges make you citable." },
+        { icon: '🏷️', title: 'Amenities & services', text: 'What your house offers — location, amenities, services — described clearly and in structured form, so AI can match your house to the right guest request.' },
         { icon: '🛏️', title: 'Room data', text: "Clear, structured room descriptions AI can match against a guest's actual request." },
         { icon: '📞', title: 'Contact & direct booking', text: 'A clear, crawlable path from "found" to "booked" — without routing guests back to an OTA.' },
       ],
@@ -155,7 +156,7 @@ const en = {
       items: [
         { title: 'Hospitality insider, not a tech vendor', text: 'Aldiana, Meliá, Thomas Cook, Maritim — 25 years developing, building and implementing hotels for international brands. We know hotel operations from the inside.' },
         { title: 'Built for AI search specifically', text: 'Not generic SEO. We optimize for how ChatGPT, Google AI Overviews and booking assistants actually select and cite hotels.' },
-        { title: 'No subscription lock-in', text: 'One clear, fixed-price engagement per hotel — sized to your house, agreed after the free check, not before.' },
+        { title: 'No subscription lock-in', text: 'One clearly scoped engagement per hotel, sized to your house. Pricing on request, agreed after the conversation, not before.' },
         { title: 'You keep control of your site', text: 'We work with your existing website and booking system. No migration, no new platform to learn.' },
       ],
     },
@@ -164,7 +165,7 @@ const en = {
     faq_h2: 'What hotel decision-makers ask us.',
     faqs: [
       { q: 'What is AI visibility for hotels?', a: "It means being found and recommended when guests use AI tools like ChatGPT, Google AI Overviews or booking assistants to choose where to stay. Most independent hotels are invisible to these tools because their website isn't machine-readable." },
-      { q: 'Why don’t guests find my hotel on ChatGPT or Google AI?', a: "Usually because the website lacks structured data (schema.org), an FAQ, public rates and clear room details. Without them, AI can't read or recommend your hotel — so it suggests competitors, and guests book via OTAs at 15–18% commission." },
+      { q: 'Why don’t guests find my hotel on ChatGPT or Google AI?', a: "Usually because the website lacks structured data (schema.org), an FAQ, clear amenity and service information and clear room details. Without them, AI can't read or recommend your hotel — so it suggests competitors, and guests book via OTAs at 15–18% commission." },
       { q: 'What is GEO (Generative Engine Optimization)?', a: 'GEO is optimizing your hotel to be selected and cited by AI answer engines, the way SEO optimizes for classic search. It is the fastest-growing discovery channel in hospitality in 2026.' },
       { q: 'How does this bring more direct bookings?', a: 'When guests find you directly through AI and your own site instead of an OTA, you keep the 15–18% commission. Even a few recovered direct bookings pay for the work.' },
       { q: 'Who is behind Peak Care AI?', a: 'Peak Care AI was founded by Andreas Donner, who spent 25 years developing, building and implementing hotels for international brands (Aldiana, Meliá, Thomas Cook, Maritim) — so we look at your hotel from inside the industry, not as a software vendor.' },
@@ -189,6 +190,7 @@ const en = {
     hero_sub: 'Five practice areas — designed around the realities of hotel operations, not around AI categories. Most engagements begin with A and select from B–E based on where pressure sits.',
     deliverables_heading: 'What you receive',
     suited_label: 'Suited for',
+    offer_more_link: 'More on the AI Offer Assistant →',
     cta_h2: 'Not sure where to start?',
     cta_sub: 'A 30-minute confidential conversation usually clarifies which practice area is the right entry point for your house.',
     cta: 'Request a confidential conversation',
@@ -273,7 +275,7 @@ const en = {
         number: '06',
         title: 'F. AI Offer Assistant',
         subtitle: 'Faster, more consistent proposals and guest responses',
-        description: 'Hotels and service businesses spend significant time drafting offers, proposals and guest responses individually — often without a consistent structure or tone. The AI Offer Assistant is a practical AI-supported workflow that helps teams prepare responses faster and more consistently, using the property\'s own standards as the basis. Operations first. AI follows.',
+        description: 'Hotels spend significant time drafting offers, proposals and guest responses individually — often without a consistent structure or tone. The AI Offer Assistant is a practical AI-supported workflow that helps teams prepare responses faster and more consistently, using the property\'s own standards as the basis. Operations first. AI follows.',
         deliverables: [
           'Mapping of recurring offer, proposal and response types',
           'Structured AI-supported response templates in your tone and brand voice',
@@ -281,7 +283,7 @@ const en = {
           'Review and approval checkpoints for sensitive or high-value responses',
           'Practical team briefing and usage guide',
         ],
-        suited: 'Sales teams, reservations, guest relations, service businesses with recurring proposal or response needs',
+        suited: 'Sales teams, reservations, guest relations, hotels with recurring proposal or response needs',
       },
       {
         id: 'ai-call-intake-assistant',
@@ -296,14 +298,14 @@ const en = {
           'Escalation and handover guidelines for complex or sensitive cases',
           'Practical team briefing and adoption support',
         ],
-        suited: 'Front office teams, reservations, service businesses and hospitality operators handling recurring guest or customer inquiries',
+        suited: 'Front office teams, reservations, hospitality operators handling recurring guest or customer inquiries',
       },
       {
         id: 'geo-audit',
         number: '08',
         title: 'H. GEO Audit / AI Search Visibility Audit',
         subtitle: 'Understand how AI systems see and describe your brand',
-        description: 'AI answer systems — ChatGPT, Gemini, Perplexity, Google AI Overviews, Bing Copilot — increasingly shape how hotels and service businesses are found and described. A GEO Audit reviews whether your brand is understandable, citeable and accurately represented in these systems, and identifies where structured data, content or entity signals are missing or unclear.',
+        description: 'AI answer systems — ChatGPT, Gemini, Perplexity, Google AI Overviews, Bing Copilot — increasingly shape how hotels are found and described. A GEO Audit reviews whether your brand is understandable, citeable and accurately represented in these systems, and identifies where structured data, content or entity signals are missing or unclear.',
         deliverables: [
           'Review of current AI-system representations of your brand',
           'Structured data and Schema.org gap analysis',
@@ -311,7 +313,7 @@ const en = {
           'FAQ and citation opportunity mapping',
           'Practical recommendations for improved AI search visibility',
         ],
-        suited: 'Hotels, service businesses, advisory brands and hospitality operators who want to be accurately represented in AI-powered search',
+        suited: 'Hotels, hotel groups and hospitality operators who want to be accurately represented in AI-powered search',
       },
     ],
   },

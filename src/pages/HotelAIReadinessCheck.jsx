@@ -509,7 +509,7 @@ export default function HotelAIReadinessCheck() {
                 <div className="bg-white rounded-xl p-5 border border-slate-200 shadow-sm">
                   <div className="text-xs font-bold text-gold-600 uppercase tracking-widest mb-2">Not sure if this applies to you?</div>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                    An initial 15-minute call is enough to determine whether the check is the right starting point for your hotel.
+                    An initial 30-minute conversation is enough to determine whether the check is the right starting point for your hotel.
                   </p>
                   <Link to="/contact" className="btn-primary text-sm px-5 py-2.5 inline-block">
                     Request a confidential conversation →

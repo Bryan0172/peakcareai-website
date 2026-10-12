@@ -240,7 +240,7 @@ export default function Webinar() {
                   <p className="text-slate-500 text-sm mt-1">Founder, Peak Care AI</p>
                   <div className="mt-4 space-y-2 text-xs text-slate-500 text-left">
                     <div className="flex items-center gap-2">
-                      <span className="text-gold-500">✓</span> 25+ years in luxury hospitality
+                      <span className="text-gold-500">✓</span> 25 years of international hotel and construction projects
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-gold-500">✓</span> Hotel project development &amp; construction
@@ -261,7 +261,7 @@ export default function Webinar() {
                   Most AI conversations for hotels are run by tech consultants. This one is run by an operator. The starting point is your operation — front office pressure, guest communication, staff workflows — not a compliance lecture or a tool demo.
                 </p>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  With 25+ years in international luxury hospitality and hotel-related project environments, I know what revenue management systems do, how guest communication is handled day to day, and where AI quietly enters hotel operations whether management is aware of it or not.
+                  With 25 years of international hotel and construction projects, I know what revenue management systems do, how guest communication is handled day to day, and where AI quietly enters hotel operations whether management is aware of it or not.
                 </p>
                 <p className="text-slate-600 leading-relaxed mb-6">
                   This is a practical conversation that ends with a clear sense of where to start. EU AI Act context is included as the trust layer — not as the headline.

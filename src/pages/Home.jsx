@@ -47,7 +47,7 @@ export default function Home() {
           "founder": {
             "@type": "Person",
             "name": "Andreas Donner",
-            "jobTitle": "Founder",
+            "jobTitle": "Founder, Peak Care AI",
             "url": "https://peakcareai.com/about",
             "description": "25 years in international hotel project development, construction and brand implementation (Aldiana, Meliá, Thomas Cook, Maritim International).",
             "knowsAbout": ["Hotel AI Visibility", "GEO for Hospitality", "Hotel Brand Implementation", "Hospitality Operations"]

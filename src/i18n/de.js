@@ -14,7 +14,7 @@ const de = {
   },
 
   footer: {
-    tagline: 'Hospitality Operations & AI Transformation. Aus über 25 Jahren internationaler Luxushotellerie-Erfahrung.',
+    tagline: 'Hotelbetrieb und KI. Aus 25 Jahren internationaler Hotel- und Bauprojekte.',
     sections: { services: 'Leistungsbereiche', focus: 'Fokus', legal: 'Rechtliches' },
     links: {
       services: [
@@ -23,6 +23,7 @@ const de = {
         { label: 'Internal Workflow Automation', to: '/services#workflow-automation' },
         { label: 'AI Governance for Hotels', to: '/services#governance' },
         { label: 'Team KI-Kompetenz & Adoption', to: '/services#team-enablement' },
+        { label: 'KI-Angebotsassistent', to: '/ai-offer-assistant-hotels' },
       ],
       focus: [
         { label: 'Hotellerie-Fokus', to: '/hospitality' },
@@ -61,7 +62,7 @@ const de = {
       items: [
         { icon: '💬', title: 'Direktanfragen', text: 'In der Sprache des Gastes, in dem Moment, in dem er fragt — nicht am nächsten Morgen.' },
         { icon: '⭐', title: 'Bewertungsantworten', text: 'Jede Bewertung bekommt eine durchdachte Antwort, noch am selben Tag.' },
-        { icon: '🛎️', title: 'Nachrichten vor der Anreise', text: 'Check-in-Details, Zusatzangebote und Tipps vor Ort — automatisch vor dem Aufenthalt versendet.' },
+        { icon: '🛎️', title: 'Nachrichten vor der Anreise', text: 'Check-in-Details, Zusatzleistungen und Tipps vor Ort, als fertiger Entwurf rechtzeitig vor dem Aufenthalt. Ihr Team prüft und sendet.' },
         { icon: '📞', title: 'Verpasste Anrufe', text: 'Ein fertiger Nachfass-Entwurf innerhalb von Minuten, damit keine Anfrage abkühlt.' },
         { icon: '📄', title: 'Nachfassen bei Angeboten', text: 'Angebote werden nachgefasst, bevor der Gast anderswo bucht.' },
       ],
@@ -112,7 +113,7 @@ const de = {
       items: [
         { icon: '🧩', title: 'Strukturierte Daten / Schema', text: 'Das maschinenlesbare Markup, mit dem KI Ihr Hotel überhaupt versteht — die meisten unabhängigen Websites haben keins.' },
         { icon: '❓', title: 'FAQ-Inhalte', text: 'KI-Antwortmaschinen stützen sich auf klare Frage-Antwort-Paare. Wir ergänzen die Fragen, die Gäste wirklich stellen.' },
-        { icon: '💶', title: 'Öffentliche Preise', text: 'KI-Tools können nicht empfehlen, was sie nicht bepreisen können. Sichtbare Preisspannen machen Sie zitierfähig.' },
+        { icon: '🏷️', title: 'Leistungen & Ausstattung', text: 'Was Ihr Haus bietet, Lage, Ausstattung, Leistungen, klar und strukturiert beschrieben, damit die KI Ihr Haus der richtigen Gästeanfrage zuordnet.' },
         { icon: '🛏️', title: 'Zimmerdaten', text: 'Klare, strukturierte Zimmerbeschreibungen, die KI mit der tatsächlichen Gästeanfrage abgleichen kann.' },
         { icon: '📞', title: 'Kontakt & Direktbuchung', text: 'Ein klarer, crawlbarer Weg von „gefunden" zu „gebucht" — ohne den Gast zurück zur OTA zu leiten.' },
       ],
@@ -155,7 +156,7 @@ const de = {
       items: [
         { title: 'Hotellerie-Insider, kein Tech-Anbieter', text: 'Aldiana, Meliá, Thomas Cook, Maritim — 25 Jahre Hotelmarken für internationale Konzerne entwickelt, gebaut und umgesetzt. Wir kennen den Hotelbetrieb von innen.' },
         { title: 'Speziell für KI-Suche gebaut', text: 'Kein generisches SEO. Wir optimieren dafür, wie ChatGPT, Google AI Overviews und Buchungsassistenten Hotels tatsächlich auswählen und zitieren.' },
-        { title: 'Kein Abo-Zwang', text: 'Ein klares Festpreis-Engagement pro Hotel — auf Ihr Haus zugeschnitten, vereinbart nach dem kostenlosen Check, nicht davor.' },
+        { title: 'Kein Abo-Zwang', text: 'Ein klar umrissenes Mandat pro Hotel, auf Ihr Haus zugeschnitten. Preis auf Anfrage, vereinbart nach dem Gespräch, nicht davor.' },
         { title: 'Sie behalten die Kontrolle über Ihre Website', text: 'Wir arbeiten mit Ihrer bestehenden Website und Buchungslösung. Keine Migration, keine neue Plattform zu lernen.' },
       ],
     },
@@ -164,7 +165,7 @@ const de = {
     faq_h2: 'Was Hotelentscheider uns fragen.',
     faqs: [
       { q: 'Was bedeutet KI-Sichtbarkeit für Hotels?', a: 'Es bedeutet, gefunden und empfohlen zu werden, wenn Gäste KI-Tools wie ChatGPT, Google AI Overviews oder Buchungsassistenten nutzen, um ihre Unterkunft auszuwählen. Die meisten unabhängigen Hotels sind für diese Tools unsichtbar, weil ihre Website nicht maschinenlesbar ist.' },
-      { q: 'Warum finden Gäste mein Hotel nicht bei ChatGPT oder Google AI?', a: 'Meist, weil der Website strukturierte Daten (schema.org), eine FAQ, öffentliche Preise und klare Zimmerdaten fehlen. Ohne das kann die KI Ihr Hotel nicht lesen oder empfehlen — sie schlägt Wettbewerber vor, und Gäste buchen über OTAs mit 15–18% Provision.' },
+      { q: 'Warum finden Gäste mein Hotel nicht bei ChatGPT oder Google AI?', a: 'Meist, weil der Website strukturierte Daten (schema.org), eine FAQ, klare Angaben zu Leistungen und Ausstattung sowie klare Zimmerdaten fehlen. Ohne das kann die KI Ihr Hotel nicht lesen oder empfehlen — sie schlägt Wettbewerber vor, und Gäste buchen über OTAs mit 15–18% Provision.' },
       { q: 'Was ist GEO (Generative Engine Optimization)?', a: 'GEO optimiert Ihr Hotel dafür, von KI-Antwortmaschinen ausgewählt und zitiert zu werden — so wie SEO für die klassische Suche optimiert. Es ist 2026 der am schnellsten wachsende Auffindbarkeits-Kanal in der Hotellerie.' },
       { q: 'Wie bringt das mehr Direktbuchungen?', a: 'Wenn Gäste Sie direkt über KI und Ihre eigene Website finden statt über eine OTA, behalten Sie die 15–18% Provision. Schon wenige zurückgewonnene Direktbuchungen finanzieren die Arbeit.' },
       { q: 'Wer steht hinter Peak Care AI?', a: 'Peak Care AI wurde von Andreas Donner gegründet, der 25 Jahre lang Hotelmarken für internationale Konzerne entwickelt, gebaut und umgesetzt hat (Aldiana, Meliá, Thomas Cook, Maritim) — wir betrachten Ihr Hotel also von innerhalb der Branche, nicht als Software-Anbieter.' },
@@ -189,6 +190,7 @@ const de = {
     hero_sub: 'Fünf Leistungsbereiche — entlang der Realität des Hotelbetriebs aufgebaut, nicht entlang von KI-Kategorien. Die meisten Mandate beginnen mit A und wählen aus B–E je nach Druckpunkt.',
     deliverables_heading: 'Was Sie erhalten',
     suited_label: 'Geeignet für',
+    offer_more_link: 'Mehr zum KI-Angebotsassistenten →',
     cta_h2: 'Unsicher, wo Sie anfangen sollen?',
     cta_sub: 'Ein vertrauliches 30-Minuten-Gespräch klärt meist, welcher Leistungsbereich der richtige Einstieg für Ihr Haus ist.',
     cta: 'Vertrauliches Gespräch anfragen',
@@ -470,7 +472,7 @@ const de = {
     },
     submit: 'Nachricht senden',
     sending: 'Wird gesendet…',
-    privacy_note: 'Ihre Daten werden gemäß unserer',
+    privacy_note: 'Wie wir Ihre Angaben verarbeiten, steht in unserer',
     privacy_link: 'Datenschutzerklärung',
     success_h2: 'Nachricht erhalten.',
     success_p: 'Vielen Dank für Ihre Kontaktaufnahme. Wir melden uns innerhalb von 48 Stunden, um einen Termin für ein erstes Gespräch zu bestätigen.',

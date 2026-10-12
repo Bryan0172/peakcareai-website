@@ -139,7 +139,7 @@ export default function Assessment() {
             <span className="text-gold-400">Self-Assessment</span>
           </h1>
           <p className="text-white/60 leading-relaxed">
-            5 questions. Find out in 3 minutes where your hotel stands against the Article 50 transparency rules that took effect on 2 August 2026 — and what the priority steps are.
+            5 questions. Find out in 5 minutes which EU AI Act duties apply to your hotel today — AI literacy (Article 4) and, where guests talk to an AI assistant, transparency (Article 50) — and what the priority steps are.
           </p>
         </div>
       </section>

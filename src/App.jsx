@@ -34,7 +34,6 @@ export default function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/webinar" element={<Webinar />} />
-              <Route path="/webinar/eu-ai-act-for-hotels" element={<Webinar />} />
               <Route path="/assessment" element={<Assessment />} />
               <Route path="/blog/eu-ai-act-hotels-2026" element={<BlogEuAiAct />} />
               <Route path="/blog/shadow-ai-hotels" element={<BlogShadowAIHotels />} />

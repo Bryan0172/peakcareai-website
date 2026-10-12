@@ -629,7 +629,7 @@ export default function AiOfferAssistant() {
             <span className="text-gold-400">One workflow. Measurable results.</span>
           </h2>
           <p className="text-white/55 text-lg mb-4 max-w-xl mx-auto leading-relaxed">
-            A 15-minute call is enough to determine whether the AI Offer Assistant fits your hotel and which inquiry type to start with.
+            A 30-minute conversation is enough to determine whether the AI Offer Assistant fits your hotel and which inquiry type to start with.
           </p>
           <p className="text-white/35 text-sm mb-10">No pitch deck. No commitment. A practical conversation about your operation.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
