@@ -462,7 +462,7 @@ const de = {
     ],
     direct_label: 'Direktkontakt',
     email: 'kontakt@peakcareai.com',
-    location: 'Peak Care AI\nBansko, Bulgarien',
+    location: 'Peak Care AI\nBansko, Bulgarien\nTel. +359 895 762 785',
     fields: {
       name: 'Vollständiger Name', name_ph: 'Ihr Name',
       company: 'Unternehmen / Hotel', company_ph: 'Hotel- oder Unternehmensname',
