@@ -472,6 +472,8 @@ const en = {
     },
     submit: 'Send Message',
     sending: 'Sending…',
+    wait_check: 'Security check in progress …',
+    send_error: 'Your message was not delivered. Please send it again, or call us:',
     privacy_note: 'Your data is processed in accordance with our',
     privacy_link: 'Privacy Policy',
     success_h2: 'Message received.',

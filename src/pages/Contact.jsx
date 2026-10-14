@@ -12,6 +12,7 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', company: '', email: '', role: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
   const [sending, setSending] = useState(false)
+  const [sendError, setSendError] = useState(false)
   const [turnstileToken, setTurnstileToken] = useState('')
   const turnstileRef = useRef(null)
   const turnstileWidgetId = useRef(null)
@@ -63,8 +64,24 @@ export default function Contact() {
       .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
       .join('&')
 
+  // PATCH 14.10.2026 (SEO/GEO, gleiche Fehlerklasse wie peak-care.com, Testanfrage PC-1): bisher
+  // war der Knopf nur waehrend des Sendens gesperrt und die Function meldete auch bei blockierter
+  // Uebermittlung 200 -> Absender sah "gesendet", als Lead kam nichts an; bei 5xx blieb die Seite
+  // stumm (nur console.error). Jetzt: Senden erst mit Token, jede Ablehnung sichtbar, Widget neu.
+  const resetTurnstile = () => {
+    setTurnstileToken('')
+    if (turnstileWidgetId.current !== null && window.turnstile) {
+      try { window.turnstile.reset(turnstileWidgetId.current) } catch (e) { /* noop */ }
+    }
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setSendError(false)
+    if (TURNSTILE_SITE_KEY && !turnstileToken) {
+      setSendError(true)
+      return
+    }
     setSending(true)
     try {
       // Honeypot ist ein unkontrolliertes Feld (kein React State) — Wert direkt aus dem
@@ -91,6 +108,8 @@ export default function Contact() {
       }
     } catch (err) {
       console.error(err)
+      setSendError(true)
+      resetTurnstile()
     } finally {
       setSending(false)
     }
@@ -244,12 +263,21 @@ export default function Contact() {
                     </p>
                     <button
                       type="submit"
-                      disabled={sending}
+                      disabled={sending || (TURNSTILE_SITE_KEY && !turnstileToken)}
                       className="inline-flex items-center gap-2 bg-gold-400 hover:bg-gold-500 disabled:opacity-60 text-navy-900 font-bold px-8 py-3.5 rounded-xl transition-colors text-sm whitespace-nowrap"
                     >
                       {sending ? c.sending : c.submit}
                     </button>
                   </div>
+                  {TURNSTILE_SITE_KEY && !turnstileToken && !sending && (
+                    <p className="text-xs text-slate-400 text-right">{c.wait_check}</p>
+                  )}
+                  {sendError && (
+                    <p role="alert" className="text-sm text-red-600">
+                      {c.send_error}{' '}
+                      <a href="tel:+359895762785" className="underline font-semibold">+359 895 762 785</a>
+                    </p>
+                  )}
                 </form>
               )}
             </div>

@@ -227,7 +227,8 @@ exports.handler = async (event) => {
       // PATCH 03.09.2026: dieser Zweig verlor bisher still. Ein FEHLENDES/abgelaufenes Token
       // (Turnstile-Tokens leben ~300s) trifft auch echte Menschen, die laenger schreiben.
       await notifyBlocked(token ? 'Turnstile-Verifikation fehlgeschlagen' : 'Turnstile-Token fehlte oder war abgelaufen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
-      return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+      // PATCH 14.10.2026 (SEO/GEO): 403 statt 200, damit das Formular die Ablehnung zeigt; Warnmail unveraendert.
+      return { statusCode: 403, body: JSON.stringify({ ok: false, reason: 'verification' }) };
     }
     // GO 08.09.2026 (Andreas, A453-PCAI): der PATCH 08.09-Fassung dieses Zweigs ("error"
     // liefert sichtbar markiert aus) ging davon aus, dass ein Cloudflare-Fehler selten ist.
@@ -238,7 +239,7 @@ exports.handler = async (event) => {
     // vom Lead- ins Warn-Postfach, wie bei 'fail'.
     if (verdict === 'error') {
       await notifyBlocked('Turnstile technisch nicht prüfbar — Verifikation ausgefallen', data, formName, { ip, ua: event.headers['user-agent'] || event.headers['User-Agent'] || '' });
-      return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+      return { statusCode: 503, body: JSON.stringify({ ok: false, reason: 'verification-unavailable' }) };
     }
   }
 

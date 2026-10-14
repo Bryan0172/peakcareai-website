@@ -472,6 +472,8 @@ const de = {
     },
     submit: 'Nachricht senden',
     sending: 'Wird gesendet…',
+    wait_check: 'Sicherheitsprüfung läuft …',
+    send_error: 'Ihre Nachricht wurde nicht zugestellt. Bitte senden Sie sie erneut oder rufen Sie uns an:',
     privacy_note: 'Wie wir Ihre Angaben verarbeiten, steht in unserer',
     privacy_link: 'Datenschutzerklärung',
     success_h2: 'Nachricht erhalten.',
