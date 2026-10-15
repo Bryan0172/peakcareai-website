@@ -23,7 +23,6 @@ const de = {
         { label: 'Internal Workflow Automation', to: '/services#workflow-automation' },
         { label: 'AI Governance for Hotels', to: '/services#governance' },
         { label: 'Team KI-Kompetenz & Adoption', to: '/services#team-enablement' },
-        { label: 'KI-Angebotsassistent', to: '/ai-offer-assistant-hotels' },
       ],
       focus: [
         { label: 'Fachbeiträge', to: '/blog' },

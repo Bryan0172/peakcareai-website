@@ -23,7 +23,6 @@ const en = {
         { label: 'Internal Workflow Automation', to: '/services#workflow-automation' },
         { label: 'AI Governance for Hotels', to: '/services#governance' },
         { label: 'Team AI Literacy & Adoption', to: '/services#team-enablement' },
-        { label: 'AI Offer Assistant', to: '/ai-offer-assistant-hotels' },
       ],
       focus: [
         { label: 'Articles', to: '/blog' },
