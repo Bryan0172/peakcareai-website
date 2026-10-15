@@ -185,29 +185,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── LIVE PROOF ─── */}
-      <section className="section-white py-20" style={{ backgroundColor: '#f8f9fb' }}>
-        <div className="container-main">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-gold-500 font-semibold text-sm uppercase tracking-widest mb-3">See For Yourself</p>
-            <h2 className="section-heading">Ask ChatGPT right now.</h2>
-            <p className="section-subheading mb-8">
-              Open ChatGPT, Perplexity or Google AI Overviews and ask: <span className="font-semibold text-navy-900">"best boutique hotels in [your town]"</span>. Is your hotel there? Most independent hotels aren't — not because they're not good enough, but because AI can't read their website.
-            </p>
-            <div className="inline-flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://calendly.com/peakcare-peak-care/ai-readiness-call-peak-care-ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-gold-400 hover:bg-gold-500 text-navy-900 font-bold px-8 py-4 rounded-xl transition-colors text-base shadow-lg shadow-gold-400/20"
-              >
-                Get your free AI Visibility Check
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ─── WHY NOW ─── */}
       <section className="section-light">
         <div className="container-main">
@@ -224,44 +201,6 @@ export default function Home() {
                 <p className="text-slate-500 text-sm leading-relaxed">{c.text}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── OFFER ─── */}
-      <section className="bg-navy-900 py-16 border-t border-white/5">
-        <div className="container-main">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2 bg-gold-400/15 text-gold-400 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide mb-4">
-                Free to start
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                One clear engagement per house — no subscription.
-              </h2>
-              <p className="text-white/60 leading-relaxed text-lg">
-                Start with a free OTA commission check. If it's useful, we agree a clear fixed price for the fixes — sized to your house, no subscription lock-in, no pricing surprises.
-              </p>
-            </div>
-            <div className="shrink-0 flex flex-col items-center gap-4">
-              <a
-                href="https://calendly.com/peakcare-peak-care/ai-readiness-call-peak-care-ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gold-400 hover:bg-gold-500 text-navy-900 font-bold px-8 py-4 rounded-xl transition-colors text-base shadow-lg shadow-gold-400/20 whitespace-nowrap"
-              >
-                Free OTA Commission Check
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-              <Link
-                to="/hotel-ai-readiness-check"
-                className="text-white/50 hover:text-white text-sm transition-colors underline underline-offset-2"
-              >
-                or see how it works →
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -289,27 +228,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── LEAD MAGNET ─── */}
-      <section className="section-light">
-        <div className="container-main">
-          <div className="max-w-2xl mx-auto text-center bg-white rounded-2xl border border-slate-200 shadow-sm px-8 py-12">
-            <p className="text-gold-500 font-semibold text-sm uppercase tracking-widest mb-3">Free AI Visibility Snapshot</p>
-            <h2 className="section-heading mb-4">Get your free AI Visibility Snapshot.</h2>
-            <p className="section-subheading mb-8">
-              Tell us your hotel's name and website — we'll check what AI currently sees (or doesn't see) and send you the 5 findings. No commitment.
-            </p>
-            <a
-              href="https://calendly.com/peakcare-peak-care/ai-readiness-call-peak-care-ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-gold-400 hover:bg-gold-500 text-navy-900 font-bold px-8 py-4 rounded-xl transition-colors text-base shadow-lg shadow-gold-400/20"
-            >
-              Request your free snapshot
-            </a>
           </div>
         </div>
       </section>

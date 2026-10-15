@@ -1,26 +1,26 @@
 # Peak Care AI
 
-> Operations-first AI for independent hotels and hotel groups. Most direct bookings aren't lost on price, they're lost on speed: the 9pm enquiry that gets a next-afternoon reply loses the guest to the OTA tab they had open next to it. Peak Care AI drafts the first response in seconds — direct enquiries, review replies, pre-arrival messages, missed calls, quote follow-ups — a person still reads the tone and hits send. AI visibility (GEO/schema/structured data) is the natural next step once response speed is solved. Start with a free OTA Commission Check. Serving hotels across Europe (DACH, Western Europe, the Balkans and Bulgaria). EU AI Act and GDPR handled as the foundation, not the headline.
+> Peak Care AI helps independent hotels keep more of their own bookings and lose fewer guest enquiries, with clearly assigned human responsibility for every AI reply.
 
-Peak Care AI (peakcareai.com) helps independent hotels and small groups adopt AI that pays off in daily operations — not hype, not a compliance-fear pitch. We start from the operation: where AI can lift direct bookings, cut OTA dependency, take load off the team and keep guest communication fast and on-brand. Led by Andreas Donner (Dipl.-Ing., background in engineering, construction, project management and hospitality operations). EU AI Act and GDPR are built in as a safe foundation.
+Peak Care AI (peakcareai.com) works with independent hotels in Europe, with Bulgaria and the Balkans as equal markets alongside the DACH region and Spain. We look with the hotel at two places where it loses bookings: commission paid on guests who were already its own, and guest enquiries answered too late. From the hotel's own figures we work out what a year of platform commission costs, and we settle which replies an AI assistant may prepare and which stay with a person. We do not sell software or a chatbot, and we do not give legal advice. Pricing on request.
 
-## Core offers
-- [Hotel AI Readiness Audit](https://peakcareai.com/hotel-ai-readiness-check): A free, practical assessment for independent hotels — where AI can reduce workload and lift revenue, where Shadow AI already exists, and which first steps are realistic. This is the door-opener.
-- [AI Offer & Guest Communication Assistant](https://peakcareai.com/ai-offer-assistant-hotels): AI-supported workflows to answer enquiries, prepare offers and handle guest communication faster and more consistently.
-- [Services](https://peakcareai.com/services): The full range — readiness assessment, guest-communication AI, internal workflow automation, AI literacy/team enablement.
-- [Corporate AI](https://peakcareai.com/corporate-ai): AI governance and enablement for larger hospitality and service organisations.
+## Who is behind it
+- Andreas Donner, Dipl.-Ing., 25 years of international hotel and construction projects, among them Meliá, Aldiana, Maritim and Thomas Cook.
+- He leads every engagement personally.
 
 ## Who we serve
-- Independent hotels and small hotel groups across Europe — DACH, Western Europe, the Balkans and Bulgaria (dual-geo: the Balkans and Bulgaria are equal target markets, not an afterthought).
+- Owners and management of independent, owner- or family-run hotels, typically 15 to 80 rooms, and hotels in new-build or pre-opening.
+- Europe-wide; Bulgaria and the Balkans are equal target markets, not an afterthought.
 
-## Positioning
-- Revenue and operations first: more direct bookings, less OTA commission, leaner workflows, better guest communication.
-- Operations-first, not hype. EU AI Act and GDPR handled as the foundation.
-
-## Company & contact
-- Founder: Andreas Donner. Contact via [the contact page](https://peakcareai.com/contact) · kontakt@peakcareai.com
+## Pages
 - [About](https://peakcareai.com/about)
+- [Services](https://peakcareai.com/services)
+- [How the conversation works](https://peakcareai.com/hotel-ai-readiness-check)
+- [Articles](https://peakcareai.com/blog): practical guides on AI in hotels, guest communication and the EU AI Act.
+- [EU AI Act for hotels: provider or deployer?](https://peakcareai.com/blog/eu-ai-act-provider-or-deployer)
+- [Questions to Ask Any AI Vendor Before Signing](https://peakcareai.com/blog/hotel-ai-vendor-questions)
 
-## Knowledge
-- [Blog](https://peakcareai.com/blog): Practical guides on AI for hotels, guest communication, EU AI Act for hospitality, and hotel tech.
-- [Questions to Ask Any AI Vendor Before Signing](https://peakcareai.com/blog/hotel-ai-vendor-questions): A 15-question hotel operator's checklist for evaluating AI vendors — data storage and GDPR, EU AI Act risk classification and documentation, accountability for errors, total cost of ownership, exit clauses, and implementation reality. Includes a Green/Yellow/Red scoring framework by category. Covers the EU AI Act Article 50 transparency deadline (2 August 2026) and the phased documentation/governance requirements through December 2027.
+## Contact
+- Email: kontakt@peakcareai.com
+- Phone: +359 895 762 785
+- [Contact page](https://peakcareai.com/contact)

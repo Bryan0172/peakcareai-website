@@ -18,6 +18,7 @@ import BlogHotelAiVendorQuestions from './pages/BlogHotelAiVendorQuestions'
 import BlogAiActProviderOrDeployer from './pages/BlogAiActProviderOrDeployer'
 import HotelAIReadinessCheck from './pages/HotelAIReadinessCheck'
 import AiOfferAssistant from './pages/AiOfferAssistant'
+import BlogIndex from './pages/BlogIndex'
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/webinar" element={<Webinar />} />
               <Route path="/assessment" element={<Assessment />} />
+              <Route path="/blog" element={<BlogIndex />} />
               <Route path="/blog/eu-ai-act-hotels-2026" element={<BlogEuAiAct />} />
               <Route path="/blog/shadow-ai-hotels" element={<BlogShadowAIHotels />} />
               <Route path="/blog/eu-ai-act-hotel-checklist-2026" element={<BlogEuAiActChecklist />} />

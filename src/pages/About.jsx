@@ -27,6 +27,19 @@ export default function About() {
         </div>
       </section>
 
+      {/* Person (AI1 a, ohne Foto: Web-Freigabe fuer das Portraet fehlt) */}
+      <section className="section-white border-b border-slate-100">
+        <div className="container-main">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-gold-500 font-semibold text-sm uppercase tracking-widest mb-2">{a.person_label}</p>
+            <h2 className="text-2xl font-bold text-navy-900">{a.person_name}</h2>
+            <p className="text-slate-500 text-sm mb-4">{a.person_role}</p>
+            <p className="text-slate-600 leading-relaxed mb-3">{a.person_p1}</p>
+            <p className="text-slate-600 leading-relaxed">{a.person_p2}</p>
+          </div>
+        </div>
+      </section>
+
       {/* Who / What */}
       <section className="section-white">
         <div className="container-main">
@@ -92,7 +105,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-white mb-4">{a.cta_h2}</h2>
           <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">{a.cta_sub}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="btn-primary">{a.cta_primary}</Link>
+            <a href="https://calendly.com/peakcare-peak-care/ai-readiness-call-peak-care-ai" target="_blank" rel="noopener noreferrer" className="btn-primary">{a.cta_primary}</a>
             <Link to="/services" className="btn-outline">{a.cta_secondary}</Link>
           </div>
         </div>

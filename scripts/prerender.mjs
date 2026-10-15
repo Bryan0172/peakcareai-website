@@ -56,7 +56,7 @@ function getRoutes() {
   ;['/services', '/hospitality', '/corporate-ai', '/about', '/contact', '/webinar',
     '/assessment', '/hotel-ai-readiness-check',
     '/ai-offer-assistant-hotels', '/privacy', '/imprint',
-    '/blog/eu-ai-act-hotels-2026', '/blog/shadow-ai-hotels',
+    '/blog', '/blog/eu-ai-act-hotels-2026', '/blog/shadow-ai-hotels',
     '/blog/eu-ai-act-hotel-checklist-2026', '/blog/hotel-ai-vendor-questions',
     // NICHT: /blog/hotel-staffing-crisis-ai-solutions + /blog/hotel-tech-stack-ai-integration
     // — Komponenten existieren, sind aber NICHT im Router verdrahtet → würden Home-Duplikate
