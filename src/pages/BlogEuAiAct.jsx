@@ -6,22 +6,23 @@ export default function BlogEuAiAct() {
     <>
       <SEO
         lang="en"
-        title="EU AI Act Article 50: What Hotels Must Disclose — In Force Since 2 August 2026 | peakcareai.com"
-        description="Since 2 August 2026, the EU AI Act's Article 50 transparency obligations have applied to hotels — the rules that cover guest-facing AI such as chatbots and automated guest communication. Here's what to do now."
-        ogTitle="EU AI Act Article 50: What Hotels Must Disclose — In Force Since 2 August 2026"
+        title="EU AI Act Article 50 for Hotels: Who Must Disclose What — and What Applies to Every Hotel | peakcareai.com"
+        description="Since 2 August 2026, Article 50 of the EU AI Act requires that people can tell when they are talking to an AI system. That duty sits mainly with the provider of the system, which can be the hotel itself. What applies to every hotel that uses AI is AI literacy (Article 4, since 2 February 2025). Revenue management and pricing tools are not an Article 50 case."
+        ogTitle="EU AI Act Article 50 for Hotels: Who Must Disclose What — and What Applies to Every Hotel"
         ogDescription="Practical guide for hotel GMs: which AI systems are affected, what needs documentation, and the 5 steps to compliance."
         type="article"
         canonical="https://peakcareai.com/blog/eu-ai-act-hotels-2026"
         jsonLd={[{
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "EU AI Act Article 50: What Hotels Must Disclose — In Force Since 2 August 2026",
+          "headline": "EU AI Act Article 50 for Hotels: Who Must Disclose What — and What Applies to Every Hotel",
           "inLanguage": "en",
           "author": { "@type": "Person", "name": "Andreas Donner", "url": "https://peakcareai.com/about" },
           "publisher": { "@type": "Organization", "name": "Peak Care AI", "url": "https://peakcareai.com" },
           "datePublished": "2026-05-02",
-          "keywords": "EU AI Act hotels, EU AI Act hotel compliance, hotel AI regulation 2026, EU AI Act Article 50 August 2026, hotel chatbot compliance, EU AI Act hospitality, shadow AI hotel, hotel revenue management AI Act",
-          "description": "Since 2 August 2026, the EU AI Act's Article 50 transparency obligations have applied to hotels using revenue management systems, chatbots, and automated guest communication. Practical 5-step compliance guide for hotel GMs without legal jargon."
+          "dateModified": "2026-10-16",
+          "keywords": "EU AI Act hotels, EU AI Act hotel compliance, hotel AI regulation 2026, EU AI Act Article 50 August 2026, hotel chatbot compliance, EU AI Act hospitality, shadow AI hotel",
+          "description": "Since 2 August 2026, Article 50 of the EU AI Act requires that people can tell when they are talking to an AI system. That duty sits mainly with the provider of the system, which can be the hotel itself. What applies to every hotel that uses AI is AI literacy (Article 4, since 2 February 2025). Revenue management and pricing tools are not an Article 50 case."
         }, {
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -31,7 +32,7 @@ export default function BlogEuAiAct() {
               "name": "Does the EU AI Act apply to hotels?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. The EU AI Act (Regulation EU 2024/1689) applies to any hotel in the EU that uses AI systems — including revenue management software that sets or recommends prices automatically, chatbots or automated guest messaging tools, AI-powered review response systems, and any tool your staff uses informally (shadow AI). If you use any of these, the regulation applies to your property."
+                "text": "Yes, if the hotel uses AI systems in the EU, it is a \"deployer\" under the Act. For most hotels two things apply today: providers and deployers must take measures to support the AI literacy of the staff who use AI (Article 4, applicable since 2 February 2025), and guest-facing AI assistants must disclose that they are AI (Article 50(1)). The disclosure is the provider's duty. A hotel that runs an assistant under its own name may itself be the provider. Revenue management or pricing software does not trigger Article 50."
               }
             },
             {
@@ -39,7 +40,7 @@ export default function BlogEuAiAct() {
               "name": "What is the EU AI Act compliance deadline for hotels?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Since 2 August 2026, Article 50 of the EU AI Act has required transparency for guest-facing AI systems — chatbots and automated guest communication must make clear that guests are interacting with a machine. High-risk obligations do not apply here: standalone high-risk duties only start on 2 December 2027, and hotel operations are not listed as a high-risk category. What matters is documented, disclosed transparency, not a fines-driven deadline."
+                "text": "Since 2 August 2026, Article 50 has applied. Article 50(1) requires providers of AI systems that interact directly with people to make clear that the person is dealing with an AI, unless this is obvious. Deployers have their own Article 50 duties only in specific cases: emotion recognition or biometric categorisation (Article 50(3)), deepfakes, and AI-generated text published to inform the public on matters of public interest (Article 50(4)). Standalone high-risk duties under Annex III start on 2 December 2027 (Digital Omnibus); typical hotel tools are not in that category."
               }
             },
             {
@@ -47,7 +48,7 @@ export default function BlogEuAiAct() {
               "name": "Which AI systems in a hotel are covered by the EU AI Act?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The following hotel systems typically fall under the EU AI Act: revenue management software (limited risk), chatbots and virtual assistants (limited risk — requires guest transparency disclosure), automated guest communication and messaging tools (limited risk), AI-driven upsell and pricing tools (limited risk), and any AI that makes or supports decisions about individual guests or staff (potentially high risk). Shadow AI — tools used by staff without formal approval — also creates obligations because it means you cannot document what AI your hotel is running."
+                "text": "Typical hotel systems and where they sit: chat or voice assistants that guests talk to directly — Article 50(1) disclosure, a duty of the provider (the hotel, if the assistant runs under its own name). Revenue management, pricing and upsell tools — no Article 50 duty; GDPR applies to guest data. Drafts for guest messages or review replies that a person reviews and sends — no direct AI interaction with the guest, so normally no Article 50 duty. Tools used to recruit, select or evaluate staff — can be high-risk under Annex III (employment). For all of them, AI literacy (Article 4) applies to the staff who use them."
               }
             },
             {
@@ -63,7 +64,7 @@ export default function BlogEuAiAct() {
               "name": "What are the EU AI Act fines for hotels?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "High-risk obligations do not apply to typical hotel AI use — following the Digital Omnibus, standalone high-risk duties for Annex III systems start on 2 December 2027, and hotel operations are not listed in Annex III at all. What has applied since 2 August 2026 is Article 50 transparency: guests must be able to tell when they are interacting with AI. The more immediate risk for most hotels is not a fine but audit exposure: a formal inquiry triggered by a guest complaint would require documentation that, if it does not exist, creates significant legal and reputational risk. The cost of documentation done proactively is a fraction of the cost of documentation produced under regulatory pressure."
+                "text": "High-risk obligations do not apply to typical hotel AI use: under the Digital Omnibus, standalone Annex III duties start on 2 December 2027, and Annex III covers, among others, AI used in recruitment and staff management, not typical guest-facing or pricing tools. What applies today is AI literacy for providers and deployers (Article 4) and Article 50 transparency, mainly for providers of guest-facing assistants. The more immediate risk for most hotels is not a fine but audit exposure: a formal inquiry triggered by a guest complaint would require documentation that, if it does not exist, creates significant legal and reputational risk. The cost of documentation done proactively is a fraction of the cost of documentation produced under regulatory pressure."
               }
             },
             {
@@ -79,7 +80,7 @@ export default function BlogEuAiAct() {
               "name": "What if a hotel's revenue management or chatbot system comes from a vendor?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The EU AI Act distinguishes between AI developers (the vendor who built the system) and deployers (the hotel that uses it). As the deployer, you have obligations regardless of whether you built the system: you must document its use, classify its risk level, ensure guest-facing transparency disclosures are in place, and maintain oversight. Ask your vendor for their EU AI Act documentation — technical specifications and conformity assessment. A vendor that cannot provide this by mid-2026 is not prepared for the August deadline."
+                "text": "The EU AI Act distinguishes the provider (who develops the system or puts it into service under its own name) from the deployer (the hotel using it under its own authority). Whose duty the Article 50 disclosure is depends on whose name is on the assistant — see our guide \"Provider or deployer\". As a deployer you should still record what you use, take measures so that the staff using it are AI-literate (Article 4) and check that the vendor's AI disclosure is actually visible to guests. Formal human oversight under Article 14 is a requirement for high-risk systems only."
               }
             },
             {
@@ -87,7 +88,7 @@ export default function BlogEuAiAct() {
               "name": "What is shadow AI in hotels, and why does it matter for EU AI Act compliance?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Shadow AI refers to AI tools that hotel staff use without management approval or awareness — ChatGPT for drafting guest communications, AI translation tools found online, free pricing analysis tools. The EU AI Act requires that you know and document what AI systems your hotel is running. Shadow AI, by definition, means you cannot comply with this requirement. A Shadow AI inventory — a 30-minute team conversation followed by a structured list — is typically the first step in any hotel AI compliance process."
+                "text": "Shadow AI refers to AI tools that hotel staff use without management approval or awareness — ChatGPT for drafting guest communications, AI translation tools found online, free pricing analysis tools. Article 4 asks deployers to take measures to support the AI literacy of the staff who use AI, which is hard if management does not know which tools are in use. Shadow AI also creates GDPR exposure when guest data goes into external tools. A Shadow AI inventory — a 30-minute team conversation followed by a structured list — is typically the first step in any hotel AI compliance process."
               }
             }
           ]
@@ -115,7 +116,7 @@ export default function BlogEuAiAct() {
           <div className="flex flex-wrap items-center gap-4 text-sm text-white/40">
             <span>By <strong className="text-white/70">Andreas Donner</strong></span>
             <span>·</span>
-            <span>May 2026</span>
+            <span>Published May 2026 · Updated October 2026</span>
             <span>·</span>
             <span>8 min read</span>
           </div>
@@ -143,9 +144,11 @@ export default function BlogEuAiAct() {
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10 mb-4">What the EU AI Act actually says about hotels</h2>
               <p className="text-slate-600 leading-relaxed">
-                The EU AI Act (Regulation 2024/1689) entered into force in August 2024. Since 2 August 2026,
-                the <strong>Article 50 transparency obligations</strong> — covering guest-facing AI such as
-                chatbots and automated guest communication — have been enforceable.
+                The EU AI Act (Regulation (EU) 2024/1689) entered into force in August 2024. Since 2 February 2025,
+                providers and deployers of AI have had to take measures to support the AI literacy of their staff (Article 4).
+                Since 2 August 2026, the <strong>Article 50 transparency obligations</strong> have applied: a guest who talks to
+                an AI assistant must be able to tell that it is a machine. That duty sits with the provider of the assistant,
+                which can be the hotel itself.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 Limited-risk systems don't mean low-importance. They include any AI system that interacts
@@ -235,8 +238,8 @@ export default function BlogEuAiAct() {
               <p className="text-slate-600 leading-relaxed">
                 High-risk obligations do not apply here. Following the Digital Omnibus, standalone Annex III
                 high-risk duties start on 2 December 2027 — and hotel operations are not listed in Annex III
-                at all. What has applied since 2 August 2026 is transparency: guests must be able to tell when
-                they are interacting with AI.
+                at all. What applies today is AI literacy for providers and deployers (Article 4) and, for guest-facing
+                assistants, the Article 50 disclosure, mainly a duty of the provider.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 For most hotels, the more immediate risk is not a fine but the audit exposure.
@@ -270,7 +273,7 @@ export default function BlogEuAiAct() {
               <div className="divide-y divide-slate-100 border border-slate-100 rounded-xl overflow-hidden">
                 {[
                   { q: 'Does this apply to small or independent hotels?', a: 'Yes. The EU AI Act applies to any organisation operating in the EU that uses AI systems, regardless of size. Independent hotels are often less prepared than chains — and face the same obligations.' },
-                  { q: 'What if our revenue management system is provided by a vendor?', a: 'The Act covers both AI developers (the vendor) and deployers (you, the hotel). As the deployer, you have obligations around transparency and documentation even if you didn\'t build the system.' },
+                  { q: 'What if our revenue management system comes from a vendor?', a: 'Revenue management and pricing tools are not covered by Article 50. What matters for you as the deployer is AI literacy for the staff using it (Article 4) and GDPR for guest data. Ask the vendor how the system works and which data it uses.' },
                   { q: 'Is ChatGPT covered by the EU AI Act?', a: 'General-purpose AI models like ChatGPT fall under a separate framework within the Act. However, the way your staff uses them — particularly with guest data or operational data — may create additional obligations under GDPR and related regulations.' },
                   { q: 'Do we need a lawyer for this?', a: 'For the initial compliance baseline, typically no. The documentation steps outlined above can be completed by hotel management. Legal review becomes important if your property uses high-risk AI applications or if you receive a regulatory inquiry.' },
                 ].map((item, i) => (
@@ -306,6 +309,7 @@ export default function BlogEuAiAct() {
                 </div>
               </div>
 
+              <p className="mt-6 text-xs text-slate-400">Orientation, not legal advice. For a binding interpretation in an individual case, take legal advice.</p>
             </article>
 
             {/* Sidebar */}

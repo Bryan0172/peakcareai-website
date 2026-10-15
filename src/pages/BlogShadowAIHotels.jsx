@@ -19,6 +19,7 @@ export default function BlogShadowAIHotels() {
           "author": { "@type": "Person", "name": "Andreas Donner", "url": "https://peakcareai.com/about" },
           "publisher": { "@type": "Organization", "name": "Peak Care AI", "url": "https://peakcareai.com" },
           "datePublished": "2026-05-18",
+          "dateModified": "2026-10-16",
           "description": "Shadow AI im Hotelbetrieb: Was Mitarbeiter eigenständig nutzen, welche Risiken entstehen und drei pragmatische erste Schritte für Hotel-Manager."
         }, {
           "@context": "https://schema.org",
@@ -61,7 +62,7 @@ export default function BlogShadowAIHotels() {
             <span className="text-gold-400 text-sm">Shadow AI Guide</span>
           </div>
           <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest mb-5">
-            EU AI Act Artikel 50 · in Kraft seit 2. August 2026
+            EU AI Act Artikel 4 · KI-Kompetenz, gilt seit 2. Februar 2025
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-5">
             Shadow AI in Hotels:<br />
@@ -73,7 +74,7 @@ export default function BlogShadowAIHotels() {
           <div className="flex flex-wrap items-center gap-4 text-sm text-white/40">
             <span>Von <strong className="text-white/70">Andreas Donner</strong></span>
             <span>·</span>
-            <span>Mai 2026</span>
+            <span>Veröffentlicht Mai 2026 · aktualisiert Oktober 2026</span>
             <span>·</span>
             <span>7 Min. Lesezeit</span>
           </div>
@@ -150,8 +151,10 @@ export default function BlogShadowAIHotels() {
 
               <h2 className="text-2xl font-bold text-navy-900 mt-10 mb-4">Warum das jetzt relevant ist</h2>
               <p className="text-slate-600 leading-relaxed">
-                Seit dem 2. August 2026 gelten die Transparenzpflichten aus Artikel 50 des EU AI Act. Eine der Kernanforderungen betrifft die
-                Transparenz und Dokumentation von KI-Systemen, die in Unternehmen eingesetzt werden.
+                Seit dem 2. Februar 2025 verlangt Artikel 4 des EU AI Act von Anbietern und Betreibern von KI, Maßnahmen zu ergreifen, um die
+                KI-Kompetenz ihrer Mitarbeitenden zu fördern. Das setzt voraus, dass das Haus weiß, welche Tools im Einsatz sind. Seit dem
+                2. August 2026 kommen die Transparenzpflichten aus Artikel 50 hinzu. Sie betreffen vor allem die Anbieter von KI-Systemen,
+                etwa den Hinweis in einem Gäste-Chat, dass dort eine KI antwortet.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 Wenn Ihr Team KI-Tools nutzt — ob eingekauft oder eigenständig mitgebracht — und diese
@@ -240,7 +243,7 @@ export default function BlogShadowAIHotels() {
               <p className="text-slate-600 leading-relaxed">
                 Diese drei Schritte lösen das Thema nicht vollständig — aber sie verschieben die Position
                 von <em>"wir wissen es nicht"</em> zu <em>"wir haben einen Ueberblick"</em>.
-                Das ist der wesentliche Unterschied, seit die Artikel-50-Transparenzpflichten am 2. August 2026 in Kraft getreten sind.
+                Genau diesen Überblick braucht ein Haus, um die seit dem 2. Februar 2025 geltende Pflicht zur Förderung der KI-Kompetenz (Artikel 4) zu erfüllen.
               </p>
 
               {/* FAQ */}
@@ -293,6 +296,7 @@ export default function BlogShadowAIHotels() {
                 </div>
               </div>
 
+              <p className="mt-6 text-xs text-slate-400">Orientierung, keine Rechtsberatung.</p>
             </article>
 
             {/* Sidebar */}
@@ -322,7 +326,7 @@ export default function BlogShadowAIHotels() {
 
               <div className="bg-white border border-slate-200 rounded-2xl p-5 text-center">
                 <div className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Weiterführender Artikel</div>
-                <p className="text-navy-900 font-bold text-sm mb-3">EU AI Act Artikel 50: Was Hotels offenlegen müssen — in Kraft seit 2. August 2026</p>
+                <p className="text-navy-900 font-bold text-sm mb-3">EU AI Act Artikel 50 für Hotels: Wer was offenlegen muss</p>
                 <Link to="/blog/eu-ai-act-hotels-2026" className="block bg-navy-900 hover:bg-navy-700 text-white font-bold py-3 rounded-xl transition-colors text-sm">
                   Artikel lesen →
                 </Link>
