@@ -26,6 +26,10 @@ export function Privacy() {
             <p style={{ whiteSpace: 'pre-line' }}>{l.privacy_processors_p}</p>
             <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_retention_h}</h2>
             <p>{l.privacy_retention_p}</p>
+            <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_analytics_h}</h2>
+            <p>{l.privacy_analytics_p}</p>
+            <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_booking_h}</h2>
+            <p>{l.privacy_booking_p}</p>
             <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_rights_h}</h2>
             <p>{l.privacy_rights_p}</p>
             <h2 className="text-base font-bold text-navy-900 mt-6">{l.privacy_cookies_h}</h2>
