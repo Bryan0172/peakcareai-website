@@ -375,8 +375,8 @@ export default function Webinar() {
           <div className="text-center mt-8 pt-6 border-t border-slate-100">
             <p className="text-slate-500 text-sm">
               Questions?{' '}
-              <a href="mailto:kontakt@peakcareai.com" className="text-navy-700 font-semibold underline">
-                kontakt@peakcareai.com
+              <a href="mailto:kontakt.ki.hotel@gmail.com" className="text-navy-700 font-semibold underline">
+                kontakt.ki.hotel@gmail.com
               </a>
             </p>
           </div>
