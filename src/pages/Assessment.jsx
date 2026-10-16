@@ -239,8 +239,8 @@ export default function Assessment() {
                 </button>
                 <p className="text-slate-400 text-xs">
                   Questions?{' '}
-                  <a href="mailto:kontakt.ki.hotel@gmail.com" className="underline hover:text-navy-700">
-                    kontakt.ki.hotel@gmail.com
+                  <a href="mailto:kontakt@peakcareai.com" className="underline hover:text-navy-700">
+                    kontakt@peakcareai.com
                   </a>
                 </p>
               </div>
