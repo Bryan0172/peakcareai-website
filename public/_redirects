@@ -10,5 +10,8 @@
 # tote Links unauffindbar, und Google sah beliebig viele Dubletten der Startseite.
 # Alle 17 Router-Routen werden vorgerendert, echte Seiten sind also Dateien und
 # haben Vorrang vor dieser Regel.
+# 18.10.2026 (SEO/GEO, REQ-2026-10-18-PCAI-ALTE-ADRESSE-CONTACT-HTML-ZEIGT-LEERE-SEITE-OHNE-FORMULAR):
+# alte Adresse aus der Zeit vor dem Umbau lieferte die SPA-Huelle ohne Formular (Router kennt nur /contact).
+/contact.html    /contact    301!
 /webinar/eu-ai-act-for-hotels    /webinar    301!
 /*    /404.html    404
