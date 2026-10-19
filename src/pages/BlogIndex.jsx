@@ -5,6 +5,18 @@ import { useLang } from '../context/LanguageContext'
 const CAL = 'https://calendly.com/peakcare-peak-care/ai-readiness-call-peak-care-ai'
 
 const POSTS = [
+  { to: '/blog/branchenbriefing-2026-10-19', lang: 'DE', date: '2026-10-19',
+    title: 'Branchenbriefing 19. Oktober 2026',
+    de: 'Phishing mit Buchungsdaten, offizielle Sterne in KI-Antworten, erklärbare Preisempfehlungen. Auch auf Englisch und Bulgarisch.',
+    en: 'Phishing with booking data, official stars in AI answers, explainable pricing. Also in English and Bulgarian.' },
+  { to: '/blog/industry-briefing-2026-10-19', lang: 'EN', date: '2026-10-19',
+    title: 'Industry Briefing 19 October 2026',
+    de: 'Englische Fassung des Branchenbriefings vom 19. Oktober.',
+    en: 'Booking-data phishing, hotel stars in AI answers, Mews pricing beta and four checks for independent hotels.' },
+  { to: '/blog/branshov-obzor-2026-10-19', lang: 'BG', date: '2026-10-19',
+    title: 'Браншов обзор, 19 октомври 2026 г.',
+    de: 'Bulgarische Fassung des Branchenbriefings vom 19. Oktober.',
+    en: 'Bulgarian edition of the 19 October industry briefing.' },
   { to: '/blog/eu-ai-act-provider-or-deployer', lang: 'EN', date: '2026-09-30',
     title: 'EU AI Act for hotels: provider or deployer?',
     de: 'Wessen Pflicht ist der KI-Hinweis im Gäste-Chat? Ein praktischer Test zu Art. 3 und Art. 50.',
