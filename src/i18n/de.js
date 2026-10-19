@@ -52,6 +52,7 @@ const de = {
       trust: ['Meliá', 'Aldiana', 'Maritim', 'Thomas Cook', '25 Jahre internationale Hotel- und Bauprojekte'],
       cta_primary: 'Vertrauliches Gespräch anfragen',
       cta_secondary: 'Wie das Gespräch abläuft →',
+      cta_secondary_to: '/contact',
       microtext: '30 Minuten, vertraulich, ohne Verkaufspräsentation. Wir rechnen gemeinsam mit Ihren eigenen Zahlen aus, was ein Jahr Plattform-Provision Ihr Haus kostet.',
     },
 
@@ -122,7 +123,7 @@ const de = {
     services: {
       label: 'Leistungsbereiche',
       h2: 'Wie wir mit Hotels arbeiten.',
-      sub: 'Fünf Leistungsbereiche — entlang der Realität des Hotelbetriebs aufgebaut, nicht entlang von KI-Kategorien.',
+      sub: 'Leistungsbereiche, entlang der Realität des Hotelbetriebs aufgebaut, nicht entlang von KI-Kategorien.',
       cta: 'Alle Leistungsbereiche ansehen →',
       items: [
         { title: 'A. Hotel Operations & AI Assessment', text: 'Analyse von operativen Engpässen, bestehenden Tools, Gästeprozessen, Teamkommunikation und KI-Potenzial — der strukturierte Einstieg.' },
@@ -179,15 +180,25 @@ const de = {
       sub: 'Wir rechnen mit Ihnen aus, was ein Jahr Plattform-Provision kostet, und klären, welche Antworten ein KI-Assistent vorbereiten darf und welche bei einem Menschen bleiben. Was Sie daraus machen, entscheiden Sie. Preis für die Umsetzung auf Anfrage.',
       cta_primary: 'Vertrauliches Gespräch anfragen',
       cta_secondary: 'Wie das Gespräch abläuft →',
+      cta_secondary_to: '/contact',
     },
   },
 
   services: {
     meta_title: 'Hotel-KI-Leistungen — Direktbuchungen, Automatisierung & Gäste-Kommunikation | Peak Care AI',
-    meta_desc: 'Fünf Leistungsbereiche für unabhängige Hotels, kleine Hotelgruppen und Hospitality-Betreiber: Operations & AI Assessment, Gästekommunikation, Workflow-Automatisierung, AI Governance und Team Enablement.',
+    meta_desc: 'Acht Leistungsbereiche für unabhängige Hotels, kleine Hotelgruppen und Hospitality-Betreiber, von Operations & AI Assessment, Gästekommunikation, Workflow-Automatisierung, AI Governance und Team Enablement bis zur KI-Sichtbarkeit.',
     hero_label: 'Leistungsbereiche',
     hero_h1: 'Wie wir mit Hotels arbeiten.',
-    hero_sub: 'Fünf Leistungsbereiche — entlang der Realität des Hotelbetriebs aufgebaut, nicht entlang von KI-Kategorien. Die meisten Mandate beginnen mit A und wählen aus B–E je nach Druckpunkt.',
+    hero_sub: 'Acht Leistungsbereiche — entlang der Realität des Hotelbetriebs aufgebaut, nicht entlang von KI-Kategorien. Die meisten Mandate beginnen mit A und wählen aus B–H je nach Druckpunkt.',
+    process: {
+      label: 'Ablauf',
+      h2: 'Drei Schritte. Ohne Mehraufwand.',
+      steps: [
+        { title: 'Erstgespräch', text: '30 Minuten, keine Folien. Wir besprechen, wo der Druck liegt — im Betrieb, bei der Compliance oder bei beidem.' },
+        { title: 'Operative Bestandsaufnahme', text: 'Tools, Abläufe und Risiken erfassen. Klären, welche KI bereits im Einsatz ist und wie realistisches Potenzial für Ihr Haus aussieht.' },
+        { title: 'Strukturierter Umsetzungsfahrplan', text: 'Ein 90-Tage-Plan, nach Wirkung gereiht — zuerst das, was den Betrieb heute verbessert, danach das Schließen der Transparenzlücken nach Artikel 50, die seit dem 2. August 2026 gelten.' },
+      ],
+    },
     deliverables_heading: 'Was Sie erhalten',
     suited_label: 'Geeignet für',
     offer_more_link: 'Mehr zum KI-Angebotsassistenten →',

@@ -130,7 +130,7 @@ export default function Home() {
                 </svg>
               </a>
               <Link
-                to="/hotel-ai-readiness-check"
+                to={h.hero.cta_secondary_to || '/hotel-ai-readiness-check'}
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 hover:border-white/30 transition-colors duration-200 text-base backdrop-blur-sm"
               >
                 {h.hero.cta_secondary}
@@ -287,7 +287,7 @@ export default function Home() {
               </svg>
             </a>
             <Link
-              to="/hotel-ai-readiness-check"
+              to={h.cta_final.cta_secondary_to || '/hotel-ai-readiness-check'}
               className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 transition-colors text-base"
             >
               {h.cta_final.cta_secondary}

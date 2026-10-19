@@ -52,6 +52,7 @@ const en = {
       trust: ['Meliá', 'Aldiana', 'Maritim', 'Thomas Cook', '25 years of international hotel and construction projects'],
       cta_primary: 'Request a confidential conversation',
       cta_secondary: 'How the conversation works →',
+      cta_secondary_to: '/hotel-ai-readiness-check',
       microtext: '30 minutes, confidential, no pitch deck. Using your own figures, we work out together what a year of platform commission costs your house.',
     },
 
@@ -71,7 +72,7 @@ const en = {
     trust: {
       label: 'Step 2',
       h2: 'Then, get found before they even ask.',
-      body: "40% of travellers now plan trips with ChatGPT, Google AI Overviews and booking assistants. If AI can't read your hotel's website, it simply recommends someone else — and the guest who would have found you directly books through an OTA instead, at 15–18% commission. That's not a marketing problem. It's a visibility problem, and it's fixable.",
+      body: "If AI can't read your hotel's website, it simply recommends someone else — and the guest who would have found you directly books through an OTA instead, at 15–18% commission. That's not a marketing problem. It's a visibility problem, and it's fixable.",
       tagline: "The hotels showing up in AI answers today aren't necessarily the best ones — they're the machine-readable ones.",
     },
 
@@ -122,7 +123,7 @@ const en = {
     services: {
       label: 'Practice Areas',
       h2: 'How we work with hotels.',
-      sub: 'Five practice areas — designed around the realities of hotel operations, not around AI categories.',
+      sub: 'Practice areas designed around the realities of hotel operations, not around AI categories.',
       cta: 'View All Practice Areas →',
       items: [
         { title: 'A. Hotel Operations & AI Assessment', text: 'Analysis of operational bottlenecks, existing tools, guest processes, team communication and AI potential — the structured starting point.' },
@@ -179,15 +180,25 @@ const en = {
       sub: 'Together we work out what a year of platform commission costs, and settle which replies an AI assistant may prepare and which stay with a person. What you do with it is yours to decide. Pricing for implementation on request.',
       cta_primary: 'Request a confidential conversation',
       cta_secondary: 'How the conversation works →',
+      cta_secondary_to: '/hotel-ai-readiness-check',
     },
   },
 
   services: {
     meta_title: 'Hotel AI Services — Direct Bookings, Automation & Guest Comms | Peak Care AI',
-    meta_desc: 'Five practice areas for independent hotels, small hotel groups and hospitality operators: operations and AI assessment, guest communication, internal workflow automation, AI governance and team enablement.',
+    meta_desc: 'Eight practice areas for independent hotels, small hotel groups and hospitality operators, from operations and AI assessment, guest communication, internal workflow automation, AI governance and team enablement to AI search visibility.',
     hero_label: 'Practice Areas',
     hero_h1: 'How we work with hotels.',
-    hero_sub: 'Five practice areas — designed around the realities of hotel operations, not around AI categories. Most engagements begin with A and select from B–E based on where pressure sits.',
+    hero_sub: 'Eight practice areas — designed around the realities of hotel operations, not around AI categories. Most engagements begin with A and select from B–H based on where pressure sits.',
+    process: {
+      label: 'How it works',
+      h2: 'Three steps. No overhead.',
+      steps: [
+        { title: 'Initial conversation', text: '30 minutes, no slides. We talk through where the pressure sits — operations, compliance, or both.' },
+        { title: 'Operational assessment', text: 'Map tools, workflows, and exposure. Identify what AI is already in use and what realistic potential looks like for your property.' },
+        { title: 'Structured implementation roadmap', text: 'A 90-day plan, sequenced by impact — starting with what improves operations today, then closing the Article 50 transparency gaps that have applied since 2 August 2026.' },
+      ],
+    },
     deliverables_heading: 'What you receive',
     suited_label: 'Suited for',
     offer_more_link: 'More on the AI Offer Assistant →',

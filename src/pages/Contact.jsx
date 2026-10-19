@@ -201,18 +201,18 @@ export default function Contact() {
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.name} *</label>
+                      <label htmlFor="contact-name" className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.name} *</label>
                       <input
-                        type="text" name="name" required
+                        id="contact-name" type="text" name="name" required
                         value={form.name} onChange={handleChange}
                         className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                         placeholder={c.fields.name_ph}
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.company} *</label>
+                      <label htmlFor="contact-company" className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.company} *</label>
                       <input
-                        type="text" name="company" required
+                        id="contact-company" type="text" name="company" required
                         value={form.company} onChange={handleChange}
                         className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                         placeholder={c.fields.company_ph}
@@ -222,18 +222,18 @@ export default function Contact() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.email} *</label>
+                      <label htmlFor="contact-email" className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.email} *</label>
                       <input
-                        type="email" name="email" required
+                        id="contact-email" type="email" name="email" required
                         value={form.email} onChange={handleChange}
                         className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                         placeholder={c.fields.email_ph}
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.role}</label>
+                      <label htmlFor="contact-role" className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.role}</label>
                       <input
-                        type="text" name="role"
+                        id="contact-role" type="text" name="role"
                         value={form.role} onChange={handleChange}
                         className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                         placeholder={c.fields.role_ph}
@@ -242,9 +242,9 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.message} *</label>
+                    <label htmlFor="contact-message" className="block text-sm font-semibold text-navy-800 mb-1.5">{c.fields.message} *</label>
                     <textarea
-                      name="message" required rows={5}
+                      id="contact-message" name="message" required rows={5}
                       value={form.message} onChange={handleChange}
                       className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent resize-none"
                       placeholder={c.fields.message_ph}

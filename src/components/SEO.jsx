@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { useLang } from '../context/LanguageContext'
 
 // Dependency-freie, versions-unabhängige SEO-Komponente.
@@ -27,6 +28,13 @@ export default function SEO({
   // `lang`-Prop ueberschreibt den Context-Wert fuer Seiten mit fester Sprache.
   const { lang: contextLang } = useLang() || {}
   const lang = langOverride || contextLang
+  // Fix 19.10.2026 (SEO/GEO, dot-Befund): viele Seiten uebergeben keinen `canonical`-Prop.
+  // Bei Client-Navigation blieben Canonical und og:url dann auf dem Wert der vorherigen Seite
+  // (meist der Startseite) stehen. Fallback: Self-Canonical aus dem aktuellen Pfad, non-slash,
+  // gleiches Schema wie scripts/prerender.mjs.
+  const { pathname } = useLocation()
+  const selfCanonical = 'https://peakcareai.com' + (pathname === '/' ? '/' : pathname.replace(/\/+$/, ''))
+  const canonicalUrl = canonical || selfCanonical
 
   useEffect(() => {
     if (lang) document.documentElement.lang = lang
@@ -44,10 +52,8 @@ export default function SEO({
     if (keywords) setMeta('name', 'keywords', keywords)
     setMeta('property', 'og:type', type)
     if (siteName) setMeta('property', 'og:site_name', siteName)
-    if (canonical) {
-      setMeta('property', 'og:url', canonical)
-      setLink('canonical', canonical)
-    }
+    setMeta('property', 'og:url', canonicalUrl)
+    setLink('canonical', canonicalUrl)
     if (image) {
       setMeta('property', 'og:image', image)
     }
@@ -62,7 +68,7 @@ export default function SEO({
       s.textContent = JSON.stringify(obj)
       document.head.appendChild(s)
     })
-  }, [title, description, keywords, canonical, type, siteName, image, ogTitle, ogDescription, JSON.stringify(jsonLd)])
+  }, [title, description, keywords, canonicalUrl, type, siteName, image, ogTitle, ogDescription, JSON.stringify(jsonLd)])
 
   return null
 }

@@ -78,35 +78,19 @@ export default function Services() {
       <section className="section-light py-20">
         <div className="container-main">
           <div className="text-center mb-12">
-            <p className="text-gold-500 font-semibold text-sm uppercase tracking-widest mb-3">How it works</p>
-            <h2 className="section-heading">Three steps. No overhead.</h2>
+            <p className="text-gold-500 font-semibold text-sm uppercase tracking-widest mb-3">{s.process.label}</p>
+            <h2 className="section-heading">{s.process.h2}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-
-            <div className="flex gap-5 items-start">
-              <div className="shrink-0 w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-bold text-sm flex items-center justify-center">1</div>
-              <div>
-                <h3 className="font-bold text-navy-900 mb-2">Initial conversation</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">30 minutes, no slides. We talk through where the pressure sits — operations, compliance, or both.</p>
+            {s.process.steps.map((step, i) => (
+              <div key={step.title} className="flex gap-5 items-start">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-bold text-sm flex items-center justify-center">{i + 1}</div>
+                <div>
+                  <h3 className="font-bold text-navy-900 mb-2">{step.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">{step.text}</p>
+                </div>
               </div>
-            </div>
-
-            <div className="flex gap-5 items-start">
-              <div className="shrink-0 w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-bold text-sm flex items-center justify-center">2</div>
-              <div>
-                <h3 className="font-bold text-navy-900 mb-2">Operational assessment</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">Map tools, workflows, and exposure. Identify what AI is already in use and what realistic potential looks like for your property.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-5 items-start">
-              <div className="shrink-0 w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-bold text-sm flex items-center justify-center">3</div>
-              <div>
-                <h3 className="font-bold text-navy-900 mb-2">Structured implementation roadmap</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">A 90-day plan, sequenced by impact — starting with what improves operations today, then closing the Article 50 transparency gaps that have applied since 2 August 2026.</p>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </section>
