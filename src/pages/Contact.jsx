@@ -186,7 +186,7 @@ export default function Contact() {
                   <p className="text-slate-500 leading-relaxed">{c.success_p}</p>
                 </div>
               ) : (
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className="space-y-5">
+                <form name="contact" method="POST" onSubmit={handleSubmit} className="space-y-5">
                   <input type="hidden" name="form-name" value="contact" />
                   {/* Honeypot (03.09.2026, A386-SEO-Muster + REQ-2026-09-03-DREI-KOMPLETT-LEERE-
                       FORMULAR-EINSENDUNGEN): unsichtbar für Menschen, Bots füllen jedes Feld blind
@@ -196,6 +196,9 @@ export default function Contact() {
                       (bestätigt: drei leere Einsendungen 03.09. 05:05Z, Betreff "Form submission
                       from contact form:" = Netlifys eigene Vorlage, nicht meine). Das serverseitige
                       Feld unten schützt weiterhin den AJAX-Pfad über lead.js. */}
+                  {/* A744 (24.10.2026): `data-netlify`/`data-netlify-honeypot` am Formular entfernt und das Netlify-
+                      Formular `contact` im Projekt gelöscht, Formularerkennung aus. Grund: darüber nahm Netlify
+                      tokenlose Einsendungen an Turnstile und lead.cjs vorbei an. Einzige Zustellung: lead.cjs. */}
                   <p className="hidden" aria-hidden="true">
                     <label>Leave this field blank<input name="bot-field" tabIndex={-1} autoComplete="off" /></label>
                   </p>
