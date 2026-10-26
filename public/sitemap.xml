@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://peakcareai.com/blog</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -117,5 +117,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://peakcareai.com/blog/branchenbriefing-2026-10-26</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://peakcareai.com/blog/industry-briefing-2026-10-26</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://peakcareai.com/blog/branshov-obzor-2026-10-26</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-10-26</lastmod>
   </url>
 </urlset>

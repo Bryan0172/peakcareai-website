@@ -20,6 +20,7 @@ import HotelAIReadinessCheck from './pages/HotelAIReadinessCheck'
 import AiOfferAssistant from './pages/AiOfferAssistant'
 import BlogIndex from './pages/BlogIndex'
 import BlogIndustryBriefing20261019 from './pages/BlogIndustryBriefing20261019'
+import BlogIndustryBriefing20261026 from './pages/BlogIndustryBriefing20261026'
 
 export default function App() {
   return (
@@ -46,6 +47,9 @@ export default function App() {
               <Route path="/blog/branchenbriefing-2026-10-19" element={<BlogIndustryBriefing20261019 lang="de" />} />
               <Route path="/blog/industry-briefing-2026-10-19" element={<BlogIndustryBriefing20261019 lang="en" />} />
               <Route path="/blog/branshov-obzor-2026-10-19" element={<BlogIndustryBriefing20261019 lang="bg" />} />
+              <Route path="/blog/branchenbriefing-2026-10-26" element={<BlogIndustryBriefing20261026 lang="de" />} />
+              <Route path="/blog/industry-briefing-2026-10-26" element={<BlogIndustryBriefing20261026 lang="en" />} />
+              <Route path="/blog/branshov-obzor-2026-10-26" element={<BlogIndustryBriefing20261026 lang="bg" />} />
               <Route path="/hotel-ai-readiness-check" element={<HotelAIReadinessCheck />} />
               <Route path="/ai-offer-assistant-hotels" element={<AiOfferAssistant />} />
               <Route path="/privacy" element={<Privacy />} />
