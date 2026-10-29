@@ -426,7 +426,7 @@ const de = {
 
   about: {
     meta_title: 'Über uns | Peak Care AI',
-    meta_desc: 'Peak Care AI hilft unabhängigen Hotels, mehr ihrer eigenen Buchungen zu behalten und weniger Gästeanfragen zu verlieren, mit klar geregelter menschlicher Verantwortung für jede KI-Antwort.',
+    meta_desc: 'Wer Peak Care AI führt: Andreas Donner, Dipl.-Ing., 25 Jahre Hotel- und Bauprojekte für Meliá, Aldiana, Maritim und Thomas Cook. Jedes Mandat persönlich.',
     hero_label: 'Über uns',
     hero_h1_line1: 'KI für unabhängige Hotels,',
     hero_h1_line2: 'mit klarer Verantwortung.',
@@ -497,6 +497,7 @@ const de = {
   },
 
   legal: {
+    privacy_meta_desc: 'Datenschutzerklärung von Peak Care AI: welche Daten wir verarbeiten, auf welcher Rechtsgrundlage, mit welchen Dienstleistern und welche Rechte Sie haben.',
     privacy_title: 'Datenschutzerklärung',
     privacy_updated: 'Stand: Oktober 2026',
     privacy_p1: 'Diese Website wird von Peak Care AI (eine Marke der „PEAK CARE" ЕДПК, Bulgarien) betrieben. Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist die im Impressum genannte Gesellschaft.',
@@ -516,6 +517,7 @@ const de = {
     privacy_rights_p: 'Sie haben das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie auf Datenübertragbarkeit und Widerspruch. Um diese Rechte auszuüben, kontaktieren Sie uns unter: kontakt.ki.hotel@gmail.com. Ihnen steht zudem ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu, insbesondere der Kommission für den Schutz personenbezogener Daten (Bulgarien, cpdp.bg).',
     privacy_cookies_h: 'Cookies und Speicherzugriffe',
     privacy_cookies_p: 'Ohne Ihre Einwilligung setzt diese Website keine Analyse- oder Marketing-Cookies. Technisch notwendig sind die Speicherung Ihrer Sprach- und Einwilligungswahl in Ihrem Browser (localStorage) und die Signale, die Cloudflare Turnstile zum Schutz des Formulars benötigt. Analyse-Cookies setzt nur Google Analytics, und nur nach Ihrer Einwilligung (siehe oben). Schriften werden von Google Fonts (Google Ireland Limited) und einzelne Bilder von Unsplash geladen. Dabei wird Ihre IP-Adresse an diese Anbieter übermittelt.',
+    imprint_meta_desc: 'Impressum von Peak Care AI: Anbieterkennzeichnung, Kontakt und verantwortliche Stelle nach den gesetzlichen Pflichtangaben.',
     imprint_title: 'Impressum',
     imprint_placeholder: 'Hinweis: Dies ist ein Platzhalter. Vollständige Angaben sind vom Website-Betreiber vor dem Go-live einzufügen.',
     imprint_resp_h: 'Verantwortlich für diese Website',

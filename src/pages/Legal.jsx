@@ -7,7 +7,7 @@ export function Privacy() {
 
   return (
     <>
-      <SEO title={`${l.privacy_title} | Peak Care AI`} />
+      <SEO title={`${l.privacy_title} | Peak Care AI`} description={l.privacy_meta_desc} />
       <section className="bg-navy-900 py-14">
         <div className="container-main">
           <h1 className="text-3xl font-bold text-white">{l.privacy_title}</h1>
@@ -47,7 +47,7 @@ export function Imprint() {
 
   return (
     <>
-      <SEO title={`${l.imprint_title} | Peak Care AI`} />
+      <SEO title={`${l.imprint_title} | Peak Care AI`} description={l.imprint_meta_desc} />
       <section className="bg-navy-900 py-14">
         <div className="container-main">
           <h1 className="text-3xl font-bold text-white">{l.imprint_title}</h1>

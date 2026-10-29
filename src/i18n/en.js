@@ -426,7 +426,7 @@ const en = {
 
   about: {
     meta_title: 'About | Peak Care AI',
-    meta_desc: 'Peak Care AI helps independent hotels keep more of their own bookings and lose fewer guest enquiries, with clearly assigned human responsibility for every AI reply.',
+    meta_desc: 'Who leads Peak Care AI: Andreas Donner, Dipl.-Ing., 25 years of hotel and construction projects for Meliá, Aldiana, Maritim and Thomas Cook. Every mandate in person.',
     hero_label: 'About',
     hero_h1_line1: 'AI for independent hotels,',
     hero_h1_line2: 'with clear responsibility.',
@@ -497,6 +497,7 @@ const en = {
   },
 
   legal: {
+    privacy_meta_desc: 'Peak Care AI privacy policy: which data we process, on what legal basis, which service providers are involved and what rights you have.',
     privacy_title: 'Privacy Policy',
     privacy_updated: 'Last updated: October 2026',
     privacy_p1: 'This website is operated by Peak Care AI (a brand of "PEAK CARE" EDPK, Bulgaria). The company named in the Imprint is the controller under the General Data Protection Regulation (GDPR).',
@@ -516,6 +517,7 @@ const en = {
     privacy_rights_p: 'You have the right to access, rectify, erase, or restrict the processing of your personal data, as well as the right to data portability and objection. To exercise these rights, contact us at: kontakt.ki.hotel@gmail.com. You also have the right to lodge a complaint with a data protection supervisory authority, in particular the Bulgarian Commission for Personal Data Protection (cpdp.bg).',
     privacy_cookies_h: 'Cookies and storage access',
     privacy_cookies_p: 'Without your consent, this website sets no analytics or marketing cookies. Technically necessary are storing your language and consent choice in your browser (localStorage) and the signals Cloudflare Turnstile needs to protect the form. Analytics cookies are set only by Google Analytics, and only after your consent (see above). Fonts are loaded from Google Fonts (Google Ireland Limited) and some images from Unsplash. Your IP address is transmitted to these providers when this happens.',
+    imprint_meta_desc: 'Peak Care AI imprint: provider identification, contact details and the responsible entity as required by law.',
     imprint_title: 'Imprint',
     imprint_placeholder: 'Note: This is a placeholder. Complete legal details must be inserted by the website operator before go-live.',
     imprint_resp_h: 'Responsible for this website',
