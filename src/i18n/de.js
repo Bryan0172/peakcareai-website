@@ -521,7 +521,7 @@ const de = {
     imprint_title: 'Impressum',
     imprint_placeholder: 'Hinweis: Dies ist ein Platzhalter. Vollständige Angaben sind vom Website-Betreiber vor dem Go-live einzufügen.',
     imprint_resp_h: 'Verantwortlich für diese Website',
-    imprint_resp_p: 'Peak Care AI — eine Marke der „PEAK CARE" ЕДПК\nСтрагите 8, бл. D, ет. 3, гр. Банско 2770, Bulgarien\nUIC / ЕИК: 208465067\nUSt-IdNr. (ДДС №): BG208465067\nRechtsform: Einpersonengesellschaft mit variablem Kapital (ЕДПК)\nGeschäftsführer (zeichnungsberechtigt): Mathias Andreas Donner\nKontakt: kontakt.ki.hotel@gmail.com',
+    imprint_resp_p: 'Peak Care AI — eine Marke der „PEAK CARE" ЕДПК\nСтрагите 8, бл. D, ет. 3, ап. 39, гр. Банско 2770, Bulgarien\nUIC / ЕИК: 208465067\nRechtsform: Einpersonengesellschaft mit variablem Kapital (ЕДПК)\nGeschäftsführer (zeichnungsberechtigt): Mathias Andreas Donner\nKontakt: kontakt.ki.hotel@gmail.com',
     imprint_disc_h: 'Haftungsausschluss',
     imprint_disc_p: 'Die Inhalte dieser Website wurden mit Sorgfalt erstellt. Peak Care EDPK übernimmt keine Haftung für die Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Informationen.',
   },

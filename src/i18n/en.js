@@ -521,7 +521,7 @@ const en = {
     imprint_title: 'Imprint',
     imprint_placeholder: 'Note: This is a placeholder. Complete legal details must be inserted by the website operator before go-live.',
     imprint_resp_h: 'Responsible for this website',
-    imprint_resp_p: 'Peak Care AI — a brand of "PEAK CARE" EDPK\nStragite 8, bl. D, fl. 3, 2770 Bansko, Bulgaria\nUIC: 208465067\nVAT ID: BG208465067\nLegal form: Single-person company with variable capital (EDPK)\nManaging director (authorised signatory): Mathias Andreas Donner\nContact: kontakt.ki.hotel@gmail.com',
+    imprint_resp_p: 'Peak Care AI — a brand of "PEAK CARE" EDPK\nStragite 8, bl. D, fl. 3, ap. 39, 2770 Bansko, Bulgaria\nUIC: 208465067\nLegal form: Single-person company with variable capital (EDPK)\nManaging director (authorised signatory): Mathias Andreas Donner\nContact: kontakt.ki.hotel@gmail.com',
     imprint_disc_h: 'Disclaimer',
     imprint_disc_p: 'The content of this website has been prepared with care. Peak Care EDPK accepts no liability for the accuracy, completeness or timeliness of the information provided.',
   },
