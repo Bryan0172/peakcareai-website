@@ -180,7 +180,7 @@
     </style>
     <div id="pcai-consent" role="dialog" aria-live="polite" aria-label="Cookie consent">
       <div class="pcai-in">
-        <p>We use cookies for anonymous statistics (Google Analytics) to improve our website &mdash; only with your consent. Essential functions are unaffected. More in our <a href="/privacy">Privacy Policy</a>.</p>
+        <p id="pcai-text">We use cookies for anonymous statistics (Google Analytics) to improve our website &mdash; only with your consent. Essential functions are unaffected. More in our <a href="/privacy">Privacy Policy</a>.</p>
         <div class="pcai-btns">
           <button class="pcai-no" id="pcai-no" type="button">Decline</button>
           <button class="pcai-ok" id="pcai-ok" type="button">Accept</button>
@@ -193,7 +193,21 @@
         var el=document.getElementById('pcai-consent');
         if(!el)return;
         var stored=null; try{stored=localStorage.getItem('pcai_consent');}catch(e){}
-        if(!stored){el.classList.add('pcai-show');}
+        if(!stored){el.classList.add('pcai-show');}else{el.classList.remove('pcai-show');} // 01.11.2026: Prerender schreibt pcai-show fest ins HTML
+        // Sprache folgt <html lang> (SEO.jsx setzt es, auch beim Sprachwechsel); Texte DE/EN (01.11.2026, PKAI-01)
+        var L={de:{t:'Wir verwenden Cookies für anonyme Statistik (Google Analytics), um unsere Website zu verbessern — nur mit Ihrer Einwilligung. Notwendige Funktionen bleiben davon unberührt. Mehr in unserer ',l:'Datenschutzerklärung',n:'Ablehnen',o:'Akzeptieren',a:'Cookie-Einwilligung'},
+               en:{t:'We use cookies for anonymous statistics (Google Analytics) to improve our website — only with your consent. Essential functions are unaffected. More in our ',l:'Privacy Policy',n:'Decline',o:'Accept',a:'Cookie consent'}};
+        function applyLang(){
+          var k=(document.documentElement.getAttribute('lang')||'en').slice(0,2); var c=L[k]||L.en;
+          var tx=document.getElementById('pcai-text'); if(!tx)return;
+          tx.innerHTML=''; tx.appendChild(document.createTextNode(c.t));
+          var a=document.createElement('a'); a.href='/privacy'; a.textContent=c.l; tx.appendChild(a); tx.appendChild(document.createTextNode('.'));
+          var n=document.getElementById('pcai-no'), o=document.getElementById('pcai-ok'); if(n)n.textContent=c.n; if(o)o.textContent=c.o; el.setAttribute('aria-label',c.a);
+        }
+        applyLang();
+        try{new MutationObserver(applyLang).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});}catch(e){}
+        // Widerruf (PKAI-03): Footer-Link oeffnet den Banner erneut; neue Wahl ueberschreibt die gespeicherte
+        window.pcaiOpenConsent=function(){el.classList.add('pcai-show');};
         function choose(v){
           try{localStorage.setItem('pcai_consent',v);}catch(e){}
           gtag('consent','update',{'analytics_storage': v==='granted'?'granted':'denied'});

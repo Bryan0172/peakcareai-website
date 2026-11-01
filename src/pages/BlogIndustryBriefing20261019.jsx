@@ -127,6 +127,7 @@ export default function BlogIndustryBriefing20261019({ lang }) {
     <>
       <SEO
         lang={lang}
+        alternates={[...Object.keys(BRIEFING_ROUTES).map((l) => ({ hreflang: l, href: 'https://peakcareai.com' + BRIEFING_ROUTES[l] })), { hreflang: 'x-default', href: 'https://peakcareai.com' + BRIEFING_ROUTES.en }]}
         title={t.seoTitle}
         description={t.desc}
         type="article"

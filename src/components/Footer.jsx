@@ -58,6 +58,15 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <button
+                  type="button"
+                  onClick={() => { if (typeof window !== 'undefined' && window.pcaiOpenConsent) window.pcaiOpenConsent() }}
+                  className="text-sm text-white/55 hover:text-gold-400 transition-colors duration-200 text-left"
+                >
+                  {f.cookie_settings}
+                </button>
+              </li>
             </ul>
           </div>
         </div>

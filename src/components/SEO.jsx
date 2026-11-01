@@ -9,7 +9,7 @@ import { useLang } from '../context/LanguageContext'
 // Googlebot rendert JS und übernimmt diese Werte. Wird wie <Helmet> im JSX platziert, rendert null.
 export default function SEO({
   title, description, keywords, canonical, type = 'website',
-  siteName, image, ogTitle, ogDescription, jsonLd, lang: langOverride,
+  siteName, image, ogTitle, ogDescription, jsonLd, lang: langOverride, alternates,
 }) {
   // Fix 03.09.2026 (SEO/GEO, REQ-2026-07-28-BC-PRIVATE-MARKETS-FIX-..., Punkt 1 -- selbe
   // Fehlerklasse+Loesung wie peak-care-neuclaude Commit b8bbe6f, nur umgekehrtes Vorzeichen:
@@ -54,6 +54,18 @@ export default function SEO({
     if (siteName) setMeta('property', 'og:site_name', siteName)
     setMeta('property', 'og:url', canonicalUrl)
     setLink('canonical', canonicalUrl)
+    // hreflang-Alternativen (PKAI-08, 01.11.2026): vorher gesetzte ersetzen
+    document.head.querySelectorAll('link[data-seo-hreflang]').forEach((el) => el.remove())
+    if (alternates) {
+      alternates.forEach(({ hreflang, href }) => {
+        const l = document.createElement('link')
+        l.setAttribute('rel', 'alternate')
+        l.setAttribute('hreflang', hreflang)
+        l.setAttribute('href', href)
+        l.setAttribute('data-seo-hreflang', '')
+        document.head.appendChild(l)
+      })
+    }
     if (image) {
       setMeta('property', 'og:image', image)
     }

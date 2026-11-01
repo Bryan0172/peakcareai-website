@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { LanguageProvider } from './context/LanguageContext'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { LanguageProvider, useLang } from './context/LanguageContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -22,6 +22,21 @@ import BlogIndex from './pages/BlogIndex'
 import BlogIndustryBriefing20261019 from './pages/BlogIndustryBriefing20261019'
 import BlogIndustryBriefing20261026 from './pages/BlogIndustryBriefing20261026'
 
+// Sprachhinweis (PKAI-04, 01.11.2026): diese Seiten gibt es nur auf Englisch; im deutschen Besuchspfad vor dem Lesen kenntlich machen.
+const EN_ONLY_ROUTES = ['/webinar', '/hotel-ai-readiness-check', '/assessment', '/ai-offer-assistant-hotels']
+function EnglishOnlyNotice() {
+  const { lang } = useLang() || {}
+  const { pathname } = useLocation()
+  const p = pathname.replace(/\/+$/, '') || '/'
+  if (lang !== 'de' || !EN_ONLY_ROUTES.includes(p)) return null
+  return (
+    <div className="bg-amber-50 border-b border-amber-200 text-amber-900 text-sm text-center px-4 py-2">
+      Diese Seite ist derzeit nur auf Englisch verfügbar.
+    </div>
+  )
+}
+
+
 export default function App() {
   return (
       <LanguageProvider>
@@ -29,6 +44,7 @@ export default function App() {
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-1">
+            <EnglishOnlyNotice />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />

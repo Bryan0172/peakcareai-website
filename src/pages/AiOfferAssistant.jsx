@@ -409,7 +409,7 @@ export default function AiOfferAssistant() {
               <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">What the pilot covers</div>
               <div className="space-y-3 mb-7">
                 {[
-                  { label: 'Inquiry types', value: 'Up to 2 defined per pilot' },
+                  { label: 'Scope', value: 'One workflow, up to 2 inquiry types' },
                   { label: 'Duration', value: '30 days' },
                   { label: 'Setup', value: '1 structured session' },
                   { label: 'Review points', value: '2 (mid-pilot + close-out)' },
@@ -523,7 +523,7 @@ export default function AiOfferAssistant() {
               </div>
               <div className="px-8 py-7">
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  The pilot validates the AI Offer Assistant in your hotel — with a single, clearly defined inquiry type. You see measurable results within the first two weeks. If it works, you expand. If not, you stop. No lock-in.
+                  The pilot validates the AI Offer Assistant in your hotel — with one clearly defined workflow covering up to two jointly defined inquiry types. You see measurable results within the first two weeks. If it works, you expand. If not, you stop. No lock-in.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-6">
                   <div>
@@ -534,7 +534,7 @@ export default function AiOfferAssistant() {
                   <div className="space-y-2">
                     {[
                       '30-day structured pilot',
-                      'One defined inquiry workflow',
+                      'One defined workflow, up to two inquiry types',
                       'Setup session + 2 review calls included',
                       'KPI report at close-out',
                       'No annual contract required',

@@ -254,7 +254,7 @@ export default function Assessment() {
         <section className="bg-amber-50 border-t border-amber-200 py-8">
           <div className="container-main text-center">
             <p className="text-amber-800 text-sm">
-              <strong>Article 50 transparency has applied since 2 August 2026. Systems already on the market must carry machine-readable marking from 2 December 2026.</strong>{' '}
+              <strong>Article 50 transparency has applied since 2 August 2026. For providers of certain AI systems that generate synthetic content and were already on the market before 2 August 2026, machine-readable marking is required from 2 December 2026.</strong>{' '}
               <Link to="/webinar" className="font-bold underline">Book an AI Readiness Call →</Link>
             </p>
           </div>
