@@ -539,7 +539,7 @@ export default function HotelAIReadinessCheck() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-10">
             <div className="bg-white rounded-xl p-5 border-l-4 border-amber-400 shadow-sm">
               <div className="font-bold text-navy-900 mb-2 text-sm">AI literacy — EU AI Act Article 4</div>
-              <p className="text-slate-500 text-sm leading-relaxed">Article 4 requires providers and deployers of AI systems to take measures to ensure a sufficient level of AI literacy among their staff — in force since 2 February 2025. Documenting these measures is recommended.</p>
+              <p className="text-slate-500 text-sm leading-relaxed">Article 4 requires providers and deployers of AI systems to take measures to support the development of AI literacy among their staff and other persons using AI systems on their behalf, taking account of their experience and the context of use. Documenting these measures is recommended.</p>
             </div>
             <div className="bg-white rounded-xl p-5 border-l-4 border-red-400 shadow-sm">
               <div className="font-bold text-navy-900 mb-2 text-sm">GDPR Exposure Today</div>
