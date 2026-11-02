@@ -19,6 +19,7 @@ const de = {
     links: {
       services: [
         { label: 'Hotel Operations & AI Assessment (EN)', to: '/hotel-ai-readiness-check' },
+        { label: 'KI-Angebotsassistent (EN)', to: '/ai-offer-assistant-hotels' },
         { label: 'Guest Communication & AI Concierge', to: '/services#guest-communication' },
         { label: 'Internal Workflow Automation', to: '/services#workflow-automation' },
         { label: 'AI Governance for Hotels', to: '/services#governance' },
@@ -202,7 +203,7 @@ const de = {
     },
     deliverables_heading: 'Was Sie erhalten',
     suited_label: 'Geeignet für',
-    offer_more_link: 'Mehr zum KI-Angebotsassistenten →',
+    offer_more_link: 'Mehr zum KI-Angebotsassistenten (EN) →',
     cta_h2: 'Unsicher, wo Sie anfangen sollen?',
     cta_sub: 'Ein vertrauliches 30-Minuten-Gespräch klärt meist, welcher Leistungsbereich der richtige Einstieg für Ihr Haus ist.',
     cta: 'Vertrauliches Gespräch anfragen',

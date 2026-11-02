@@ -6,6 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://peakcareai.com/ai-offer-assistant-hotels</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
     <loc>https://peakcareai.com/webinar</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

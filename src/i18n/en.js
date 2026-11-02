@@ -19,6 +19,7 @@ const en = {
     links: {
       services: [
         { label: 'Hotel Operations & AI Assessment', to: '/hotel-ai-readiness-check' },
+        { label: 'AI Offer Assistant', to: '/ai-offer-assistant-hotels' },
         { label: 'Guest Communication & AI Concierge', to: '/services#guest-communication' },
         { label: 'Internal Workflow Automation', to: '/services#workflow-automation' },
         { label: 'AI Governance for Hotels', to: '/services#governance' },

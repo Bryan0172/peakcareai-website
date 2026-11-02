@@ -53,6 +53,11 @@ export default function Services() {
                 <p className="text-xs text-slate-400 italic">
                   <span className="font-semibold not-italic text-slate-500">{s.suited_label}:</span> {item.suited}
                 </p>
+                {item.id === 'ai-offer-assistant' && (
+                  <Link to="/ai-offer-assistant-hotels" className="inline-block mt-4 text-sm font-semibold text-gold-600 hover:text-gold-500 underline underline-offset-2">
+                    {s.offer_more_link}
+                  </Link>
+                )}
               </div>
               <div className="lg:col-span-6 bg-slate-50 rounded-2xl p-7">
                 <h3 className="text-sm font-bold text-navy-800 uppercase tracking-wide mb-4">{s.deliverables_heading}</h3>
