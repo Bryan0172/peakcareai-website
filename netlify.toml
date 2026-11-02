@@ -13,9 +13,3 @@
   to     = "/404.html"
   status = 404
   force  = false
-
-# Webinar form → trigger Brevo automation function
-[[triggers]]
-  event = "submission-created"
-  form = "webinar-registration"
-  function = "webinar-signup"
