@@ -21,6 +21,7 @@ import AiOfferAssistant from './pages/AiOfferAssistant'
 import BlogIndex from './pages/BlogIndex'
 import BlogIndustryBriefing20261019 from './pages/BlogIndustryBriefing20261019'
 import BlogIndustryBriefing20261026 from './pages/BlogIndustryBriefing20261026'
+import BlogIndustryBriefing20261102 from './pages/BlogIndustryBriefing20261102'
 
 // Sprachhinweis (PKAI-04, 01.11.2026): diese Seiten gibt es nur auf Englisch; im deutschen Besuchspfad vor dem Lesen kenntlich machen.
 const EN_ONLY_ROUTES = ['/webinar', '/hotel-ai-readiness-check', '/assessment', '/ai-offer-assistant-hotels']
@@ -66,6 +67,9 @@ export default function App() {
               <Route path="/blog/branchenbriefing-2026-10-26" element={<BlogIndustryBriefing20261026 lang="de" />} />
               <Route path="/blog/industry-briefing-2026-10-26" element={<BlogIndustryBriefing20261026 lang="en" />} />
               <Route path="/blog/branshov-obzor-2026-10-26" element={<BlogIndustryBriefing20261026 lang="bg" />} />
+              <Route path="/blog/branchenbriefing-2026-11-02" element={<BlogIndustryBriefing20261102 lang="de" />} />
+              <Route path="/blog/industry-briefing-2026-11-02" element={<BlogIndustryBriefing20261102 lang="en" />} />
+              <Route path="/blog/branshov-obzor-2026-11-02" element={<BlogIndustryBriefing20261102 lang="bg" />} />
               <Route path="/hotel-ai-readiness-check" element={<HotelAIReadinessCheck />} />
               <Route path="/ai-offer-assistant-hotels" element={<AiOfferAssistant />} />
               <Route path="/privacy" element={<Privacy />} />

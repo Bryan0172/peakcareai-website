@@ -5,6 +5,18 @@ import { useLang } from '../context/LanguageContext'
 const CAL = 'https://calendly.com/peakcare-peak-care/ai-readiness-call-peak-care-ai'
 
 const POSTS = [
+  { to: '/blog/branchenbriefing-2026-11-02', lang: 'DE', date: '2026-11-02',
+    title: 'Branchenbriefing 2. November 2026',
+    de: 'Ausweichwege bei Nachrichtenausfall, OTA-Inhalte für KI-Vergleiche, Nettobuchungen als Kennzahl. Auch auf Englisch und Bulgarisch.',
+    en: 'Messaging fallback, OTA content for AI comparisons, net bookings as a metric. Also in English and Bulgarian.' },
+  { to: '/blog/industry-briefing-2026-11-02', lang: 'EN', date: '2026-11-02',
+    title: 'Industry Briefing 2 November 2026',
+    de: 'Englische Fassung des Branchenbriefings vom 2. November.',
+    en: 'Messaging fallback procedures, accurate OTA content for AI comparisons and net bookings as a revenue metric.' },
+  { to: '/blog/branshov-obzor-2026-11-02', lang: 'BG', date: '2026-11-02',
+    title: 'Браншов обзор, 2 ноември 2026 г.',
+    de: 'Bulgarische Fassung des Branchenbriefings vom 2. November.',
+    en: 'Bulgarian edition of the 2 November industry briefing.' },
   { to: '/blog/branchenbriefing-2026-10-26', lang: 'DE', date: '2026-10-26',
     title: 'Branchenbriefing 26. Oktober 2026',
     de: 'Entscheidungsgrenzen für KI-Preise, Googles präzisierte Suchkontrollen, Cloudbeds und Muse. Auch auf Englisch und Bulgarisch.',
