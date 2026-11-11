@@ -61,6 +61,7 @@ function getRoutes() {
     '/blog/branchenbriefing-2026-10-19', '/blog/industry-briefing-2026-10-19', '/blog/branshov-obzor-2026-10-19',
     '/blog/branchenbriefing-2026-10-26', '/blog/industry-briefing-2026-10-26', '/blog/branshov-obzor-2026-10-26',
     '/blog/branchenbriefing-2026-11-02', '/blog/industry-briefing-2026-11-02', '/blog/branshov-obzor-2026-11-02',
+    '/blog/branchenbriefing-2026-11-09', '/blog/industry-briefing-2026-11-09', '/blog/branshov-obzor-2026-11-09',
     // NICHT: /blog/hotel-staffing-crisis-ai-solutions + /blog/hotel-tech-stack-ai-integration
     // — Komponenten existieren, sind aber NICHT im Router verdrahtet → würden Home-Duplikate
     // erzeugen. Erst in Router+Sitemap aufnehmen, dann hier ergänzen. (06.07.)
