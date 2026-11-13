@@ -281,8 +281,8 @@ export default function AiOfferAssistant() {
     <>
       <SEO
         lang="en"
-        title="AI Offer Assistant for Hotels — Group, Corporate & Event Inquiries | Peak Care AI"
-        description="Peak Care AI's AI Offer Assistant helps hotel reservations and sales teams handle group bookings, corporate requests and event inquiries faster and more consistently. 30-day pilot · Human team in control."
+        title="AI Offer Assistant for Hotels — Group, Corporate & Event Inquiries | Peak Care AI Consulting"
+        description="Peak Care AI Consulting's AI Offer Assistant helps hotel reservations and sales teams handle group bookings, corporate requests and event inquiries faster and more consistently. 30-day pilot · Human team in control."
         jsonLd={[SCHEMA]}
       />
 
@@ -310,7 +310,7 @@ export default function AiOfferAssistant() {
             <div className="inline-flex items-center gap-2 mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
               <span className="text-gold-400 text-xs font-semibold tracking-[0.15em] uppercase">
-                AI Offer Assistant · Peak Care AI
+                AI Offer Assistant · Peak Care AI Consulting
               </span>
             </div>
 
@@ -575,7 +575,7 @@ export default function AiOfferAssistant() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
             <div className="lg:col-span-2">
-              <p className="text-gold-500 font-semibold text-sm uppercase tracking-widest mb-3">Why Peak Care AI</p>
+              <p className="text-gold-500 font-semibold text-sm uppercase tracking-widest mb-3">Why Peak Care AI Consulting</p>
               <h2 className="text-3xl font-bold text-navy-900 mb-5 leading-tight">
                 Built on hospitality operations. Not on generic automation.
               </h2>

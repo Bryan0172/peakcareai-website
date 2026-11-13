@@ -43,8 +43,8 @@ const en = {
   },
 
   home: {
-    meta_title: 'Keep More of Your Own Bookings: Independent Hotels | Peak Care AI',
-    meta_desc: 'Peak Care AI helps independent hotels keep more of their own bookings and lose fewer guest enquiries, with clearly assigned human responsibility for every AI reply.',
+    meta_title: 'Keep More of Your Own Bookings: Independent Hotels | Peak Care AI Consulting',
+    meta_desc: 'Peak Care AI Consulting helps independent hotels keep more of their own bookings and lose fewer guest enquiries, with clearly assigned human responsibility for every AI reply.',
 
     hero: {
       badge: 'For independent hotels',
@@ -152,10 +152,10 @@ const en = {
     },
 
     why_us: {
-      label: 'Why Peak Care AI',
+      label: 'Why Peak Care AI Consulting',
       h2: 'Built by a hotel insider, not a software vendor.',
       body: "The difference between a generic AI/SEO agency and us is 25 years inside hotel brand development. We know what actually convinces a guest, what a hotel's real constraints are, and how to make a site machine-readable without turning it into a spec sheet.",
-      cta: 'About Peak Care AI',
+      cta: 'About Peak Care AI Consulting',
       items: [
         { title: 'Hospitality insider, not a tech vendor', text: 'Meliá, Aldiana, Maritim, Thomas Cook: 25 years of international hotel and construction projects. We know hotels from planning, construction and brand roll-out.' },
         { title: 'Built for AI search specifically', text: 'Not generic SEO. We optimize for how ChatGPT, Google AI Overviews and booking assistants actually select and cite hotels.' },
@@ -171,7 +171,7 @@ const en = {
       { q: 'Why don’t guests find my hotel on ChatGPT or Google AI?', a: "Often because the website does not make key information easy to find: structured data (schema.org), an FAQ, clear amenity and service information and clear room details. Clear, accessible content and suitable structured data can help search systems understand your hotel. Missing information can make it harder to be found; a recommendation by AI systems is not guaranteed. Guests who do not find you may book via OTAs instead, typically at 15–18% commission." },
       { q: 'What is GEO (Generative Engine Optimization)?', a: 'GEO (Generative Engine Optimization) means improving content and technical accessibility to help AI answer systems understand your hotel and consider it as a source. The individual systems decide whether to select, cite or recommend your hotel; there is no guarantee.' },
       { q: 'How does this bring more direct bookings?', a: 'When guests find you directly through AI and your own site instead of an OTA, you keep the 15–18% commission. Even a few recovered direct bookings pay for the work.' },
-      { q: 'Who is behind Peak Care AI?', a: 'Peak Care AI was founded by Andreas Donner, who spent 25 years developing, building and implementing hotels for international brands (Aldiana, Meliá, Thomas Cook, Maritim) — so we look at your hotel from inside the industry, not as a software vendor.' },
+      { q: 'Who is behind Peak Care AI Consulting?', a: 'Peak Care AI Consulting was founded by Andreas Donner, who spent 25 years developing, building and implementing hotels for international brands (Aldiana, Meliá, Thomas Cook, Maritim) — so we look at your hotel from inside the industry, not as a software vendor.' },
       { q: 'Do I need to change my booking system or website provider?', a: "No. We work with your existing website and booking setup — we make it readable for AI and search, we don't replace it." },
     ],
 
@@ -187,7 +187,7 @@ const en = {
   },
 
   services: {
-    meta_title: 'Hotel AI Services — Direct Bookings, Automation & Guest Comms | Peak Care AI',
+    meta_title: 'Hotel AI Services — Direct Bookings, Automation & Guest Comms | Peak Care AI Consulting',
     meta_desc: 'Eight practice areas for independent hotels, small hotel groups and hospitality operators, from operations and AI assessment, guest communication, internal workflow automation, AI governance and team enablement to AI search visibility.',
     hero_label: 'Practice Areas',
     hero_h1: 'How we work with hotels.',
@@ -332,7 +332,7 @@ const en = {
   },
 
   hospitality: {
-    meta_title: 'AI for Independent Hotels — Cut OTA Fees, Win Direct Bookings | Peak Care AI',
+    meta_title: 'AI for Independent Hotels — Cut OTA Fees, Win Direct Bookings | Peak Care AI Consulting',
     meta_desc: 'AI advisory built on genuine hospitality understanding. Use cases across every hotel department, shadow AI awareness and practical implementation guidance.',
     hero_label: 'Hospitality Focus',
     hero_h1: 'We understand how hotels actually work.',
@@ -376,7 +376,7 @@ const en = {
   },
 
   corporateAI: {
-    meta_title: 'Corporate AI Governance & EU AI Act Compliance | Peak Care AI',
+    meta_title: 'Corporate AI Governance & EU AI Act Compliance | Peak Care AI Consulting',
     meta_desc: 'GDPR/DSGVO-compliant AI governance frameworks for hotels. Data classification, usage policies, system approval and accountability structures for hospitality organisations.',
     hero_label: 'Corporate AI & Governance',
     hero_h1: 'AI without governance is not a strategy.',
@@ -427,20 +427,20 @@ const en = {
   },
 
   about: {
-    meta_title: 'About | Peak Care AI',
-    meta_desc: 'Who leads Peak Care AI: Andreas Donner, Dipl.-Ing., 25 years of hotel and construction projects for Meliá, Aldiana, Maritim and Thomas Cook. Every mandate in person.',
+    meta_title: 'About | Peak Care AI Consulting',
+    meta_desc: 'Who leads Peak Care AI Consulting: Andreas Donner, Dipl.-Ing., 25 years of hotel and construction projects for Meliá, Aldiana, Maritim and Thomas Cook. Every mandate in person.',
     hero_label: 'About',
     hero_h1_line1: 'AI for independent hotels,',
     hero_h1_line2: 'with clear responsibility.',
-    hero_sub: 'Peak Care AI helps independent hotels keep more of their own bookings and lose fewer guest enquiries, with clearly assigned human responsibility for every AI reply.',
+    hero_sub: 'Peak Care AI Consulting helps independent hotels keep more of their own bookings and lose fewer guest enquiries, with clearly assigned human responsibility for every AI reply.',
     person_label: 'Who is responsible for your property',
     person_name: 'Andreas Donner',
-    person_role: 'Founder, Peak Care AI',
+    person_role: 'Founder, Peak Care AI Consulting',
     person_p1: 'Andreas Donner, Dipl.-Ing., 25 years of international hotel and construction projects, among them Meliá, Aldiana, Maritim and Thomas Cook.',
     person_p2: 'I lead every engagement personally. For every AI reply to your guests, we settle in advance who in your house is responsible for it.',
-    who_label: 'Peak Care AI',
+    who_label: 'Peak Care AI Consulting',
     who_h2: 'Who we are.',
-    who_p1: 'Peak Care AI works with independent hotels on introducing AI into guest communication. It starts with a figure from your own records: what a year of platform commission costs on guests who were already yours.',
+    who_p1: 'Peak Care AI Consulting works with independent hotels on introducing AI into guest communication. It starts with a figure from your own records: what a year of platform commission costs on guests who were already yours.',
     who_p2: 'We know hotels from planning, construction and brand roll-out. We turn that knowledge into AI workflows where it is settled in your house who replies and who reviews.',
     who_p3: 'We do not sell software or a chatbot. You receive figures and a basis for your decision. We support the implementation if you want us to.',
     what_label: 'Our Focus',
@@ -457,18 +457,18 @@ const en = {
       { title: 'Hospitality as a system', text: 'Hotel operations are interconnected. Advisory that ignores this produces point solutions that create friction elsewhere. We work at the system level.' },
     ],
     brand_h2: 'Brand & Organisational Structure',
-    brand_p1: 'Peak Care AI is our brand for AI in hospitality. It stands for an advisory practice dedicated to introducing AI in independent hotels.',
+    brand_p1: 'Peak Care AI Consulting is our brand for AI in hospitality. It stands for an advisory practice dedicated to introducing AI in independent hotels.',
     brand_p2: 'The practice draws on 25 years of international hotel and construction projects, among them Meliá, Aldiana, Maritim and Thomas Cook. Andreas Donner leads every engagement personally.',
     brand_p3: 'This focus ensures clarity for clients: you are engaging with a specialist who understands your operational context — not a general-purpose agency that has added hospitality to its service portfolio.',
     cta_h2: 'Work with us.',
-    cta_sub: 'Start with a 30-minute confidential conversation. We will quickly determine whether and how Peak Care AI can be useful to your house.',
+    cta_sub: 'Start with a 30-minute confidential conversation. We will quickly determine whether and how Peak Care AI Consulting can be useful to your house.',
     cta_primary: 'Request a confidential conversation',
     cta_secondary: 'View Practice Areas',
   },
 
   contact: {
-    meta_title: 'Contact | Peak Care AI',
-    meta_desc: 'Request a confidential conversation with Peak Care AI. We help independent hotels reduce operational pressure, improve guest communication and implement AI safely.',
+    meta_title: 'Contact | Peak Care AI Consulting',
+    meta_desc: 'Request a confidential conversation with Peak Care AI Consulting. We help independent hotels reduce operational pressure, improve guest communication and implement AI safely.',
     hero_label: 'Contact',
     hero_h1: 'Request a confidential conversation.',
     hero_sub: 'No commitment, no sales pressure. A focused 30-minute conversation about your operation — and where AI can practically help.',
@@ -480,7 +480,7 @@ const en = {
     ],
     direct_label: 'Direct contact',
     email: 'kontakt.ki.hotel@gmail.com',
-    location: 'Peak Care AI\nBansko, Bulgaria\nPhone +359 895 762 785',
+    location: 'Peak Care AI Consulting\nBansko, Bulgaria\nPhone +359 895 762 785',
     fields: {
       name: 'Full Name', name_ph: 'Your name',
       company: 'Company / Property', company_ph: 'Hotel or company name',
@@ -499,10 +499,10 @@ const en = {
   },
 
   legal: {
-    privacy_meta_desc: 'Peak Care AI privacy policy: which data we process, on what legal basis, which service providers are involved and what rights you have.',
+    privacy_meta_desc: 'Peak Care AI Consulting privacy policy: which data we process, on what legal basis, which service providers are involved and what rights you have.',
     privacy_title: 'Privacy Policy',
     privacy_updated: 'Last updated: October 2026',
-    privacy_p1: 'This website is operated by Peak Care AI (a brand of "PEAK CARE" EDPK, Bulgaria). The company named in the Imprint is the controller under the General Data Protection Regulation (GDPR).',
+    privacy_p1: 'This website is operated by Peak Care AI Consulting (a brand of "PEAK CARE" EDPK, Bulgaria). The company named in the Imprint is the controller under the General Data Protection Regulation (GDPR).',
     privacy_data_h: 'Data collected and purpose',
     privacy_data_p: 'When you use our contact form, we collect your name, company, email address, and the content of your message. This data is used exclusively to process and respond to your enquiry and is not used for any other purpose.',
     privacy_legal_h: 'Legal basis',
@@ -519,11 +519,11 @@ const en = {
     privacy_rights_p: 'You have the right to access, rectify, erase, or restrict the processing of your personal data, as well as the right to data portability and objection. To exercise these rights, contact us at: kontakt.ki.hotel@gmail.com. You also have the right to lodge a complaint with a data protection supervisory authority, in particular the Bulgarian Commission for Personal Data Protection (cpdp.bg).',
     privacy_cookies_h: 'Cookies and storage access',
     privacy_cookies_p: 'Without your consent, this website sets no analytics or marketing cookies. Technically necessary are storing your language and consent choice in your browser (localStorage) and the signals Cloudflare Turnstile needs to protect the form. Analytics cookies are set only by Google Analytics, and only after your consent (see above). Fonts are loaded from Google Fonts (Google Ireland Limited) and some images from Unsplash. Your IP address is transmitted to these providers when this happens.',
-    imprint_meta_desc: 'Peak Care AI imprint: provider identification, contact details and the responsible entity as required by law.',
+    imprint_meta_desc: 'Peak Care AI Consulting imprint: provider identification, contact details and the responsible entity as required by law.',
     imprint_title: 'Imprint',
     imprint_placeholder: 'Note: This is a placeholder. Complete legal details must be inserted by the website operator before go-live.',
     imprint_resp_h: 'Responsible for this website',
-    imprint_resp_p: 'Peak Care AI — a brand of "PEAK CARE" EDPK\nStragite 8, bl. D, fl. 3, ap. 39, 2770 Bansko, Bulgaria\nUIC: 208465067\nLegal form: Single-person company with variable capital (EDPK)\nManaging director (authorised signatory): Mathias Andreas Donner\nContact: kontakt.ki.hotel@gmail.com',
+    imprint_resp_p: 'Peak Care AI Consulting — a brand of "PEAK CARE" EDPK\nStragite 8, bl. D, fl. 3, ap. 39, 2770 Bansko, Bulgaria\nUIC: 208465067\nLegal form: Single-person company with variable capital (EDPK)\nManaging director (authorised signatory): Mathias Andreas Donner\nContact: kontakt.ki.hotel@gmail.com',
     imprint_disc_h: 'Disclaimer',
     imprint_disc_p: 'The content of this website has been prepared with care. Peak Care EDPK accepts no liability for the accuracy, completeness or timeliness of the information provided.',
   },

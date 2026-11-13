@@ -21,10 +21,10 @@ const SOURCES = [
 
 const T = {
   de: {
-    seoTitle: 'Branchenbriefing 19. Oktober 2026: Buchungsdaten, Hotelsterne in KI, Mews | Peak Care AI',
+    seoTitle: 'Branchenbriefing 19. Oktober 2026: Buchungsdaten, Hotelsterne in KI, Mews | Peak Care AI Consulting',
     desc: 'Vier Entwicklungen für unabhängige Hotels im DACH-Raum: Phishing mit Buchungsdaten, offizielle Sterne in KI-Antworten, erklärbare Preisempfehlungen und KI-Werkzeuge im Alltag.',
     crumb: 'Branchenbriefing', badge: 'Branchenbriefing', date: '19. Oktober 2026',
-    h1: 'Peak Care AI Branchenbriefing', h1b: '19. Oktober 2026',
+    h1: 'Peak Care AI Consulting Branchenbriefing', h1b: '19. Oktober 2026',
     lead: 'Vier Entwicklungen für unabhängige Hotels und kleine Hotelgruppen im DACH-Raum: sichere Buchungsdaten, überprüfbare Hotelinformationen und kontrollierbare Automatisierung.',
     why: 'Bedeutung', why4: 'Bedeutung, unsere Schlussfolgerung', next: 'Nächster Schritt',
     items: [
@@ -49,14 +49,14 @@ const T = {
     prio: 'Buchungs- und Kommunikationswege prüfen, verifizierte Hoteldaten pflegen und Freigabegrenzen für Automatisierungen festlegen.',
     srcH: 'Quellen', otherLang: 'Weitere Sprachen',
     ctaH: 'Wie steht Ihr Haus bei diesen vier Punkten?',
-    ctaP: 'Peak Care AI unterstützt Hotels bei AI-Readiness-Assessments, Gästekommunikation und Workflow-Automatisierung.',
+    ctaP: 'Peak Care AI Consulting unterstützt Hotels bei AI-Readiness-Assessments, Gästekommunikation und Workflow-Automatisierung.',
     cta: 'Gespräch anfragen', cta2: 'AI-Readiness-Assessment',
   },
   en: {
-    seoTitle: 'Industry Briefing 19 October 2026: booking data, hotel stars in AI, Mews | Peak Care AI',
+    seoTitle: 'Industry Briefing 19 October 2026: booking data, hotel stars in AI, Mews | Peak Care AI Consulting',
     desc: 'Four developments for independent hotels in Germany, Austria and Switzerland: phishing with booking data, official stars in AI answers, explainable pricing recommendations and everyday AI tools.',
     crumb: 'Industry Briefing', badge: 'Industry Briefing', date: '19 October 2026',
-    h1: 'Peak Care AI Industry Briefing', h1b: '19 October 2026',
+    h1: 'Peak Care AI Consulting Industry Briefing', h1b: '19 October 2026',
     lead: 'Four developments for independent hotels and small hotel groups in Germany, Austria and Switzerland: secure booking data, verifiable hotel information and accountable automation.',
     why: 'Why it matters', why4: 'Why it matters, our interpretation', next: 'Next step',
     items: [
@@ -81,14 +81,14 @@ const T = {
     prio: 'Check booking and communication workflows, maintain verified hotel facts and define approval limits for automation.',
     srcH: 'Sources', otherLang: 'Other languages',
     ctaH: 'Where does your hotel stand on these four points?',
-    ctaP: 'Peak Care AI helps hotels assess AI readiness, improve guest communication and automate workflows.',
+    ctaP: 'Peak Care AI Consulting helps hotels assess AI readiness, improve guest communication and automate workflows.',
     cta: 'Request a conversation', cta2: 'AI Readiness Assessment',
   },
   bg: {
-    seoTitle: 'Браншов обзор 19 октомври 2026 г.: резервационни данни, хотелски звезди в ИИ, Mews | Peak Care AI',
+    seoTitle: 'Браншов обзор 19 октомври 2026 г.: резервационни данни, хотелски звезди в ИИ, Mews | Peak Care AI Consulting',
     desc: 'Четири развития за независимите хотели в Германия, Австрия и Швейцария: фишинг с резервационни данни, официални звезди в отговорите на ИИ, обясними ценови препоръки и ИИ инструменти в ежедневието.',
     crumb: 'Браншов обзор', badge: 'Браншов обзор', date: '19 октомври 2026 г.',
-    h1: 'Браншов обзор на Peak Care AI', h1b: '19 октомври 2026 г.',
+    h1: 'Браншов обзор на Peak Care AI Consulting', h1b: '19 октомври 2026 г.',
     lead: 'Четири развития с практическо значение за независимите хотели и малките хотелски групи в Германия, Австрия и Швейцария: защита на резервационните данни, проверима информация за хотела и автоматизация с ясен контрол.',
     why: 'Значение', why4: 'Значение, наш извод', next: 'Следваща стъпка',
     items: [
@@ -113,7 +113,7 @@ const T = {
     prio: 'Проверка на резервационните и комуникационните процеси, поддържане на проверени хотелски данни и ясни граници за автоматичните действия.',
     srcH: 'Източници', otherLang: 'Други езици',
     ctaH: 'Къде е вашият хотел по тези четири точки?',
-    ctaP: 'Peak Care AI подпомага хотелите при оценка на готовността за ИИ, комуникация с гостите и автоматизация на работните процеси.',
+    ctaP: 'Peak Care AI Consulting подпомага хотелите при оценка на готовността за ИИ, комуникация с гостите и автоматизация на работните процеси.',
     cta: 'Запитване за разговор', cta2: 'Оценка на готовността за ИИ',
   },
 }

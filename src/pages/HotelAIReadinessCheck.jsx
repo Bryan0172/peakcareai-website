@@ -91,7 +91,7 @@ const PROCESS = [
   },
   {
     step: '03',
-    title: 'Analysis by Peak Care AI',
+    title: 'Analysis by Peak Care AI Consulting',
     duration: '3–5 days',
     text: 'We assess potentials, compliance risks and operational bottlenecks based on your specific situation.',
   },
@@ -128,7 +128,7 @@ const FAQS = [
   },
   {
     q: 'What happens after the check?',
-    a: 'On request, Peak Care AI can support the implementation of prioritised measures, tool selection, staff training and the development of internal AI policies.',
+    a: 'On request, Peak Care AI Consulting can support the implementation of prioritised measures, tool selection, staff training and the development of internal AI policies.',
   },
 ]
 
@@ -164,9 +164,9 @@ export default function HotelAIReadinessCheck() {
     <>
       <SEO
         lang="en"
-        title="Hotel Operations & AI Assessment for Independent Hotels | Peak Care AI"
-        description="Peak Care AI maps operational pain points, existing tools, shadow-AI exposure and realistic AI potential for independent hotels and small groups. Includes a 90-day plan."
-        ogTitle="Hotel Operations & AI Assessment for Independent Hotels | Peak Care AI"
+        title="Hotel Operations & AI Assessment for Independent Hotels | Peak Care AI Consulting"
+        description="Peak Care AI Consulting maps operational pain points, existing tools, shadow-AI exposure and realistic AI potential for independent hotels and small groups. Includes a 90-day plan."
+        ogTitle="Hotel Operations & AI Assessment for Independent Hotels | Peak Care AI Consulting"
         ogDescription="Structured AI readiness check for independent hotels and small hotel groups — tool inventory, EU AI Act compliance risk, operational efficiency, 90-day roadmap."
         type="website"
         canonical="https://peakcareai.com/hotel-ai-readiness-check"
@@ -235,7 +235,7 @@ export default function HotelAIReadinessCheck() {
               "name": "What happens after the Hotel AI Readiness Check?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The check produces a written management report with scores, prioritised measures, and a 90-day roadmap. On request, Peak Care AI can support the implementation of prioritised measures: tool selection, EU AI Act documentation, staff training, and the development of internal AI policies. The 90-day roadmap is designed to be actionable without ongoing external support."
+                "text": "The check produces a written management report with scores, prioritised measures, and a 90-day roadmap. On request, Peak Care AI Consulting can support the implementation of prioritised measures: tool selection, EU AI Act documentation, staff training, and the development of internal AI policies. The 90-day roadmap is designed to be actionable without ongoing external support."
               }
             },
             {
@@ -243,7 +243,7 @@ export default function HotelAIReadinessCheck() {
               "name": "What does a Hotel AI Readiness Check cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The Hotel Operations & AI Assessment is scoped individually per hotel and offered as a tailored quote on request. It includes an initial 30-minute conversation, a digital questionnaire, 3–5 days of analysis by Peak Care AI, a written management report with six scored components, and a 60-minute results presentation. Book an initial free 30-minute call to discuss whether the check fits your hotel's current situation."
+                "text": "The Hotel Operations & AI Assessment is scoped individually per hotel and offered as a tailored quote on request. It includes an initial 30-minute conversation, a digital questionnaire, 3–5 days of analysis by Peak Care AI Consulting, a written management report with six scored components, and a 60-minute results presentation. Book an initial free 30-minute call to discuss whether the check fits your hotel's current situation."
               }
             }
           ]
@@ -360,7 +360,7 @@ export default function HotelAIReadinessCheck() {
                 Structure for your AI introduction — not another abstract report.
               </h2>
               <p className="text-slate-600 leading-relaxed mb-5">
-                Peak Care AI analyses your current system landscape, AI usage, core hotel processes and potential compliance risks. The result is not a theoretical assessment, but a concrete management report: scores, quick wins and a 90-day action plan.
+                Peak Care AI Consulting analyses your current system landscape, AI usage, core hotel processes and potential compliance risks. The result is not a theoretical assessment, but a concrete management report: scores, quick wins and a 90-day action plan.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 Designed for hotel operators who run without a dedicated AI, IT or compliance department — and who need practical guidance, not generic consulting.
@@ -615,7 +615,7 @@ export default function HotelAIReadinessCheck() {
               </div>
               <div className="px-8 py-7">
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  For the initial validation phase, Peak Care AI offers the Hotel Operations & AI Assessment to a limited number of independent hotels at a reduced pilot price.
+                  For the initial validation phase, Peak Care AI Consulting offers the Hotel Operations & AI Assessment to a limited number of independent hotels at a reduced pilot price.
                 </p>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-6">
                   <div>

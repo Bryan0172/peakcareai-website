@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="mb-4">
-              <div className="text-white font-bold text-base tracking-wide">Peak Care AI</div>
+              <div className="text-white font-bold text-base tracking-wide">Peak Care AI Consulting</div>
               <div className="text-gold-400 text-xs font-medium tracking-widest uppercase mt-0.5">AI Strategy & Automation for Hospitality</div>
             </div>
             <p className="text-sm leading-relaxed text-white/50">{f.tagline}</p>

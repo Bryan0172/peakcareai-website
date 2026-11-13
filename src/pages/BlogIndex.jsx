@@ -79,10 +79,10 @@ export default function BlogIndex() {
   const { lang } = useLang()
   const de = lang === 'de'
   const tx = de
-    ? { title: 'Fachbeiträge: KI im Hotel | Peak Care AI', h1: 'Fachbeiträge: KI im Hotel',
+    ? { title: 'Fachbeiträge: KI im Hotel | Peak Care AI Consulting', h1: 'Fachbeiträge: KI im Hotel',
         intro: 'Wie Hotels Anfragen schneller beantworten, KI im Team sicher einsetzen und was der EU AI Act tatsächlich verlangt.',
         upd: 'Stand', cta_h2: 'Fragen zu Ihrem Haus?', cta: 'Vertrauliches Gespräch anfragen' }
-    : { title: 'Articles: AI in hotels | Peak Care AI', h1: 'Articles: AI in hotels',
+    : { title: 'Articles: AI in hotels | Peak Care AI Consulting', h1: 'Articles: AI in hotels',
         intro: 'How hotels answer enquiries faster, use AI safely in the team, and what the EU AI Act actually requires.',
         upd: 'Updated', cta_h2: 'Questions about your hotel?', cta: 'Request a confidential conversation' }
 

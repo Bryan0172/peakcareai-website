@@ -43,7 +43,7 @@ export default function BlogShadowAIHotels() {
             },
             {
               "@type": "Question",
-              "name": "Was kostet ein AI Readiness Call bei Peak Care AI?",
+              "name": "Was kostet ein AI Readiness Call bei Peak Care AI Consulting?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Der erste Schritt — ein 30-minütiges Gespräch — ist kostenfrei. Ein strukturierter AI Readiness Check mit schriftlichem Ergebnis ist als separates Angebot verfügbar."
@@ -263,7 +263,7 @@ export default function BlogShadowAIHotels() {
                     a: 'Erfahrungsgemäß 60–90 Minuten: 30 Minuten Teamrunde, 30–60 Minuten strukturierte Aufbereitung. Kein IT-Projekt, kein externer Berater erforderlich.',
                   },
                   {
-                    q: 'Was kostet ein AI Readiness Call bei Peak Care AI?',
+                    q: 'Was kostet ein AI Readiness Call bei Peak Care AI Consulting?',
                     a: 'Der erste Schritt — ein 30-minütiges Gespräch — ist kostenfrei. Ein strukturierter AI Readiness Check mit schriftlichem Ergebnis ist als separates Angebot verfügbar. Details auf Anfrage.',
                   },
                 ].map((item, i) => (

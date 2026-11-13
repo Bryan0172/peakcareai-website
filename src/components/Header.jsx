@@ -44,7 +44,7 @@ export default function Header() {
             </svg>
           </div>
           <div className="flex flex-col leading-none">
-            <span className="text-white font-bold text-sm tracking-wide">Peak Care AI</span>
+            <span className="text-white font-bold text-sm tracking-wide">Peak Care AI Consulting</span>
             <span className="text-gold-400 text-xs font-medium tracking-[0.1em] uppercase mt-0.5">AI Strategy & Automation</span>
           </div>
         </Link>

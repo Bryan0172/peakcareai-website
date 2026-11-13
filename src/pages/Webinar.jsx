@@ -34,9 +34,9 @@ export default function Webinar() {
     <>
       <SEO
         lang="en"
-        title="Executive Briefing: Shadow AI & AI Literacy for Hotels | Peak Care AI"
+        title="Executive Briefing: Shadow AI & AI Literacy for Hotels | Peak Care AI Consulting"
         description="A focused conversation for hotel operators — where AI is already in your operation, how to bring staff tool usage under management control, and what practical AI governance looks like."
-        ogTitle="Executive Briefing: Shadow AI & AI Literacy for Hotels | Peak Care AI"
+        ogTitle="Executive Briefing: Shadow AI & AI Literacy for Hotels | Peak Care AI Consulting"
         ogDescription="Understand where your hotel stands before AI becomes unmanaged. One-to-one AI Readiness Call for hotel owners, GMs and operations leaders."
         type="website"
       />
@@ -237,7 +237,7 @@ export default function Webinar() {
                     AD
                   </div>
                   <h3 className="font-bold text-navy-900">Andreas Donner</h3>
-                  <p className="text-slate-500 text-sm mt-1">Founder, Peak Care AI</p>
+                  <p className="text-slate-500 text-sm mt-1">Founder, Peak Care AI Consulting</p>
                   <div className="mt-4 space-y-2 text-xs text-slate-500 text-left">
                     <div className="flex items-center gap-2">
                       <span className="text-gold-500">✓</span> 25 years of international hotel and construction projects

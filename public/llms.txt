@@ -1,6 +1,6 @@
-# Peak Care AI
+# Peak Care AI Consulting
 
-> Peak Care AI helps independent hotels keep more of their own bookings and lose fewer guest enquiries, with clearly assigned human responsibility for every AI reply.
+> Peak Care AI Consulting helps independent hotels keep more of their own bookings and lose fewer guest enquiries, with clearly assigned human responsibility for every AI reply.
 
 Peak Care AI (peakcareai.com) works with independent hotels in Europe, with Bulgaria and the Balkans as equal markets alongside the DACH region and Spain. We look with the hotel at two places where it loses bookings: commission paid on guests who were already its own, and guest enquiries answered too late. From the hotel's own figures we work out what a year of platform commission costs, and we settle which replies an AI assistant may prepare and which stay with a person. We do not sell software or a chatbot, and we do not give legal advice. Pricing on request.
 

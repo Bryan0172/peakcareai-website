@@ -13,12 +13,12 @@ export default function Home() {
         description={h.meta_desc}
         keywords="hotel AI visibility, AI search for hotels, GEO for hotels, generative engine optimization hospitality, hotel direct bookings AI, reduce OTA commission, hotel ChatGPT visibility, hotel AI schema markup, boutique hotel AI, hotel structured data, AI concierge, DACH hospitality AI, Bulgaria hotel AI, Balkans hospitality AI, hotel AI consultant Europe"
         type="website"
-        siteName="Peak Care AI"
+        siteName="Peak Care AI Consulting"
         canonical="https://peakcareai.com/"
         jsonLd={[{
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "Peak Care AI",
+          "name": "Peak Care AI Consulting",
           "url": "https://peakcareai.com",
           "description": "AI visibility and GEO for hotels — we help independent and boutique hotels get found and recommended by AI search (ChatGPT, Google AI, booking assistants) and win back direct bookings. Built by a hotel-industry insider with 25 years developing, building and implementing hotels for international brands.",
           "serviceType": ["Hotel AI Visibility & GEO Optimization", "Structured Data / Schema for Hotels", "AI Search Readiness Check", "Direct Booking Optimization", "AI Concierge & Guest Communication"],
@@ -47,7 +47,7 @@ export default function Home() {
           "founder": {
             "@type": "Person",
             "name": "Andreas Donner",
-            "jobTitle": "Founder, Peak Care AI",
+            "jobTitle": "Founder, Peak Care AI Consulting",
             "url": "https://peakcareai.com/about",
             "description": "25 years in international hotel project development, construction and brand implementation (Aldiana, Meliá, Thomas Cook, Maritim International).",
             "knowsAbout": ["Hotel AI Visibility", "GEO for Hospitality", "Hotel Brand Implementation", "Hospitality Operations"]

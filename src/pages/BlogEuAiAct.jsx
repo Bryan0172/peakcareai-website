@@ -72,7 +72,7 @@ export default function BlogEuAiAct() {
               "name": "Do independent or small hotels need to comply with the EU AI Act?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. The EU AI Act applies to any organisation operating in the EU that uses AI systems, regardless of size. Independent hotels are often less prepared than chains — and face the same obligations. The documentation requirements for limited-risk systems (the category most hotel tools fall into) are manageable without a dedicated IT or compliance team. Peak Care AI has designed a structured AI Readiness Check specifically for hotels without dedicated technical resources."
+                "text": "Yes. The EU AI Act applies to any organisation operating in the EU that uses AI systems, regardless of size. Independent hotels are often less prepared than chains — and face the same obligations. The documentation requirements for limited-risk systems (the category most hotel tools fall into) are manageable without a dedicated IT or compliance team. Peak Care AI Consulting has designed a structured AI Readiness Check specifically for hotels without dedicated technical resources."
               }
             },
             {
